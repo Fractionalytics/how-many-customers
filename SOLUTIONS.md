@@ -105,6 +105,79 @@ customer between payments) was never written down.
     "customers" depending on the question. Separately, the invoice table holds only 1,042 distinct
     `customer_ref` against 1,144 billing customers, so 102 customers have never been invoiced.
 
+13. **Marketing spend joins to nothing.** `marketing_spend.csv` is monthly and by channel: 282 rows,
+    47 months, six channels, **$6,890,456 total**. There is no account-level cost anywhere, because
+    real finance systems do not hold one. The only bridge to a customer is the CRM's `lead_source`,
+    and traps 14 to 16 are about why that bridge does not hold weight.
+
+    | Channel (finance's spelling) | Spend |
+    |---|---|
+    | Paid Search | $2,164,143 |
+    | Outbound SDR | $1,315,361 |
+    | Paid Social | $1,190,805 |
+    | Events & Sponsorships | $971,731 |
+    | Content & SEO | $759,378 |
+    | Partner Program | $489,038 |
+
+14. **The two sides do not share a vocabulary.** Finance books **six** channels. The CRM holds
+    **23 distinct `lead_source` values**, because it is a free-text-ish picklist nobody normalised:
+    `Google Ads`, `PPC`, `paid search` and `Paid Search` are four separate values for one channel,
+    and events appear as `Event`, `Conference` and `Tradeshow`.
+
+    **This is exactly trap 3, one system over.** Anyone who solved the company-name join and then
+    joins spend to lead source on the raw channel string will silently drop most of the book. The
+    mapping is a business decision (which CRM values roll up to which GL line) that exists in nobody's
+    documentation.
+
+15. **Last touch over-credits Direct and Organic, and `lead_source` is blank on half the book.**
+
+    - **603 of 1,209 CRM rows have a blank `lead_source` (50%).** Of those, **520 predate
+      2024-06-01**, when the field was added, and **83 are later rows nobody filled in.**
+    - The blank half is not a random half. Mean `created_date` for a blank row is **2023-10-22**;
+      for a tagged row it is **2025-06-09**. **Twenty months apart.** Mean MRR is nearly identical
+      ($1,986 blank against $1,905 tagged), so the bias is not in deal size, it is in tenure: any
+      channel analysis is computed entirely on the newest half of the customer base, and every
+      conclusion about "what works" is a conclusion about the last fifteen months only.
+    - Where a tag does exist, it is often the wrong one. Measured against the generator's ground
+      truth, this share of each channel's genuinely-driven accounts is credited to `Direct` or an
+      organic variant instead:
+
+      | True channel | Misattributed | Rate |
+      |---|---|---|
+      | Events & Sponsorships | 22 of 62 | **35.5%** |
+      | Paid Social | 25 of 71 | **35.2%** |
+      | Paid Search | 37 of 140 | 26.4% |
+      | Outbound SDR | 16 of 77 | 20.8% |
+      | Partner Program | 13 of 88 | 14.8% |
+      | Content & SEO | 7 of 112 | 6.2% |
+
+      Events lose the most, which is the real-world pattern: somebody meets you at a conference and
+      then signs up through a branded search three weeks later, so the conference gets no credit.
+      **Content & SEO looks the most accurate and is not: it is the channel everything else leaks
+      into, so it is flattered by the same mechanism that penalises events.**
+
+16. **160 companies arrived by acquisition and cost nothing to acquire, and nothing flags them.**
+    The company bought three smaller books: **Northgate (63), Pelham (52), Vireo (45)**. Those
+    customers were never marketed to and belong in no CAC denominator.
+
+    **The migration had to put something in the column, so 33 of them carry a marketing channel they
+    never came from**, which inflates whichever channels they landed in. The rest are blank, and are
+    therefore indistinguishable from trap 15's blanks.
+
+    Consequence, and it is the one worth stating out loud:
+
+    | Method | Result | Verdict |
+    |---|---|---|
+    | Spend / all 1,200 companies | **$5,742** | Wrong. Counts a book that cost nothing to acquire |
+    | Spend / 1,040 non-acquired | **$6,625** | Better, and still not defensible |
+    | Per channel | **not computable** | Traps 13, 14, 15 and 16 each independently break it |
+
+    Even the $6,625 needs an agreed definition of "customer" in the denominator, which is question
+    one. **CAC and payback inherit the definition problem rather than escaping it**, and payback
+    fractures again on contract type: an annual customer who paid twelve months up front and a
+    monthly customer at the same MRR have completely different payback curves, and a blended figure
+    describes neither.
+
 ## The revenue question
 
 The README suggests asking for a defensible trailing-twelve-month figure. Five answers:

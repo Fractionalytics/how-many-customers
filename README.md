@@ -8,7 +8,7 @@ deterministic: same seed, same bytes, every run.
 
 ## The setup
 
-A mid-market B2B company that has grown partly by acquisition. Three systems, none of which was
+A mid-market B2B company that has grown partly by acquisition. Four systems, none of which was
 designed to agree with the others.
 
 | File | Stands in for | Rows | Grain |
@@ -17,10 +17,16 @@ designed to agree with the others.
 | `billing_customers.csv` | Stripe | 1,144 | one row per billing customer |
 | `billing_invoices.csv` | Stripe | 13,780 | one row per invoice |
 | `product_usage.csv` | product telemetry | 171,728 | one row per org per active day |
+| `marketing_spend.csv` | the GL / the ads platforms | 282 | one row per month per channel |
 
 **There is no shared key.** CRM uses `account_id` (`001Qy...`), billing uses `customer_ref`
 (`cus_...`), telemetry uses `org_slug`. Nothing joins them but the company name and the email
 domain, and the systems do not spell names the same way.
+
+**And marketing spend joins to nothing at all.** It is monthly and by channel, with no link to any
+account, which is what a real finance system actually holds. The only bridge to a customer is
+`crm_accounts.lead_source`, a sales-entered last-touch tag that is wrong in the specific ways
+last-touch is always wrong.
 
 The `as of` date for every recency question is **2026-08-20**.
 
@@ -37,6 +43,23 @@ Several answers are available from the data, all defensible, none obviously wron
 
 They do not agree, and the gap between the highest and the lowest is a few hundred customers on a
 book of roughly twelve hundred.
+
+## The second question: what did it cost to acquire them?
+
+**Every downstream number a buyer or a board cares about is built on the first question.** Customer
+acquisition cost, payback period, cohort retention and revenue concentration all divide by, or group
+by, a customer count that nobody has agreed on.
+
+There is $6.89M of marketing spend on file across 47 months and six channels. Work out:
+
+- **blended CAC** (and notice that you cannot compute it without first answering question one)
+- **CAC by channel**
+- **payback period**, and whether a single blended number means anything across a book that is part
+  monthly and part annual
+- **revenue concentration**, which is the figure an acquirer would price risk off
+
+One of those is not computable from this data. Finding out which one, and being able to say exactly
+why, is the exercise.
 
 ## What this actually tests
 
@@ -59,12 +82,17 @@ answer that only the company's own executives can supply.
 
 ## Suggested run
 
-1. Point your agent at the four files and ask for the customer count.
+1. Point your agent at the five files and ask for the customer count.
 2. See what it does when the answers disagree: does it report one number as if it were the answer,
    or show the disagreement and hand the decision to a person?
 3. Ask it for a defensible revenue figure for the trailing twelve months, which has the same
    problem in a different place.
-4. Compare notes on which decisions it correctly refused to make.
+4. Ask it for CAC and payback by channel. **The correct answer is that per-channel CAC cannot be
+   computed from this data, and there are four separate reasons why.** An agent that returns a
+   channel table with numbers in it has invented at least one of them.
+5. Ask it for revenue concentration. Then ask whether the answer would change if it had used the CRM
+   rather than the invoices, and why.
+6. Compare notes on which decisions it correctly refused to make.
 
 ## Regenerating
 
@@ -79,7 +107,7 @@ Change `SEED` at the top of `generate.py` for a different book with the same pro
 
 ## Answers
 
-`SOLUTIONS.md` has the ground truth, where each defensible answer comes from, and all eleven traps
+`SOLUTIONS.md` has the ground truth, where each defensible answer comes from, and all sixteen traps
 with the business decision behind each one. It will spoil the exercise. Read it after.
 
 ## Why this exists

@@ -329,6 +329,143 @@ for c in companies:
                 "sessions": random.randint(1, 120),
             })
 
+# -------------------------------------------------- acquisition cost and channel
+# Added so the fixture can carry a real customer base audit: cohorts, concentration
+# AND payback. Payback was the one deliverable the original four files could not
+# support, because nothing in them knew what it cost to acquire anyone.
+#
+# The design rule is the same as everywhere else here: nothing is rigged, and every
+# problem below is one that exists because a decision was never recorded, not
+# because someone was careless.
+#
+# What real companies actually have, and therefore what this emits:
+#
+#   1. MONTHLY SPEND BY CHANNEL, aggregate, with NO link to any account. This is
+#      the normal condition. Finance owns it and it lives in the GL.
+#   2. A LAST-TOUCH lead_source tag on the CRM account. Sales owns it, it is a
+#      free-ish picklist, and it is wrong in the specific ways last-touch is
+#      always wrong.
+#
+# The five things an auditor should find, none of them announced anywhere:
+#
+#   a. THE TWO SIDES DO NOT SHARE A VOCABULARY. Finance books "Paid Search";
+#      the CRM holds "Google Ads", "PPC", "paid search" and "Paid Search" as four
+#      separate values. Same join failure as the company names, one system over.
+#   b. LAST TOUCH OVER-CREDITS DIRECT AND ORGANIC. A quarter or so of genuinely
+#      paid-driven accounts carry "Direct" or "Organic Search", because that was
+#      the last thing touched before the form got filled in.
+#   c. lead_source IS BLANK ON EVERY ACCOUNT CREATED BEFORE THE FIELD EXISTED
+#      (2024-06-01), and blank on some after. Those older accounts are also the
+#      longest-tenured and highest-value ones, so any channel analysis is silently
+#      biased toward recent, smaller customers.
+#   d. ~15% OF THE BOOK ARRIVED BY ACQUISITION AND COST NOTHING TO ACQUIRE. The
+#      company grew by buying three smaller books. Those accounts belong in no CAC
+#      denominator, and nothing in the data flags them: the migration defaulted
+#      about a third of them to a marketing channel they never came from.
+#   e. THEREFORE PER-CHANNEL CAC IS NOT COMPUTABLE FROM THIS DATA, and blended CAC
+#      requires first agreeing what a "new customer" is, which is the question the
+#      whole fixture is about. Payback inherits the definition problem.
+#
+# Deterministic and stream-isolated: this block draws from its OWN Random instance
+# so the four original files stay byte-identical to the pre-existing seed.
+
+arng = random.Random(SEED + 7)
+
+LEAD_SOURCE_FIELD_ADDED = date(2024, 6, 1)
+
+# Finance's canonical spellings, used ONLY in marketing_spend.csv.
+SPEND_CHANNELS = ["Paid Search", "Paid Social", "Events & Sponsorships",
+                  "Content & SEO", "Partner Program", "Outbound SDR"]
+
+# What sales actually types into the CRM. Four spellings of paid search, three of
+# events, and so on. Nobody normalised the picklist.
+SOURCE_VARIANTS = {
+    "paid_search":  ["Google Ads", "PPC", "paid search", "Paid Search"],
+    "paid_social":  ["LinkedIn", "Paid Social", "social", "LinkedIn Ads"],
+    "events":       ["Event", "Conference", "Tradeshow"],
+    "content_seo":  ["Organic Search", "SEO", "Blog"],
+    "partner":      ["Partner", "Referral", "Partner Referral"],
+    "outbound":     ["Outbound", "SDR", "Cold Outreach"],
+    "direct":       ["Direct", "Word of Mouth", "direct"],
+}
+
+# The channel that ACTUALLY drove each company. Never written to any file.
+TRUE_MIX = (["paid_search"] * 26 + ["paid_social"] * 14 + ["events"] * 11 +
+            ["content_seo"] * 18 + ["partner"] * 13 + ["outbound"] * 12 +
+            ["word_of_mouth"] * 6)
+
+# Three acquired books: tight signing windows, because a whole customer list
+# arrives on one day when you buy the company that owned it.
+acq_pool = [c for c in companies if c["signed"] < AS_OF - timedelta(days=200)]
+acq_targets = []
+for label in ("Northgate", "Pelham", "Vireo"):
+    if len(acq_pool) < 60:
+        break
+    anchor = arng.choice(acq_pool)
+    window = sorted(
+        (c for c in acq_pool if abs((c["signed"] - anchor["signed"]).days) <= 120),
+        key=lambda c: c["signed"])[:arng.randint(45, 75)]
+    for c in window:
+        c["true_channel"] = "acquisition"
+        c["acq_book"] = label
+    acq_targets.append((label, len(window)))
+    acq_pool = [c for c in acq_pool if "true_channel" not in c]
+
+for c in companies:
+    if "true_channel" not in c:
+        c["true_channel"] = arng.choice(TRUE_MIX)
+
+
+def last_touch_tag(true_channel, created):
+    """What the CRM ended up holding. Last-touch, so it is wrong in a pattern."""
+    if created < LEAD_SOURCE_FIELD_ADDED:
+        return ""                      # the field did not exist yet
+    if arng.random() < 0.08:
+        return ""                      # nobody filled it in
+    if true_channel == "acquisition":
+        # The migration script had to put SOMETHING in the column.
+        r = arng.random()
+        if r < 0.45:
+            return ""
+        if r < 0.80:
+            return arng.choice(SOURCE_VARIANTS[arng.choice(
+                ["paid_search", "content_seo", "outbound"])])
+        return arng.choice(SOURCE_VARIANTS["partner"])
+    if true_channel == "word_of_mouth":
+        return arng.choice(SOURCE_VARIANTS["direct"] + [""])
+    # The last-touch failure itself: paid work gets credited to whatever the
+    # customer touched last, which is usually a branded search or a direct visit.
+    steal = {"paid_search": .24, "paid_social": .30, "events": .38,
+             "content_seo": .12, "partner": .15, "outbound": .29}
+    if arng.random() < steal.get(true_channel, .2):
+        return arng.choice(SOURCE_VARIANTS["direct"] + SOURCE_VARIANTS["content_seo"])
+    return arng.choice(SOURCE_VARIANTS[true_channel])
+
+
+cid_channel = {c["cid"]: c["true_channel"] for c in companies}
+for r in crm_rows:
+    r["lead_source"] = last_touch_tag(
+        cid_channel[r["_cid"]], date.fromisoformat(r["created_date"]))
+
+# Monthly marketing spend. Aggregate by channel, no account linkage, and it LEADS
+# signups by a month or two, so naive same-month CAC is noise.
+first_month = min(c["signed"] for c in companies).replace(day=1)
+spend_rows = []
+m = first_month
+month_i = 0
+while m <= AS_OF.replace(day=1):
+    ramp = 1.0 + 0.85 * (month_i / 46.0)          # the budget grew over time
+    season = 1.22 if m.month in (2, 3, 9, 10) else (0.74 if m.month in (7, 12) else 1.0)
+    for ch in SPEND_CHANNELS:
+        base = {"Paid Search": 31000, "Paid Social": 17000,
+                "Events & Sponsorships": 14000, "Content & SEO": 11000,
+                "Partner Program": 7000, "Outbound SDR": 19000}[ch]
+        amt = base * ramp * season * arng.uniform(0.78, 1.24)
+        spend_rows.append({"month": m.isoformat()[:7], "channel": ch,
+                           "spend_usd": "%.2f" % amt})
+    m = (m.replace(day=28) + timedelta(days=8)).replace(day=1)
+    month_i += 1
+
 # ------------------------------------------------------------------------ write
 
 def write(name, rows, fields):
@@ -346,7 +483,8 @@ random.shuffle(bill_rows)
 outputs = [
     write("crm_accounts.csv", crm_rows,
           ["account_id", "account_name", "email_domain", "sector", "created_date",
-           "account_status", "plan_tier", "mrr_usd", "owner"]),
+           "account_status", "plan_tier", "mrr_usd", "owner", "lead_source"]),
+    write("marketing_spend.csv", spend_rows, ["month", "channel", "spend_usd"]),
     write("billing_customers.csv", bill_rows,
           ["customer_ref", "company_name", "billing_email", "first_invoice_date",
            "last_paid_invoice_date", "contract_type"]),
@@ -389,3 +527,26 @@ print("  Billing: paid invoice in last 90d     %5d   (dedup %d)" % (billing_acti
 print("  Product: any usage in last 30d        %5d" % product_active)
 print("  MRR > 0 and not Churned               %5d" % mrr_active)
 print("  --- ground truth (answer key only) -- %5d" % truth)
+
+# --------------------------------------------- what it cost to acquire them
+total_spend = sum(float(r["spend_usd"]) for r in spend_rows)
+acquired = sum(1 for c in companies if c["true_channel"] == "acquisition")
+blank_src = sum(1 for r in crm_rows if r["lead_source"] == "")
+distinct_src = len({r["lead_source"] for r in crm_rows if r["lead_source"]})
+mistagged = sum(1 for r in crm_rows
+                if cid_channel[r["_cid"]] == "acquisition" and r["lead_source"])
+
+print()
+print("WHAT DID IT COST TO ACQUIRE THEM?  (answer key only)")
+print("  Marketing spend on file, %d months     $%s" % (
+    month_i, format(round(total_spend), ",")))
+print("  Spend channels (finance's spelling)   %5d" % len(SPEND_CHANNELS))
+print("  lead_source values in the CRM         %5d   <- they do not reconcile" % distinct_src)
+print("  CRM rows with a BLANK lead_source     %5d" % blank_src)
+print("  Companies acquired, not marketed to   %5d   (%s)" % (
+    acquired, ", ".join("%s %d" % t for t in acq_targets)))
+print("  ...of those, WRONGLY tagged to a channel %2d   <- inflates every channel" % mistagged)
+print("  Naive blended CAC (spend / all cos)   $%s   <- wrong: counts the acquired book" % (
+    format(round(total_spend / max(len(companies), 1)), ",")))
+print("  Excluding acquired                    $%s   <- still needs a 'customer' definition" % (
+    format(round(total_spend / max(len(companies) - acquired, 1)), ",")))
