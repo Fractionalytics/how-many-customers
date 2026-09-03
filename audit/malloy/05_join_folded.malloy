@@ -1,0 +1,8 @@
+// The same join with accents folded. More matches, AND the row count inflates: join_one is a
+// declaration, not an enforcement. The more correct join is the one that trips the alarm.
+run: crm_x_billing -> {
+  aggregate:
+    crm_rows is count()
+    matched is count() { where: billing.customer_ref != null }
+    unmatched is count() { where: billing.customer_ref = null }
+}

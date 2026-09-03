@@ -1,0 +1,2 @@
+// How many customers, according to the CRM. Rows and entities, two rules each.
+run: crm -> { aggregate: active_rows, active_entities, mrr_live_rows, mrr_live_entities }

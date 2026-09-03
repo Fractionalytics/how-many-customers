@@ -1,0 +1,11 @@
+// Concentration from the invoices: share of TTM paid revenue, top 10 billing customers.
+// The CRM's version of this question is in 10; they do not agree.
+run: invoices -> {
+  where: status = 'paid' and invoice_date > @2025-08-20
+  group_by: billing.company_name, billing.contract_type
+  aggregate:
+    ttm is sum(amount_usd)
+    share_pct is sum(amount_usd) / all(sum(amount_usd)) * 100
+  order_by: ttm desc
+  limit: 10
+}

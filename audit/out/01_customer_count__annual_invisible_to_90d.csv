@@ -1,0 +1,4 @@
+contract_type,billing_customers,last_paid_over_90d_ago,paid_91_to_365d_ago
+annual,534,397,293
+monthly,500,130,94
+usage,110,23,18

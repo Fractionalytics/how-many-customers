@@ -1,0 +1,7 @@
+// Does the plan tier predict the money? If not, the field is decoration.
+run: crm -> {
+  where: mrr_usd > 0
+  group_by: plan_tier
+  aggregate: accounts, mean_mrr is avg(mrr_usd), max_mrr is max(mrr_usd)
+  order_by: mean_mrr desc
+}

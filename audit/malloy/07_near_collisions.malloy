@@ -1,0 +1,11 @@
+// Genuinely different companies whose names differ by one token: same stem and middle,
+// different legal suffix. A fuzzy matcher loose enough to fix spelling merges these.
+run: crm -> {
+  group_by: stem is regexp_replace!string(account_name,
+              ' (Inc|LLC|Corp|Corporation|Incorporated|Group|Holdings|Partners|Systems|Labs)\.?( \(DBA\))?$', '')
+  aggregate: distinct_companies is entities
+  nest: names is { group_by: account_name }
+  having: distinct_companies > 1
+  order_by: distinct_companies desc
+  limit: 12
+}

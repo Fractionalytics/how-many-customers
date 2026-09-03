@@ -1,0 +1,12 @@
+segment,customers_in_base,logo_retention_12m_pct,nrr_12m_pct,grr_12m_pct
+Retail,81,75.9,73.8,69.7
+Media,80,77.1,75.8,72.2
+Hospitality,79,78.8,86.8,83.1
+Healthcare,79,76.3,90.7,86.0
+Fintech,79,81.8,77.8,74.1
+Logistics,78,82.4,82.2,76.9
+Energy,78,85.9,87.2,82.1
+Construction,75,71.6,69.0,64.4
+Education,69,80.5,89.6,85.2
+(unmatched),65,80.6,72.1,68.4
+Manufacturing,61,77.0,87.3,81.1

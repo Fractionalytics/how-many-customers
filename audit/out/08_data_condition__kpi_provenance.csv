@@ -1,0 +1,11 @@
+kpi,system_of_record,defensible_values_found,why_it_is_rebuilt_by_hand
+Customer count,"none: CRM status, billing recency, telemetry each give one",11,rebuilt by hand each month
+MRR / ARR,CRM mrr_usd (hand-entered) or billing recognized (derived),4,CRM field is typed in; billing needs an amortization rule nobody wrote down
+TTM revenue,billing_invoices,5,cash vs recognized vs which statuses count
+Revenue concentration,billing_invoices or CRM mrr_usd,2,the two systems rank customers differently
+Logo churn,CRM status (no history) or billing panel,3,CRM cannot say what last month looked like
+NRR,"billing_invoices, recognized basis",2,cash basis makes annual customers churn and resurrect yearly
+"CAC, blended",marketing_spend / a count,7,one per count definition
+CAC by channel,not computable,0,"no account key on spend; lead_source is last-touch, 23 labels, half blank"
+Payback,CAC over cohort revenue,4,"inherits CAC, then splits on contract type"
+Active users,product_usage,2,org vs seat; 13 months of history only

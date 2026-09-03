@@ -1,0 +1,10 @@
+// The same question asked of the CRM: annualized mrr_usd on non-churned accounts.
+run: crm -> {
+  where: mrr_usd > 0 and status != 'Churned'
+  group_by: account_name
+  aggregate:
+    arr is sum(mrr_usd) * 12
+    share_pct is sum(mrr_usd) / all(sum(mrr_usd)) * 100
+  order_by: arr desc
+  limit: 10
+}

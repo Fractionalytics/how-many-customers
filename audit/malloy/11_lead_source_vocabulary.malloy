@@ -1,0 +1,6 @@
+// What sales typed into the CRM, against the six channels finance books. 23 labels, half blank.
+run: crm -> {
+  group_by: lead_source_norm
+  aggregate: accounts
+  order_by: accounts desc
+}

@@ -1,0 +1,5 @@
+account_status,rows,avg_mrr,with_mrr
+Active,756,2024.0,577
+Churned,246,1834.0,188
+Inactive,117,1615.0,90
+(blank),90,2012.0,72

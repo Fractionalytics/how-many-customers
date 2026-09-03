@@ -1,0 +1,5 @@
+contract_type,customers,mean_lifetime_usd,median_lifetime_usd,mean_over_median,mean_months_with_revenue
+,1035,50361.0,14212.0,3.54,12.1
+annual,470,59958.0,15506.0,3.87,2.3
+monthly,466,41056.0,12381.0,3.32,20.2
+usage,99,48601.0,13261.0,3.66,20.7

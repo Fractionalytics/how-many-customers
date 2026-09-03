@@ -1,0 +1,12 @@
+ord,rule,n
+1,CRM account_status = Active (rows),756
+2,CRM account_status = Active (distinct name key),751
+3,CRM mrr_usd > 0 and not Churned (rows),739
+4,CRM mrr_usd > 0 and not Churned (distinct name key),719
+5,Billing: paid invoice in last 90 days (customer_ref),485
+6,Billing: paid invoice in last 90 days (parent entity),476
+7,Billing: paid invoice in last 365 days (customer_ref),890
+8,"Billing: contract-aware (monthly/usage paid 90d, annual paid 365d)",778
+9,Billing: recognized revenue > 0 in the as-of month,612
+10,Product: any usage in last 30 days (org_slug),770
+11,"Product: monthly active orgs, last complete month",781

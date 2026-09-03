@@ -1,0 +1,5 @@
+basis,usd,customers
+"billing, paid cash, TTM",19634907.0,889
+"billing, recognized, TTM",19612578.0,969
+"CRM, Active x mrr_usd x 12",18365859.0,756
+"CRM, not Churned and mrr > 0, x 12",22806832.0,739

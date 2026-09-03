@@ -1,0 +1,2 @@
+// How many customers, according to the product. Any usage in 30 days, and July's monthly actives.
+run: usage -> { aggregate: orgs_30d, orgs_july, orgs_ever is orgs }

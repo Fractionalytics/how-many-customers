@@ -1,0 +1,4 @@
+segment,paying_customers,ttm_usd,revenue_share_pct,mean_ttm_per_paying,median_ttm_per_paying
+annual,366,9701951.0,49.4,26508.0,8643.0
+monthly,430,7987848.0,40.7,18576.0,5389.0
+usage,93,1945107.0,9.9,20915.0,7914.0

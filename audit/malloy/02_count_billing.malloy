@@ -1,0 +1,3 @@
+// How many customers, according to billing. The 90-day rule, the 365-day rule, and the
+// contract-aware rule. The definition is a named measure in model.malloy; the query is one line.
+run: invoices -> { aggregate: payers_90d, payers_365d, payers_contract_aware, ttm_paid_usd }

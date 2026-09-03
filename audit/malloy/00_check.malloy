@@ -1,0 +1,2 @@
+// Sanity check on the fixture: 1,209 CRM rows on 59 email domains.
+run: crm -> { aggregate: accounts, distinct_email_domains is count(email_domain) }

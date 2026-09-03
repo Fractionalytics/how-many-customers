@@ -1,0 +1,78 @@
+// model.malloy : the semantic layer over the four systems.
+//
+// One source per system, one normalized name key per source, and the joins declared the way
+// an analyst would declare them. The point of putting this in Malloy rather than SQL is that
+// the definition of "customer" is written ONCE, as a named dimension or measure, and every
+// query below reuses it. When the business changes the definition, one line changes.
+//
+// Import into a query file with:  import "model.malloy"
+// Paths resolve from the repository root (run.js chdirs there).
+
+source: crm is duckdb.table('crm_accounts.csv') extend {
+  primary_key: account_id
+  // Fold accents FIRST, then uppercase, then strip everything that is not a letter or digit.
+  dimension: k is regexp_replace!string(upper(strip_accents!string(account_name)), '[^A-Z0-9]', '', 'g')
+  dimension: k_accent_blind is regexp_replace!string(upper(account_name), '[^A-Z0-9]', '', 'g')
+  dimension: status is coalesce(nullif(account_status, ''), '(blank)')
+  dimension: lead_source_norm is coalesce(nullif(lead_source, ''), '(blank)')
+  measure:
+    accounts is count()
+    entities is count(k)
+    active_rows is count() { where: account_status = 'Active' }
+    active_entities is count(k) { where: account_status = 'Active' }
+    mrr_live_rows is count() { where: mrr_usd > 0 and status != 'Churned' }
+    mrr_live_entities is count(k) { where: mrr_usd > 0 and status != 'Churned' }
+    arr_active is sum(mrr_usd) { where: account_status = 'Active' } * 12
+}
+
+source: billing is duckdb.table('billing_customers.csv') extend {
+  primary_key: customer_ref
+  dimension: k is regexp_replace!string(upper(strip_accents!string(company_name)), '[^A-Z0-9]', '', 'g')
+  dimension: k_accent_blind is regexp_replace!string(upper(company_name), '[^A-Z0-9]', '', 'g')
+  // Subsidiary suffixes. Whether a subsidiary is a customer is a business decision (trap 7).
+  dimension: parent_k is regexp_replace!string(
+    upper(strip_accents!string(regexp_replace!string(company_name, ' - (EMEA|LATAM|Subsidiary|Div 2)$', ''))),
+    '[^A-Z0-9]', '', 'g')
+  dimension: is_subsidiary is regexp_extract!string(company_name, ' - (EMEA|LATAM|Subsidiary|Div 2)$') != ''
+  measure:
+    customers is count()
+    parents is count(parent_k)
+}
+
+source: invoices is duckdb.table('billing_invoices.csv') extend {
+  primary_key: invoice_id
+  join_one: billing on customer_ref = billing.customer_ref
+  measure:
+    invoice_count is count()
+    paid_usd is sum(amount_usd) { where: status = 'paid' }
+    payers is count(customer_ref) { where: status = 'paid' }
+    // The as-of date is 2026-08-20. Windows are inclusive.
+    payers_90d is count(customer_ref) { where: status = 'paid' and invoice_date >= @2026-05-22 }
+    payers_365d is count(customer_ref) { where: status = 'paid' and invoice_date >= @2025-08-21 }
+    payers_contract_aware is count(customer_ref) {
+      where: status = 'paid' and (invoice_date >= @2026-05-22
+             or (billing.contract_type = 'annual' and invoice_date >= @2025-08-21)) }
+    ttm_paid_usd is sum(amount_usd) { where: status = 'paid' and invoice_date > @2025-08-20 }
+}
+
+source: usage is duckdb.table('product_usage.csv') extend {
+  dimension: k is regexp_replace!string(upper(org_slug), '[^A-Z0-9]', '', 'g')
+  measure:
+    orgs is count(org_slug)
+    orgs_30d is count(org_slug) { where: event_date >= @2026-07-21 }
+    orgs_july is count(org_slug) { where: event_date >= @2026-07-01 and event_date < @2026-08-01 }
+}
+
+source: spend is duckdb.table('marketing_spend.csv') extend {
+  measure: total_spend is sum(spend_usd)
+}
+
+// The CRM with billing joined on the folded key. join_one is a DECLARATION of belief: it
+// compiles to a LEFT JOIN and does not enforce one-to-one. Re-count rows after joining.
+source: crm_x_billing is crm extend {
+  join_one: billing on k = billing.parent_k
+}
+
+source: crm_x_billing_accent_blind is crm extend {
+  join_one: billing on k_accent_blind = billing.k_accent_blind
+}

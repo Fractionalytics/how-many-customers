@@ -1,0 +1,7 @@
+field,condition,months_reconstructible
+crm.account_status,overwritten in place; no history table,0
+crm.mrr_usd,overwritten in place; no history table,0
+crm.lead_source,added 2024-06-01; blank before that,26
+billing_invoices,append-only ledger,47
+product_usage,"append-only log, retention window",14
+marketing_spend,"monthly aggregate, no account link",47

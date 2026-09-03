@@ -1,0 +1,7 @@
+// Companies billed as more than one customer. One customer or two is a business decision.
+run: billing -> {
+  where: is_subsidiary
+  group_by: parent_k
+  nest: billed_as is { group_by: company_name, customer_ref, contract_type }
+  limit: 10
+}

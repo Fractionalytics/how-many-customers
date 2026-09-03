@@ -1,0 +1,7 @@
+gap,n
+billing customers with no CRM match (after both tiers),89
+CRM accounts with no billing match (after both tiers),130
+billing customers never invoiced,102
+usage orgs with no billing match,102
+usage orgs with no CRM match,42
+invoices whose customer_ref is not in billing_customers,0

@@ -1,0 +1,8 @@
+// The join an analyst writes first: uppercase, strip punctuation, no accent folding.
+// Note crm_rows: it should equal 1,209. Whether it does is the point of 05.
+run: crm_x_billing_accent_blind -> {
+  aggregate:
+    crm_rows is count()
+    matched is count() { where: billing.customer_ref != null }
+    unmatched is count() { where: billing.customer_ref = null }
+}

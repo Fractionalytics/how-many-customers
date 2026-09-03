@@ -1,0 +1,12 @@
+segment,paying_customers,ttm_usd,revenue_share_pct,mean_ttm_per_paying,median_ttm_per_paying
+Fintech,89,2306248.0,11.7,25913.0,4853.0
+Retail,95,2160552.0,11.0,22743.0,5503.0
+Construction,78,2107410.0,10.7,27018.0,8595.0
+Media,83,1847235.0,9.4,22256.0,9087.0
+Education,76,1776614.0,9.0,23377.0,8991.0
+Energy,86,1762423.0,9.0,20493.0,5963.0
+Healthcare,83,1748768.0,8.9,21069.0,5621.0
+Logistics,88,1709232.0,8.7,19423.0,5224.0
+Manufacturing,65,1626911.0,8.3,25029.0,5351.0
+Hospitality,79,1355403.0,6.9,17157.0,8099.0
+(unmatched),67,1234111.0,6.3,18420.0,5882.0

@@ -1,0 +1,5 @@
+rule,n
+"paid 90d, >= boundary",485
+"paid 90d, >  boundary",484
+"usage 30d, >= boundary",770
+"usage 30d, >  boundary",767

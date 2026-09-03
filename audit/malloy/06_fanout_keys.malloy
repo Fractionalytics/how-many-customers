@@ -1,0 +1,9 @@
+// Which billing keys collide once accents are folded? These are the rows that fan out in 05.
+run: billing -> {
+  group_by: parent_k
+  aggregate: customers
+  nest: names is { group_by: company_name }
+  having: customers > 1
+  order_by: customers desc
+  limit: 15
+}
