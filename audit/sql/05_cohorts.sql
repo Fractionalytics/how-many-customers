@@ -19,32 +19,43 @@ CREATE OR REPLACE VIEW cohort_long AS
 -- @out cohort_long
 SELECT * FROM cohort_long ORDER BY cohort, k;
 
--- Quarterly cohorts, logo retention at fixed horizons. Only horizons the cohort has reached.
+-- Quarterly cohorts at fixed horizons, built from MONTHLY cohorts, and a horizon is shown for
+-- a quarter only when every monthly cohort in that quarter has reached it. Otherwise the
+-- quarter's tail horizon is really one monthly cohort, and one large customer swings it.
+CREATE OR REPLACE VIEW cohort_monthly AS
+  SELECT first_month, months_since_first AS k,
+         COUNT(DISTINCT customer_ref) AS n, COUNT(DISTINCT customer_ref) FILTER (WHERE rev > 0) AS active, SUM(rev) AS rev
+  FROM panel, params WHERE month < date_trunc('month', as_of) GROUP BY 1, 2;
+
+CREATE OR REPLACE VIEW cohort_quarter_complete AS
+  WITH reach AS (SELECT first_month, MAX(k) AS kmax FROM cohort_monthly GROUP BY 1),
+       qmin AS (SELECT date_trunc('quarter', first_month)::DATE AS cohort_q, MIN(kmax) AS kmax FROM reach GROUP BY 1)
+  SELECT cohort_q, k FROM qmin, range(0, 120) t(k) WHERE k <= kmax;
+
 -- @out cohort_quarterly_logo_retention
 WITH q AS (
-  SELECT date_trunc('quarter', first_month)::DATE AS cohort_q, months_since_first AS k,
-         COUNT(DISTINCT customer_ref) FILTER (WHERE rev > 0) AS active,
-         COUNT(DISTINCT customer_ref) AS n
-  FROM panel, params WHERE month < date_trunc('month', as_of)
-  GROUP BY 1, 2)
-PIVOT (SELECT cohort_q, 'm' || lpad(k::VARCHAR, 2, '0') AS m, ROUND(100.0 * active / n, 1) AS ret FROM q WHERE k IN (0,1,3,6,12,18,24,36))
+  SELECT date_trunc('quarter', first_month)::DATE AS cohort_q, k, SUM(active) AS active, SUM(n) AS n
+  FROM cohort_monthly GROUP BY 1, 2)
+PIVOT (SELECT q.cohort_q, 'm' || lpad(k::VARCHAR, 2, '0') AS m, ROUND(100.0 * active / n, 1) AS ret
+       FROM q JOIN cohort_quarter_complete USING (cohort_q, k) WHERE k IN (0,1,3,6,12,18,24,36))
 ON m USING FIRST(ret) ORDER BY cohort_q;
 
 -- @out cohort_quarterly_revenue_retention
-WITH q AS (
-  SELECT date_trunc('quarter', first_month)::DATE AS cohort_q, months_since_first AS k, SUM(rev) AS rev
-  FROM panel, params WHERE month < date_trunc('month', as_of) GROUP BY 1, 2),
-base AS (SELECT cohort_q, rev AS rev0 FROM q WHERE k = 0)
-PIVOT (SELECT q.cohort_q, 'm' || lpad(k::VARCHAR, 2, '0') AS m, ROUND(100.0 * rev / rev0, 1) AS ret FROM q JOIN base USING (cohort_q) WHERE k IN (0,1,3,6,12,18,24,36))
+WITH base AS (SELECT first_month, rev AS rev0 FROM cohort_monthly WHERE k = 0),
+q AS (
+  SELECT date_trunc('quarter', c.first_month)::DATE AS cohort_q, k, SUM(c.rev) AS rev, SUM(base.rev0) AS rev0
+  FROM cohort_monthly c JOIN base USING (first_month) GROUP BY 1, 2)
+PIVOT (SELECT q.cohort_q, 'm' || lpad(k::VARCHAR, 2, '0') AS m, ROUND(100.0 * rev / rev0, 1) AS ret
+       FROM q JOIN cohort_quarter_complete USING (cohort_q, k) WHERE k IN (0,1,3,6,12,18,24,36))
 ON m USING FIRST(ret) ORDER BY cohort_q;
 
 -- @out cohort_quarterly_size_and_cum_revenue
 WITH q AS (
-  SELECT date_trunc('quarter', first_month)::DATE AS cohort_q, months_since_first AS k,
-         COUNT(DISTINCT customer_ref) AS n, SUM(rev) AS rev
-  FROM panel, params WHERE month < date_trunc('month', as_of) GROUP BY 1, 2),
-c AS (SELECT cohort_q, k, n, SUM(rev) OVER (PARTITION BY cohort_q ORDER BY k) / MAX(n) OVER (PARTITION BY cohort_q) AS cum_per_cust FROM q)
-PIVOT (SELECT cohort_q, 'm' || lpad(k::VARCHAR, 2, '0') AS m, ROUND(cum_per_cust) AS v FROM c WHERE k IN (0,3,6,12,18,24,36))
+  SELECT date_trunc('quarter', cohort)::DATE AS cohort_q, k,
+         SUM(cum_rev_per_cohort_customer * cohort_size) / SUM(cohort_size) AS cum_per_cust
+  FROM cohort_long GROUP BY 1, 2)
+PIVOT (SELECT q.cohort_q, 'm' || lpad(k::VARCHAR, 2, '0') AS m, ROUND(cum_per_cust) AS v
+       FROM q JOIN cohort_quarter_complete USING (cohort_q, k) WHERE k IN (0,3,6,12,18,24,36))
 ON m USING FIRST(v) ORDER BY cohort_q;
 
 -- Logo retention by contract type at 12 months, by cohort year (thesis leg 1: annual retains better?).
