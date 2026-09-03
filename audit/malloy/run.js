@@ -1,4 +1,6 @@
-// Runner: node audit/malloy/run.js [file.malloy ...] [--sql]
+// Runner: node audit/malloy/run.js <company-dir> [file.malloy ...] [--sql]
+// e.g.    node audit/malloy/run.js company2
+//         node audit/malloy/run.js company2 05_join_folded.malloy --sql
 // With no files, runs every .malloy in this directory in name order. Executes the final
 // `run:` statement in each file; --sql also prints the SQL Malloy generated for it.
 //
@@ -13,7 +15,12 @@ const { createRequire } = require('module');
 
 const HERE = __dirname;
 const REPO = path.resolve(HERE, '..', '..');
-process.chdir(REPO);                       // duckdb.table('crm_accounts.csv') resolves from the repo root
+const companyArg = process.argv[2];
+if (!companyArg || !fs.existsSync(path.join(REPO, companyArg, 'crm_accounts.csv'))) {
+  console.error('usage: node audit/malloy/run.js <company-dir> [file.malloy ...] [--sql]   e.g. company2');
+  process.exit(1);
+}
+process.chdir(path.join(REPO, companyArg));   // duckdb.table('crm_accounts.csv') resolves from the company dir
 
 const CANDIDATES = [
   path.join(HERE, 'node_modules'),
@@ -38,7 +45,7 @@ const { DuckDBConnection } = req('@malloydata/db-duckdb');
 const { SingleConnectionRuntime } = req('@malloydata/malloy');
 
 const showSql = process.argv.includes('--sql');
-let files = process.argv.slice(2).filter(a => !a.startsWith('--'));
+let files = process.argv.slice(3).filter(a => !a.startsWith('--')).map(f => path.isAbsolute(f) ? f : path.join(HERE, path.basename(f)));
 if (files.length === 0) {
   files = fs.readdirSync(HERE).filter(f => f.endsWith('.malloy') && /^\d/.test(f)).sort().map(f => path.join(HERE, f));
 }

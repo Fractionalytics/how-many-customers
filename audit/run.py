@@ -3,17 +3,17 @@
 Customer base audit + data condition review, as SQL on DuckDB.
 
     pip install duckdb pandas
-    python audit/run.py            # runs every audit/sql/*.sql in order
-    python audit/run.py 03         # runs only the files whose name starts with 03
+    python audit/run.py company2           # runs every audit/sql/*.sql against company2/
+    python audit/run.py company2 03        # only the files whose name starts with 03
 
-Every SELECT in a .sql file is printed and written to audit/out/<file>__<label>.csv.
+Every SELECT in a .sql file is printed and written to <company>/out/<file>__<label>.csv.
 Label a SELECT with a comment line immediately above it:  -- @out concentration_top_n
 Everything else (CREATE, SET, ...) runs silently. Files share one in-memory database, so
 00_model.sql's views are available to every later file. Statements end with a semicolon at
 the end of a line.
 
-No conclusions live in this code. The numbers are the numbers; the reasoning is in
-audit/FINDINGS.md and the deck.
+No conclusions live in this code. The numbers are the numbers; the reasoning is in each
+company's FINDINGS.md and in the deck.
 """
 import os
 import re
@@ -23,8 +23,14 @@ import duckdb
 import pandas as pd
 
 HERE = pathlib.Path(__file__).resolve().parent
-DATA = HERE.parent
-OUT = HERE / "out"
+REPO = HERE.parent
+
+args = [a for a in sys.argv[1:]]
+if not args or not (REPO / args[0]).is_dir():
+    sys.exit("usage: python audit/run.py <company-dir> [sql-prefix]   e.g. python audit/run.py company2 03")
+DATA = REPO / args[0]
+prefix = args[1] if len(args) > 1 else ""
+OUT = DATA / "out"
 OUT.mkdir(exist_ok=True)
 os.chdir(DATA)                       # SQL reads the CSVs by bare filename
 
@@ -33,7 +39,6 @@ pd.set_option("display.max_columns", 40)
 pd.set_option("display.max_rows", 500)
 pd.set_option("display.float_format", lambda v: f"{v:,.4f}" if abs(v) < 10 else f"{v:,.1f}")
 
-prefix = sys.argv[1] if len(sys.argv) > 1 else ""
 files = sorted(p for p in (HERE / "sql").glob("*.sql") if p.name.startswith(prefix))
 if prefix and not any(p.name.startswith("00") for p in files):
     files = [HERE / "sql" / "00_model.sql"] + files      # the model is always needed
