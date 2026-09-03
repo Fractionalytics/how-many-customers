@@ -1,0 +1,5 @@
+segment,paying_customers,ttm_usd,revenue_share_pct,mean_ttm_per_paying,median_ttm_per_paying
+Enterprise,107,19278830.0,48.7,180176.0,129976.0
+Growth,344,12201569.0,30.8,35470.0,28844.0
+(unmatched),88,4565226.0,11.5,51878.0,11752.0
+Starter,526,3546830.0,9.0,6743.0,4989.0

@@ -1,0 +1,5 @@
+source,first_date,last_date,months_of_history
+product_usage,2022-09-21,2026-08-20,48
+billing_invoices,2022-10-01,2026-08-20,47
+crm_accounts (created_date),2016-12-31,2026-08-04,117
+marketing_spend,2022-10-01,2026-08-01,47

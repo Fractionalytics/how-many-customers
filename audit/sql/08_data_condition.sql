@@ -45,7 +45,7 @@ GROUP BY 1 HAVING COUNT(DISTINCT c.ck) > 1 ORDER BY 2 DESC LIMIT 12;
 
 -- Telemetry that predates the contract: usage more than 30 days before the first invoice.
 -- @out usage_before_first_invoice
-WITH first_use AS (SELECT entity_k AS k, MIN(month) AS first_use FROM usage_month GROUP BY 1),
+WITH first_use AS (SELECT name_key(org_slug) AS k, MIN(event_date) AS first_use FROM usage GROUP BY 1),
      first_bill AS (SELECT e.entity_k AS k, MIN(first_invoice_date) AS first_inv FROM bill b JOIN bill_entity e USING (customer_ref) GROUP BY 1)
 SELECT COUNT(*) AS orgs_matched,
        COUNT(*) FILTER (WHERE first_use < first_inv - INTERVAL 30 DAY) AS usage_over_30d_before_first_invoice,
@@ -82,3 +82,54 @@ SELECT * FROM (VALUES
   ('Payback',               'CAC over cohort revenue',                                        4, 'inherits CAC, then splits on contract type'),
   ('Active users',          'product_usage',                                                  2, 'org vs seat; 13 months of history only')
 ) t(kpi, system_of_record, defensible_values_found, why_it_is_rebuilt_by_hand);
+
+-- ------------------------------------------------------------------ the board's tab
+-- Which reported numbers come from a system, and which get rebuilt by hand. For each month
+-- the board saw, the reported figure against what each system can produce for that month.
+-- (Empty when the company carries no board_kpis.csv.)
+
+CREATE OR REPLACE VIEW board_vs_systems AS
+  WITH b AS (SELECT (month || '-01')::DATE AS month, * EXCLUDE (month) FROM board),
+  sys AS (
+    SELECT m.month,
+           (SELECT COUNT(DISTINCT customer_ref) FROM rev_amort r WHERE r.month = m.month AND r.rev > 0) AS billing_recognized_payers,
+           (SELECT COUNT(DISTINCT org_slug) FROM usage_month u WHERE u.month = m.month) AS telemetry_active_orgs,
+           (SELECT SUM(rev) FROM rev_amort r WHERE r.month = m.month) AS billing_recognized_rev,
+           (SELECT SUM(rev) FROM rev_cash r WHERE r.month = m.month) AS billing_cash_rev,
+           (SELECT COUNT(*) FROM (SELECT customer_ref, MIN(month) AS f FROM rev_amort GROUP BY 1) WHERE f = m.month) AS billing_new_customers
+    FROM months m)
+  SELECT b.month, b.prepared_on, b.prepared_by, b.adjustment, b.adjustment_note,
+         b.active_customers AS board_customers, sys.billing_recognized_payers, sys.telemetry_active_orgs,
+         b.mrr_usd AS board_mrr, ROUND(sys.billing_recognized_rev) AS billing_recognized_rev,
+         b.revenue_usd AS board_revenue, ROUND(sys.billing_cash_rev) AS billing_cash_rev,
+         CASE WHEN ABS(b.revenue_usd - sys.billing_cash_rev) / NULLIF(sys.billing_cash_rev, 0) < 0.01 THEN 'cash'
+              WHEN ABS(b.revenue_usd - sys.billing_recognized_rev) / NULLIF(sys.billing_recognized_rev, 0) < 0.01 THEN 'recognized'
+              ELSE 'neither' END AS board_revenue_basis,
+         b.new_customers AS board_new, sys.billing_new_customers, b.churned_customers AS board_churned
+  FROM b JOIN sys USING (month);
+
+-- @out board_vs_systems_monthly
+SELECT month, board_customers, billing_recognized_payers, telemetry_active_orgs,
+       ROUND(100.0 * board_customers / NULLIF(billing_recognized_payers, 0) - 100, 1) AS board_over_billing_pct,
+       board_mrr, billing_recognized_rev, ROUND(100.0 * board_mrr / NULLIF(billing_recognized_rev, 0) - 100, 1) AS board_mrr_over_billing_pct,
+       board_revenue_basis, board_new, billing_new_customers, board_churned, adjustment, prepared_by
+FROM board_vs_systems ORDER BY month;
+
+-- @out board_revenue_basis_by_period
+SELECT board_revenue_basis, COUNT(*) AS months, MIN(month) AS from_month, MAX(month) AS to_month,
+       STRING_AGG(DISTINCT prepared_by, ', ') AS prepared_by
+FROM board_vs_systems GROUP BY 1 ORDER BY 3;
+
+-- @out board_manual_adjustments
+SELECT month, adjustment, adjustment_note, prepared_by, board_customers
+FROM board_vs_systems WHERE adjustment IS NOT NULL OR adjustment_note <> '' ORDER BY month;
+
+-- @out board_provenance_summary
+SELECT COUNT(*) AS months_reported,
+       ROUND(AVG(100.0 * board_customers / NULLIF(billing_recognized_payers, 0) - 100), 1) AS mean_customer_count_gap_pct,
+       ROUND(AVG(100.0 * board_mrr / NULLIF(billing_recognized_rev, 0) - 100), 1) AS mean_mrr_gap_pct,
+       COUNT(*) FILTER (WHERE adjustment IS NOT NULL) AS months_with_manual_adjustment,
+       COUNT(DISTINCT prepared_by) AS preparers,
+       COUNT(DISTINCT board_revenue_basis) AS revenue_bases_used,
+       ROUND(AVG(date_diff('day', month, prepared_on))) AS mean_days_after_month_start_prepared
+FROM board_vs_systems;

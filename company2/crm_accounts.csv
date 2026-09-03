@@ -1,0 +1,1465 @@
+account_id,account_name,email_domain,sector,created_date,account_status,plan_tier,mrr_usd,owner,lead_source
+001Qy00000100836,Marbury Lumen LLC,marbury.com,Fintech,2025-05-14,Active,Starter,558.95,p.lindqvist,
+001Qy00000101105,Muñoz Holdings Onyx II,munoz.com,Healthcare,2026-01-18,Active,Enterprise,2062.53,j.whitfield,
+001Qy00000101031,Stonebridge Freight LLC,stonebridge.com,Manufacturing,2025-11-08,Active,Starter,657.34,m.tan,Word of Mouth
+001Qy00000100326,Ironwood Summit Partners,ironwood.com,Energy,2023-06-04,Active,Growth,1993.24,m.tan,
+001Qy00000100335,Redstone Clinical Holdings,redstone.com,Construction,2023-08-13,Active,Enterprise,6826.70,p.lindqvist,
+001Qy00000101023,Oakfield Quantum Systems,oakfield.com,Energy,2025-10-08,Active,Starter,548.35,m.tan,Word of Mouth
+001Qy00000100129,Copperfield Quantum Inc,copperfield.com,Education,2021-05-26,Churned,Enterprise,0.00,j.whitfield,
+001Qy00000100749,Meridian Precision Inc,meridian.com,Education,2025-01-12,Active,Growth,1487.64,m.tan,LinkedIn
+001Qy00000101416,García Sistemas Cascade II,garcia.com,Healthcare,2020-04-27,Active,Growth,2581.53,d.castellanos,
+001Qy00000100017,Lakeshore Analytics Systems,lakeshore.com,Hospitality,2017-06-18,Active,Growth,4936.95,p.lindqvist,
+001Qy00000100815,Meridian Coastal Inc,meridian.com,Media,2025-04-08,Active,Growth,2834.63,m.tan,Tradeshow
+001Qy00000101401,Nightingale Compass Inc,nightingale.com,Healthcare,2021-05-21,Active,Enterprise,7495.30,s.okoro,
+001Qy00000101113,Redstone Beacon Systems,redstone.com,Education,2026-01-13,,Growth,3735.57,m.tan,Partner Referral
+001Qy00000100686,Oakfield Pioneer Partners,oakfield.com,Hospitality,2024-10-02,Churned,Starter,996.53,d.castellanos,Organic Search
+001Qy00000100099,López y Asociados Analytics,lopez.com,Hospitality,2019-12-24,Active,Growth,2188.88,j.whitfield,
+001Qy00000100032,Whitmore Onyx Corp,whitmore.com,Hospitality,2020-07-11,Churned,Enterprise,43946.77,p.lindqvist,
+001Qy00000101016,Stonebridge Sable Holdings,stonebridge.com,Media,2025-11-12,Active,Growth,1151.88,a.reyes,Direct
+001Qy00000100286,Quillfeather Summit Corp,quillfeather.com,Manufacturing,2023-04-02,Active,Enterprise,6000.00,a.reyes,
+001Qy00000100172,Northgate Summit Corp,northgate.com,Education,2022-10-22,Churned,Starter,718.97,d.castellanos,
+001Qy00000100609,Pinnacle Trading Systems,pinnacle.com,Logistics,2024-07-17,Inactive,Starter,0.00,s.okoro,social
+001Qy00000101033,Thornbury Quantum Systems,thornbury.com,Manufacturing,2025-10-25,Active,Growth,2033.26,j.whitfield,Outbound
+001Qy00000101341,Zenith Beacon Systems,zenith.com,Construction,2022-12-23,Active,Enterprise,13071.84,m.tan,
+001Qy00000100144,Underhill Atlas Holdings,underhill.com,Construction,2022-09-17,Active,Starter,1058.16,j.whitfield,
+001Qy00000100634,Nightingale Quantum Labs,nightingale.com,Media,2024-09-20,Active,Starter,803.00,p.lindqvist,Paid Social
+001Qy00000101131,Quarry Keystone LLC,quarry.com,Construction,2026-03-13,Churned,Starter,0.00,m.tan,paid search
+001Qy00000101290,Dovetail Keystone Systems,dovetail.com,Media,2026-07-10,,Starter,314.48,d.castellanos,paid search
+001Qy00000101296,Westbrook Lumen Corp,westbrook.com,Retail,2026-07-17,Active,Starter,861.02,j.whitfield,SEO
+001Qy00000100136,Kestrel Freight Systems,kestrel.com,Logistics,2021-04-16,Active,Growth,11220.88,a.reyes,
+001Qy00000101278,Silverline Beacon LLC,silverline.com,Healthcare,2026-07-03,Active,Starter,760.37,a.reyes,Google Ads
+001Qy00000100559,Pinnacle Precision Partners,pinnacle.com,Retail,2024-05-23,Active,Growth,2581.15,s.okoro,
+001Qy00000100360,Inglewood Vector Labs,inglewood.com,Retail,2023-08-11,,Growth,3061.66,s.okoro,
+001Qy00000100702,Guimarães Log Digital,guimaraes.com,Construction,2024-11-26,Active,Growth,3845.30,p.lindqvist,Direct
+001Qy00000101326,Verdigris Anchor Labs,verdigris.com,Fintech,2023-07-06,Active,Starter,654.01,a.reyes,
+001Qy00000100394,Dovetail Summit Systems,dovetail.com,Manufacturing,2023-10-29,Inactive,Starter,330.49,s.okoro,
+001Qy00000100921,Westbrook Lumen Group,westbrook.com,Logistics,2025-08-12,,Growth,1093.51,m.tan,Paid Search
+001Qy00000100966,Ashcombe Lumen Inc.,ashcombe.com,Construction,2025-10-10,Active,Starter,10.87,d.castellanos,LinkedIn Ads
+001Qy00000101434,Cranfield Trading Partners,cranfield.com,Retail,2020-07-02,Active,Growth,2363.01,a.reyes,
+001Qy00000100748,Dunmore Supply Inc,dunmore.com,Hospitality,2025-01-10,Active,Starter,317.90,j.whitfield,Google Ads
+001Qy00000101259,Pinnacle Sterling LLC,pinnacle.com,Media,2026-05-17,Active,Starter,536.79,d.castellanos,
+001Qy00000100588,Verdigris Sterling Holdings,verdigris.com,Manufacturing,2024-06-09,Inactive,Growth,328.36,m.tan,PPC
+001Qy00000100358,Alder Digital Labs,alder.com,Education,2023-09-17,Active,Starter,747.36,s.okoro,
+001Qy00000100847,Kestrel Nimbus LLC,kestrel.com,Healthcare,2025-04-11,Active,Growth,2951.63,s.okoro,Word of Mouth
+001Qy00000100567,Northwind Lumen LLC,northwind.com,Construction,2024-06-08,Active,Starter,528.38,s.okoro,direct
+001Qy00000100403,Guimarães Log Beacon,guimaraes.com,Fintech,2023-11-24,Active,Enterprise,21685.54,p.lindqvist,
+001Qy00000100134,Brightwater Analytics LLC,brightwater.com,Healthcare,2017-08-14,Inactive,Growth,1406.94,m.tan,
+001Qy00000101039,Thornbury Summit Systems,thornbury.com,Logistics,2025-11-02,Churned,Starter,291.72,m.tan,Blog
+001Qy00000100612,Ravenswood Digital Holdings,ravenswood.com,Education,2024-07-11,Inactive,Growth,6585.45,s.okoro,Partner Referral
+001Qy00000101053,Fairmount Coastal Corp,fairmount.com,Retail,2025-11-30,Active,Starter,439.52,m.tan,direct
+001Qy00000100741,Cerulean Supply Corp,cerulean.com,Construction,2024-12-24,Active,Growth,2011.31,j.whitfield,Blog
+001Qy00000101418,Glenrock Trading Holdings,glenrock.com,Media,2020-01-09,Active,Starter,627.23,s.okoro,
+001Qy00000100795,Underhill Coastal Holdings,underhill.com,Media,2025-03-07,Inactive,Starter,1057.89,m.tan,LinkedIn Ads
+001Qy00000100597,GARCÍA SISTEMAS LUMEN II,garcia.com,Manufacturing,2024-06-02,Churned,Starter,137.11,a.reyes,SDR
+001Qy00000100130,Quillfeather Digital Systems,quillfeather.com,Education,2021-09-15,Active,Growth,13500.00,m.tan,
+001Qy00000100161,Glenrock Onyx Systems,glenrock.com,Hospitality,2022-08-27,Churned,Growth,1808.16,m.tan,
+001Qy00000100694,Alder Analytics Corp,alder.com,Hospitality,2024-11-09,Active,Growth,2477.56,m.tan,Organic Search
+001Qy00000100750,Copperfield Nimbus LLC,copperfield.com,Manufacturing,2025-01-11,Active,Growth,3917.26,d.castellanos,Google Ads
+001Qy00000100380,Zenith Pioneer LLC,zenith.com,Retail,2023-10-13,Active,Growth,1150.40,s.okoro,
+001Qy00000100573,Brightwater Summit Systems,brightwater.com,Healthcare,2024-05-14,Active,Enterprise,26705.72,j.whitfield,
+001Qy00000100629,Westbrook Analytics Systems,westbrook.com,Education,2024-08-22,Active,Starter,531.38,p.lindqvist,Paid Search
+001Qy00000100862,Kestrel Lumen Group,kestrel.com,Retail,2025-06-15,Active,Growth,2685.99,j.whitfield,Partner Referral
+001Qy00000101146,Quillfeather Supply Holdings,quillfeather.com,Healthcare,2026-02-09,Active,Starter,420.74,d.castellanos,Conference
+001Qy00000100905,Pérez Group Cascade II,perez.com,Fintech,2025-07-20,Active,Starter,926.98,j.whitfield,Tradeshow
+001Qy00000101307,Núñez Capital Sterling,nunez.com,Healthcare,2020-10-12,Active,Starter,552.23,s.okoro,
+001Qy00000100892,Yarrow Sterling Labs,yarrow.com,Energy,2025-07-15,Active,Starter,802.18,m.tan,Blog
+001Qy00000101040,Acme Onyx Systems,acme.com,Construction,2025-11-22,Active,Enterprise,96062.51,s.okoro,Direct
+001Qy00000101233,Ravenswood Sterling Partners,ravenswood.com,Energy,2026-05-03,Active,Growth,4173.44,m.tan,
+001Qy00000101086,Silverline Sable Holdings,silverline.com,Hospitality,2025-12-03,,Starter,394.66,a.reyes,PPC
+001Qy00000100198,Hernández Retail Clinical,hernandez.com,Retail,2023-01-14,Inactive,Growth,11.04,s.okoro,
+001Qy00000101224,Stonebridge Analytics LLC,stonebridge.com,Construction,2026-05-10,Active,Growth,1448.27,j.whitfield,direct
+001Qy00000101428,Vantage Anchor Systems,vantage.com,Hospitality,2021-12-24,Churned,Growth,4202.83,p.lindqvist,
+001Qy00000100718,Meridian Cascade Inc,meridian.com,Fintech,2024-11-19,Active,Growth,3203.17,s.okoro,Direct
+001Qy00000100497,Grupo Peña Compass II,grupo.com,Manufacturing,2024-01-26,Churned,Growth,483.14,p.lindqvist,
+001Qy00000100381,Pinnacle Onyx Holdings,pinnacle.com,Media,2023-10-10,Inactive,Growth,0.00,m.tan,
+001Qy00000101305,López y Asociados Digital,lopez.com,Healthcare,2022-12-20,,Growth,4876.10,a.reyes,
+001Qy00000101253,Northwind Digital Systems,northwind.com,Healthcare,2026-06-02,Active,Starter,338.10,j.whitfield,SDR
+001Qy00000100283,Fairmount Summit Labs,fairmount.com,Media,2023-05-06,Churned,Growth,0.00,d.castellanos,
+001Qy00000101037,Marbury Quantum Corp,marbury.com,Media,2025-12-04,Inactive,Enterprise,21869.79,j.whitfield,SEO
+001Qy00000100935,Underhill Vector LLC,underhill.com,Energy,2025-07-05,Active,Starter,514.81,p.lindqvist,social
+001Qy00000101215,Hollowway Nimbus LLC,hollowway.com,Media,2026-05-12,Active,Starter,634.62,d.castellanos,Word of Mouth
+001Qy00000101221,Fairmount Digital Corp,fairmount.com,Logistics,2026-04-05,Active,Growth,2305.18,s.okoro,Organic Search
+001Qy00000100057,Westbrook Nimbus Systems,westbrook.com,Logistics,2021-11-02,Active,Starter,729.08,m.tan,
+001Qy00000100769,Silverline Quantum Holdings,silverline.com,Construction,2025-01-27,,Enterprise,3692.46,s.okoro,
+001Qy00000100860,Quarry Foundry Systems,quarry.com,Energy,2025-04-30,,Starter,290.37,p.lindqvist,Google Ads
+001Qy00000100482,Cranfield Trading Inc,cranfield.com,Media,2024-02-04,Active,Growth,7870.06,a.reyes,
+001Qy00000101272,Harborview Pioneer Corp,harborview.com,Education,2026-06-25,Active,Starter,634.05,m.tan,PPC
+001Qy00000101194,Inglewood Freight Systems,inglewood.com,Energy,2026-04-04,Active,Starter,1255.81,a.reyes,Paid Search
+001Qy00000100640,Blackthorn Precision Group,blackthorn.com,Healthcare,2024-09-06,Churned,Starter,830.12,j.whitfield,Cold Outreach
+001Qy00000101314,Verdigris Supply LLC,verdigris.com,Energy,2021-06-26,,Growth,2237.63,p.lindqvist,
+001Qy00000100506,Lakeshore Freight Partners,lakeshore.com,Healthcare,2024-02-26,Active,Starter,376.66,m.tan,
+001Qy00000100610,Cerulean Lumen Systems,cerulean.com,Education,2024-07-16,Churned,Growth,0.00,a.reyes,Paid Search
+001Qy00000100719,Pinnacle Anchor Labs,pinnacle.com,Construction,2024-11-20,Active,Enterprise,6000.00,d.castellanos,Blog
+001Qy00000100298,Grupo Peña Compass,grupo.com,Hospitality,2023-05-14,Active,Growth,1889.58,a.reyes,
+001Qy00000100493,Vásquez Media Vector,vasquez.com,Healthcare,2024-02-28,Inactive,Starter,1026.21,a.reyes,
+001Qy00000101082,Fairmount Beacon Labs,fairmount.com,Logistics,2025-12-16,Active,Starter,714.58,d.castellanos,Organic Search
+001Qy00000100818,Copperfield Coastal Systems,copperfield.com,Healthcare,2025-03-30,Active,Starter,935.07,a.reyes,PPC
+001Qy00000101216,Hollowway Nimbus LLC,hollowway.com,Media,2026-04-15,,Starter,40.96,d.castellanos,Event
+001Qy00000100846,Redstone Clinical Group,redstone.com,Manufacturing,2025-03-31,Inactive,Starter,550.44,d.castellanos,
+001Qy00000100778,Thornbury Sable Labs,thornbury.com,Construction,2025-01-05,Active,Starter,22885.58,a.reyes,SEO
+001Qy00000100494,Guimarães Log Anchor,guimaraes.com,Media,2024-02-11,Inactive,Growth,6337.04,d.castellanos,
+001Qy00000100925,Pinnacle Pioneer Inc,pinnacle.com,Logistics,2025-06-24,Active,Starter,267.98,d.castellanos,paid search
+001Qy00000100226,Juniper Coastal Holdings,juniper.com,Retail,2023-02-25,,Enterprise,8423.38,j.whitfield,
+001Qy00000100562,Pemberton Compass Partners,pemberton.com,Hospitality,2024-05-04,Active,Starter,203.34,s.okoro,
+001Qy00000100689,Blackthorn Summit Systems,blackthorn.com,Energy,2024-11-13,Active,Starter,524.82,d.castellanos,Blog
+001Qy00000100602,Pérez Group Sable,perez.com,Manufacturing,2024-07-08,,Growth,2072.84,j.whitfield,SEO
+001Qy00000101028,Eastvale Trading LLC,eastvale.com,Media,2025-10-23,Active,Growth,3511.69,p.lindqvist,Partner Referral
+001Qy00000101225,Vantage Anchor Corp,vantage.com,Fintech,2026-04-22,Active,Starter,718.72,d.castellanos,
+001Qy00000101286,Verdigris Analytics Labs,verdigris.com,Retail,2026-07-03,Active,Starter,252.97,j.whitfield,
+001Qy00000100952,Meridian Nimbus Partners,meridian.com,Fintech,2025-07-31,Active,Growth,2618.63,a.reyes,Cold Outreach
+001Qy00000100119,Quarry Quantum Holdings,quarry.com,Construction,2019-11-24,Churned,Growth,1998.57,a.reyes,
+001Qy00000100077,Cranfield Freight Inc,cranfield.com,Healthcare,2020-01-14,Active,Starter,887.61,p.lindqvist,
+001Qy00000100940,Umbra Keystone Inc,umbra.com,Energy,2025-08-07,Active,Starter,504.48,a.reyes,
+001Qy00000100123,Copperfield Quantum Labs,copperfield.com,Construction,2017-12-06,Active,Growth,2537.03,s.okoro,
+001Qy00000100113,Lakeshore Precision Inc,lakeshore.com,Hospitality,2020-06-30,Churned,Starter,525.01,j.whitfield,
+001Qy00000100365,Pinnacle Cascade LLC,pinnacle.com,Education,2023-08-13,Churned,Starter,758.82,p.lindqvist,
+001Qy00000101010,Underhill Summit Partners,underhill.com,Retail,2025-10-10,Churned,Starter,360.72,j.whitfield,
+001Qy00000101309,Pérez Group Supply,perez.com,Energy,2022-04-17,Churned,Starter,59.94,a.reyes,
+001Qy00000101019,Vantage Vector Holdings,vantage.com,Energy,2025-11-01,Active,Starter,409.56,p.lindqvist,LinkedIn Ads
+001Qy00000100110,Brightwater Pioneer Inc,brightwater.com,Logistics,2020-08-12,Inactive,Enterprise,175.01,d.castellanos,
+001Qy00000101191,Meridian Supply Corp,meridian.com,Media,2026-03-03,,Growth,1724.57,a.reyes,paid search
+001Qy00000100867,Oakfield Foundry Corp,oakfield.com,Logistics,2025-05-25,,Growth,1376.40,a.reyes,Word of Mouth
+001Qy00000100250,Quillfeather Precision LLC,quillfeather.com,Energy,2023-03-18,Active,Starter,1036.08,j.whitfield,
+001Qy00000100373,Yellowfin Atlas LLC,yellowfin.com,Energy,2023-09-23,Active,Starter,697.73,m.tan,
+001Qy00000101092,Zenith Quantum Holdings,zenith.com,Fintech,2026-02-14,Active,Starter,626.47,s.okoro,Organic Search
+001Qy00000100624,Kestrel Compass Labs,kestrel.com,Manufacturing,2024-08-28,Churned,Growth,0.00,m.tan,Conference
+001Qy00000100927,Fairmount Digital Group,fairmount.com,Construction,2025-07-30,Active,Enterprise,6000.00,s.okoro,Event
+001Qy00000100168,Ashcombe Trading Partners,ashcombe.com,Construction,2022-10-11,Active,Growth,3187.52,j.whitfield,
+001Qy00000101236,Nightingale Beacon LLC,nightingale.com,Media,2026-05-20,Active,Growth,1200.00,p.lindqvist,Blog
+001Qy00000101062,Verdigris Precision Holdings,verdigris.com,Media,2025-12-08,Active,Enterprise,6837.42,d.castellanos,Outbound
+001Qy00000100013,Eastvale Foundry Labs,eastvale.com,Logistics,2021-08-18,Churned,Growth,0.00,p.lindqvist,
+001Qy00000100217,Ravenswood Cascade Labs,ravenswood.com,Energy,2023-01-21,Active,Starter,498.59,s.okoro,
+001Qy00000100367,Northwind Onyx Inc,northwind.com,Manufacturing,2023-08-26,Active,Starter,1171.53,j.whitfield,
+001Qy00000100915,Zenith Precision Partners,zenith.com,Logistics,2025-08-04,Active,Starter,798.92,s.okoro,paid search
+001Qy00000100257,Larkspur Pioneer Group,larkspur.com,Education,2023-03-25,Churned,Starter,657.81,d.castellanos,
+001Qy00000101164,Nightingale Clinical LLC,nightingale.com,Media,2026-02-28,,Starter,532.41,d.castellanos,direct
+001Qy00000100791,Alder Cascade Holdings,alder.com,Media,2025-02-23,Churned,Starter,1290.46,j.whitfield,LinkedIn Ads
+001Qy00000101185,Underhill Quantum Partners,underhill.com,Retail,2026-04-02,Active,Enterprise,4462.90,p.lindqvist,
+001Qy00000101302,Quarry Quantum Partners,quarry.com,Media,2020-08-02,Inactive,Starter,0.00,m.tan,
+001Qy00000100378,Stonebridge Pioneer Labs,stonebridge.com,Education,2023-08-31,Churned,Growth,0.00,a.reyes,
+001Qy00000100183,Meridian Atlas Holdings,meridian.com,Healthcare,2022-11-16,Churned,Growth,1914.75,p.lindqvist,
+001Qy00000100164,Redstone Digital Corp,redstone.com,Healthcare,2022-10-29,,Enterprise,9506.44,d.castellanos,
+001Qy00000100128,Orchard Trading Inc,orchard.com,Manufacturing,2018-05-30,Active,Enterprise,4840.55,d.castellanos,
+001Qy00000100489,Verdigris Pioneer LLC,verdigris.com,Logistics,2024-02-15,Churned,Starter,0.00,s.okoro,
+001Qy00000100754,Quillfeather Trading Systems,quillfeather.com,Media,2025-02-24,Churned,Enterprise,0.00,p.lindqvist,paid search
+001Qy00000100213,Meridian Digital Partners,meridian.com,Retail,2022-12-10,Active,Starter,647.85,d.castellanos,
+001Qy00000100280,Orchard Beacon Group,orchard.com,Retail,2023-03-24,,Starter,1127.20,p.lindqvist,
+001Qy00000100389,Umbra Analytics Systems,umbra.com,Construction,2023-09-21,Inactive,Growth,433.91,d.castellanos,
+001Qy00000101409,Vantage Quantum Corp,vantage.com,Media,2019-11-21,Churned,Growth,982.70,p.lindqvist,
+001Qy00000101068,Yellowfin Summit Holdings,yellowfin.com,Logistics,2026-01-01,Active,Growth,6139.87,a.reyes,SDR
+001Qy00000100423,Ashcombe Compass Partners,ashcombe.com,Energy,2023-11-20,Active,Starter,844.35,p.lindqvist,
+001Qy00000101186,Nightingale Clinical Group,nightingale.com,Hospitality,2026-04-15,Active,Starter,855.17,d.castellanos,Paid Search
+001Qy00000100443,Lakeshore Atlas Inc,lakeshore.com,Education,2024-01-04,Active,Starter,1693.27,p.lindqvist,
+001Qy00000101336,Umbra Supply Partners,umbra.com,Retail,2020-04-19,Active,Starter,399.83,p.lindqvist,
+001Qy00000101334,Ravenswood Atlas Systems,ravenswood.com,Education,2022-07-29,Churned,Starter,0.00,s.okoro,
+001Qy00000100117,Ravenswood Trading Inc,ravenswood.com,Education,2021-09-28,Churned,Growth,2348.03,s.okoro,
+001Qy00000100746,Glenrock Coastal Systems,glenrock.com,Construction,2024-12-29,Inactive,Starter,0.00,a.reyes,
+001Qy00000100308,Northgate Lumen Labs,northgate.com,Logistics,2023-05-26,Active,Starter,514.15,j.whitfield,
+001Qy00000100088,Alder Supply LLC,alder.com,Healthcare,2017-06-21,Active,Growth,2640.46,j.whitfield,
+001Qy00000100127,Hollowway Coastal Corp,hollowway.com,Logistics,2018-12-31,Active,Starter,513.92,a.reyes,
+001Qy00000100315,Acme Vector Inc,acme.com,Education,2023-06-09,Active,Starter,623.27,a.reyes,
+001Qy00000101464,Verdigris Sable Labs,verdigris.com,Manufacturing,2020-12-31,Active,Starter,261.92,p.lindqvist,
+001Qy00000100554,Orchard Beacon LLC,orchard.com,Education,2024-04-25,Churned,Starter,492.59,a.reyes,
+001Qy00000100071,Lakeshore Quantum Inc,lakeshore.com,Construction,2019-09-15,Active,Growth,7331.23,m.tan,
+001Qy00000101072,Ashcombe Digital Labs,ashcombe.com,Manufacturing,2025-12-28,Inactive,Growth,1398.24,s.okoro,Direct
+001Qy00000100317,Lakeshore Beacon Inc,lakeshore.com,Energy,2023-06-29,Active,Starter,844.91,j.whitfield,
+001Qy00000100412,Verdigris Atlas Systems,verdigris.com,Hospitality,2023-10-17,Active,Starter,385.48,a.reyes,
+001Qy00000100963,Lakeshore Beacon Group,lakeshore.com,Fintech,2025-09-13,Active,Enterprise,14026.06,p.lindqvist,Direct
+001Qy00000101292,Silverline Nimbus Corp,silverline.com,Education,2026-07-07,Active,Starter,604.27,m.tan,Paid Search
+001Qy00000100221,Quarry Lumen Group,quarry.com,Hospitality,2023-01-20,Inactive,Starter,485.19,j.whitfield,
+001Qy00000101014,Oakfield Clinical Corp,oakfield.com,Fintech,2025-11-17,Churned,Starter,483.90,p.lindqvist,PPC
+001Qy00000100379,Yarrow Freight Labs,yarrow.com,Healthcare,2023-09-09,,Starter,1500.00,d.castellanos,
+001Qy00000100357,Stonebridge Anchor Group,stonebridge.com,Logistics,2023-09-25,Active,Starter,5.50,s.okoro,
+001Qy00000100869,Oakfield Lumen Labs,oakfield.com,Fintech,2025-04-22,Churned,Starter,0.00,a.reyes,Direct
+001Qy00000100886,Quillfeather Keystone Corp,quillfeather.com,Energy,2025-07-22,Active,Growth,1200.00,j.whitfield,SEO
+001Qy00000100890,Hollowway Foundry Labs,hollowway.com,Hospitality,2025-06-18,,Starter,0.00,s.okoro,Google Ads
+001Qy00000101198,Quarry Cascade Inc,quarry.com,Healthcare,2026-04-02,Active,Growth,502.04,s.okoro,LinkedIn
+001Qy00000100649,Juniper Atlas Systems,juniper.com,Logistics,2024-08-14,Active,Enterprise,12957.11,j.whitfield,Word of Mouth
+001Qy00000100375,Pinnacle Pioneer Partners,pinnacle.com,Media,2023-10-09,Active,Starter,483.02,p.lindqvist,
+001Qy00000100049,Dunmore Sable Group,dunmore.com,Education,2020-01-08,Active,Growth,8714.02,d.castellanos,
+001Qy00000101046,Acme Analytics LLC,acme.com,Fintech,2025-11-06,Active,Starter,653.67,p.lindqvist,Paid Search
+001Qy00000101374,Nightingale Lumen LLC,nightingale.com,Hospitality,2023-12-06,Churned,Starter,772.45,d.castellanos,
+001Qy00000100709,Brightwater Keystone Corp,brightwater.com,Construction,2024-12-17,Active,Enterprise,15217.54,p.lindqvist,SEO
+001Qy00000100798,Hernández Retail Quantum,hernandez.com,Energy,2025-01-19,Churned,Starter,631.68,j.whitfield,Direct
+001Qy00000100125,Zenith Supply Corp,zenith.com,Construction,2022-08-01,Active,Growth,2480.07,m.tan,
+001Qy00000100696,Blackthorn Atlas Labs,blackthorn.com,Media,2024-09-29,Active,Growth,3262.04,s.okoro,Partner
+001Qy00000100466,Yarrow Lumen Holdings,yarrow.com,Manufacturing,2024-01-18,Churned,Starter,554.55,m.tan,
+001Qy00000100537,Pemberton Freight LLC,pemberton.com,Construction,2024-04-11,,Growth,4080.48,m.tan,
+001Qy00000100321,Hollowway Digital Partners,hollowway.com,Fintech,2023-05-29,,Starter,298.02,a.reyes,
+001Qy00000100266,Meridian Analytics Systems,meridian.com,Energy,2023-03-27,Active,Growth,2328.26,s.okoro,
+001Qy00000101264,Copperfield Beacon Inc,copperfield.com,Manufacturing,2026-06-19,Active,Starter,981.04,p.lindqvist,paid search
+001Qy00000101328,Dunmore Keystone Systems,dunmore.com,Manufacturing,2022-02-21,Active,Growth,1645.46,a.reyes,
+001Qy00000100691,Fairmount Analytics Systems,fairmount.com,Media,2024-10-27,Active,Starter,643.33,p.lindqvist,Organic Search
+001Qy00000101091,Harborview Cascade Inc,harborview.com,Logistics,2026-02-11,Inactive,Starter,647.82,m.tan,PPC
+001Qy00000101138,Quillfeather Summit Labs,quillfeather.com,Logistics,2026-02-22,Active,Growth,1594.41,d.castellanos,Outbound
+001Qy00000101151,Nightingale Pioneer Corp,nightingale.com,Construction,2026-02-10,Active,Starter,798.29,m.tan,LinkedIn
+001Qy00000101213,Pérez Group Nimbus,perez.com,Construction,2026-04-07,Inactive,Starter,247.73,s.okoro,Paid Search
+001Qy00000100209,Harborview Coastal Group,harborview.com,Construction,2022-12-16,Inactive,Starter,1509.71,m.tan,
+001Qy00000100946,Meridian Cascade Group,meridian.com,Construction,2025-08-03,Active,Starter,704.28,d.castellanos,SEO
+001Qy00000101015,Orchard Supply Inc,orchard.com,Retail,2025-10-27,Active,Starter,487.64,a.reyes,LinkedIn
+001Qy00000100319,Tanglewood Sable Corp,tanglewood.com,Retail,2023-06-27,,Growth,1370.43,j.whitfield,
+001Qy00000100979,Alder Compass LLC,alder.com,Manufacturing,2025-08-17,Active,Growth,4327.86,a.reyes,Cold Outreach
+001Qy00000101386,Pemberton Lumen Inc,pemberton.com,Retail,2020-07-02,Inactive,Growth,4283.27,m.tan,
+001Qy00000100124,Acme Clinical Systems,acme.com,Healthcare,2019-08-17,Active,Starter,1199.62,p.lindqvist,
+001Qy00000101337,Inglewood Cascade Partners,inglewood.com,Media,2020-01-29,Active,Starter,258.35,s.okoro,
+001Qy00000100740,Eastvale Beacon Holdings,eastvale.com,Construction,2024-12-26,Active,Growth,4099.05,d.castellanos,paid search
+001Qy00000100313,Lakeshore Compass Group,lakeshore.com,Retail,2023-06-01,Active,Growth,1260.82,m.tan,
+001Qy00000100398,São Bento Foundry II,sao.com,Fintech,2023-10-28,Churned,Starter,651.79,p.lindqvist,
+001Qy00000100067,Pinnacle Foundry Inc,pinnacle.com,Logistics,2021-08-08,Active,Growth,2439.28,p.lindqvist,
+001Qy00000101084,Tanglewood Digital Labs,tanglewood.com,Retail,2025-11-22,Churned,Starter,287.32,m.tan,Word of Mouth
+001Qy00000101133,Cerulean Nimbus Labs,cerulean.com,Hospitality,2026-02-14,,Starter,53.39,s.okoro,social
+001Qy00000101078,Orchard Pioneer Inc,orchard.com,Education,2025-12-22,,Starter,382.01,a.reyes,Partner Referral
+001Qy00000100481,Ravenswood Quantum Group,ravenswood.com,Manufacturing,2024-02-20,Inactive,Starter,0.00,d.castellanos,
+001Qy00000101274,Nightingale Coastal Inc,nightingale.com,Fintech,2026-06-16,Active,Growth,2530.50,p.lindqvist,Organic Search
+001Qy00000101065,Ironwood Atlas Labs,ironwood.com,Education,2025-12-09,Active,Starter,499.66,m.tan,direct
+001Qy00000100620,Brightwater Nimbus Holdings,brightwater.com,Retail,2024-07-18,Churned,Enterprise,0.00,j.whitfield,Paid Social
+001Qy00000101200,Meridian Foundry Holdings,meridian.com,Fintech,2026-03-31,Churned,Growth,0.00,s.okoro,
+001Qy00000100960,Dovetail Analytics Labs,dovetail.com,Manufacturing,2025-08-07,Inactive,Starter,0.00,s.okoro,LinkedIn Ads
+001Qy00000100819,Dovetail Foundry Corp,dovetail.com,Media,2025-03-26,Active,Starter,509.35,p.lindqvist,Tradeshow
+001Qy00000100023,Yellowfin Clinical LLC,yellowfin.com,Hospitality,2019-05-16,Active,Enterprise,33662.41,j.whitfield,
+001Qy00000100804,André Frères Compass,andre.com,Manufacturing,2025-02-22,Active,Growth,3096.27,d.castellanos,Outbound
+001Qy00000100131,Westbrook Sterling LLC,westbrook.com,Retail,2018-04-14,Active,Growth,2854.44,a.reyes,
+001Qy00000100061,Blackthorn Analytics Systems,blackthorn.com,Education,2017-09-01,Active,Starter,843.08,m.tan,
+001Qy00000100787,Westbrook Freight Corp.,westbrook.com,Education,2025-02-06,Active,Enterprise,60.56,d.castellanos,SEO
+001Qy00000100980,Brightwater Freight LLC,brightwater.com,Education,2025-10-02,Churned,Starter,0.00,j.whitfield,Paid Search
+001Qy00000100621,Copperfield Freight Corp,copperfield.com,Energy,2024-08-17,Active,Starter,682.96,s.okoro,Google Ads
+001Qy00000100363,Inglewood Coastal Group,inglewood.com,Healthcare,2023-09-07,Active,Growth,1496.57,a.reyes,
+001Qy00000100047,Northwind Foundry Labs,northwind.com,Education,2018-08-26,Active,Enterprise,6111.14,j.whitfield,
+001Qy00000100549,Verdigris Analytics Partners,verdigris.com,Retail,2024-04-24,Active,Starter,456.42,s.okoro,
+001Qy00000100632,Ravenswood Precision LLC,ravenswood.com,Retail,2024-08-18,Active,Starter,716.12,j.whitfield,PPC
+001Qy00000100053,Ravenswood Cascade Partners,ravenswood.com,Manufacturing,2019-07-02,Active,Enterprise,582.57,d.castellanos,
+001Qy00000100651,Northgate Cascade Inc,northgate.com,Retail,2024-10-02,Churned,Starter,0.00,a.reyes,Organic Search
+001Qy00000101074,Larkspur Nimbus Partners,larkspur.com,Fintech,2025-12-24,Active,Starter,1053.55,j.whitfield,SDR
+001Qy00000100912,Pemberton Atlas Systems,pemberton.com,Retail,2025-08-02,Active,Growth,1832.65,j.whitfield,Referral
+001Qy00000100700,Hernández Retail Sterling,hernandez.com,Energy,2024-12-08,Active,Growth,3031.99,j.whitfield,LinkedIn Ads
+001Qy00000100813,Cerulean Beacon Corp,cerulean.com,Media,2025-04-10,Active,Starter,250.00,d.castellanos,Google Ads
+001Qy00000100891,Pinnacle Compass Corp,pinnacle.com,Logistics,2025-07-20,Churned,Growth,4134.92,m.tan,
+001Qy00000100098,Tanglewood Foundry Systems,tanglewood.com,Energy,2022-02-23,Active,Enterprise,4379.11,a.reyes,
+001Qy00000101461,Inglewood Clinical Partners,inglewood.com,Education,2023-08-28,Inactive,Growth,1587.98,j.whitfield,
+001Qy00000100710,Brightwater (DBA),brightwater.com,Construction,2024-11-23,Inactive,Enterprise,4617.39,p.lindqvist,SEO
+001Qy00000100755,Dovetail Coastal Group,dovetail.com,Healthcare,2025-02-15,Active,Starter,665.04,s.okoro,LinkedIn Ads
+001Qy00000101420,Alder Vector Corp,alder.com,Manufacturing,2021-09-13,Active,Starter,711.77,p.lindqvist,
+001Qy00000100504,Ravenswood Analytics Corp,ravenswood.com,Healthcare,2024-03-23,Active,Growth,3338.87,j.whitfield,
+001Qy00000100907,Oakfield Quantum LLC,oakfield.com,Construction,2025-07-25,Active,Starter,745.10,p.lindqvist,paid search
+001Qy00000100343,Tanglewood Atlas LLC,tanglewood.com,Education,2023-07-13,Inactive,Starter,313.24,a.reyes,
+001Qy00000100757,Underhill Atlas Group,underhill.com,Logistics,2025-02-16,Active,Growth,2164.17,m.tan,direct
+001Qy00000100759,Meridian Nimbus Group,meridian.com,Media,2025-01-28,,Starter,390.46,s.okoro,Paid Search
+001Qy00000101415,Muñoz Holdings Foundry,munoz.com,Healthcare,2022-02-04,Active,Starter,659.61,p.lindqvist,
+001Qy00000100664,Redstone Nimbus Inc,redstone.com,Energy,2024-08-18,Churned,Starter,1474.03,d.castellanos,Google Ads
+001Qy00000101064,Cranfield Foundry Group,cranfield.com,Retail,2025-12-31,Active,Enterprise,144.58,a.reyes,Paid Social
+001Qy00000100157,Thornbury Sable Group,thornbury.com,Energy,2022-09-26,Active,Growth,11653.85,p.lindqvist,
+001Qy00000101089,Westbrook Lumen Systems,westbrook.com,Education,2026-01-04,Inactive,Starter,273.43,j.whitfield,Event
+001Qy00000101299,Meridian Coastal Group,meridian.com,Hospitality,2020-02-10,Churned,Growth,2315.30,d.castellanos,
+001Qy00000100560,Glenrock Quantum Labs,glenrock.com,Media,2024-04-05,Churned,Growth,0.00,a.reyes,
+001Qy00000101358,Cranfield Sterling Labs,cranfield.com,Retail,2019-11-19,Active,Starter,762.96,s.okoro,
+001Qy00000100699,Pérez Group Onyx,perez.com,Education,2024-11-09,Churned,Starter,763.49,s.okoro,Paid Search
+001Qy00000101048,Brightwater Quantum Inc,brightwater.com,Retail,2025-11-25,Active,Starter,431.87,p.lindqvist,Word of Mouth
+001Qy00000101156,Juniper Compass Corp,juniper.com,Education,2026-02-15,Active,Growth,2205.75,d.castellanos,direct
+001Qy00000101424,Vantage Keystone Corp,vantage.com,Media,2023-03-27,Active,Growth,5784.93,a.reyes,
+001Qy00000100050,Ashcombe Beacon Inc,ashcombe.com,Logistics,2020-04-05,Active,Growth,1631.47,j.whitfield,
+001Qy00000100578,Cerulean Supply Inc,cerulean.com,Retail,2024-05-28,Active,Starter,788.68,m.tan,Paid Search
+001Qy00000100516,Cerulean Compass Inc,cerulean.com,Fintech,2024-02-21,Active,Enterprise,6000.00,m.tan,
+001Qy00000100311,Hollowway Supply LLC,hollowway.com,Construction,2023-05-28,Churned,Starter,938.49,p.lindqvist,
+001Qy00000100062,Marbury Sable Corp,marbury.com,Retail,2019-11-23,Active,Growth,8433.97,j.whitfield,
+001Qy00000100572,Yarrow Coastal LLC,yarrow.com,Media,2024-05-25,Churned,Growth,0.00,j.whitfield,Tradeshow
+001Qy00000100739,Pinnacle Foundry Systems,pinnacle.com,Hospitality,2024-11-29,Active,Starter,2378.10,p.lindqvist,Organic Search
+001Qy00000100111,Ravenswood Keystone Corp,ravenswood.com,Construction,2019-06-03,Active,Starter,662.56,p.lindqvist,
+001Qy00000100917,Whitmore Nimbus LLC,whitmore.com,Energy,2025-07-04,Active,Starter,802.32,j.whitfield,
+001Qy00000100331,Pemberton Digital LLC,pemberton.com,Fintech,2023-08-06,Churned,Growth,3434.93,m.tan,
+001Qy00000100690,Northgate Precision Corp,northgate.com,Construction,2024-10-05,Active,Starter,949.38,j.whitfield,Google Ads
+001Qy00000101229,Zenith Analytics Group,zenith.com,Manufacturing,2026-04-30,Active,Starter,511.01,j.whitfield,Blog
+001Qy00000100460,Nightingale Sterling Holdings,nightingale.com,Construction,2023-12-28,Active,Starter,715.20,d.castellanos,
+001Qy00000100848,Nightingale Coastal Labs,nightingale.com,Healthcare,2025-05-15,Active,Growth,2846.81,a.reyes,Partner
+001Qy00000100575,Kestrel Sable Group,kestrel.com,Manufacturing,2024-06-02,Active,Growth,1329.04,p.lindqvist,Blog
+001Qy00000101414,Ferreira Serviços Precision,ferreira.com,Construction,2021-10-03,Active,Growth,1460.98,d.castellanos,
+001Qy00000100265,Zenith Coastal Partners,zenith.com,Construction,2023-04-20,Active,Starter,304.23,s.okoro,
+001Qy00000100338,Inglewood Clinical Group,inglewood.com,Fintech,2023-08-03,Active,Growth,7167.35,a.reyes,
+001Qy00000100291,Vantage Sterling LLC,vantage.com,Energy,2023-04-29,,Growth,3124.09,s.okoro,
+001Qy00000101255,Harborview Quantum Holdings,harborview.com,Manufacturing,2026-06-14,Active,Enterprise,100606.82,m.tan,Tradeshow
+001Qy00000101208,André Frères Compass II II,andre.com,Energy,2026-04-24,Active,Growth,1895.48,a.reyes,Blog
+001Qy00000101230,Cranfield Trading Group,cranfield.com,Media,2026-04-21,Active,Starter,388.14,j.whitfield,
+001Qy00000100733,Brightwater Freight Group,brightwater.com,Energy,2024-12-19,Active,Starter,448.22,s.okoro,paid search
+001Qy00000100016,Acme Digital Holdings,acme.com,Hospitality,2021-01-25,Active,Growth,1971.97,j.whitfield,
+001Qy00000100971,Zenith Freight Holdings,zenith.com,Energy,2025-09-05,Active,Growth,2879.25,p.lindqvist,SDR
+001Qy00000100352,Inglewood Pioneer Group,inglewood.com,Education,2023-09-03,Churned,Starter,529.85,a.reyes,
+001Qy00000101202,Orchard Foundry Holdings,orchard.com,Logistics,2026-04-02,Active,Starter,502.94,s.okoro,PPC
+001Qy00000100234,Eastvale Atlas Labs,eastvale.com,Hospitality,2023-02-15,Active,Starter,969.76,m.tan,
+001Qy00000100095,Thornbury Compass Corp,thornbury.com,Manufacturing,2017-04-23,Active,Growth,1306.72,s.okoro,
+001Qy00000100842,Northgate Nimbus Corp,northgate.com,Healthcare,2025-04-06,Churned,Growth,5001.25,a.reyes,Cold Outreach
+001Qy00000100785,Hollowway Anchor Labs,hollowway.com,Manufacturing,2025-02-11,Active,Starter,485.92,j.whitfield,SEO
+001Qy00000100108,Vantage Trading Corp,vantage.com,Construction,2019-05-10,Active,Enterprise,22152.46,a.reyes,
+001Qy00000101252,Hollowway Lumen LLC,hollowway.com,Healthcare,2026-05-16,Active,Starter,468.27,p.lindqvist,direct
+001Qy00000100042,Northgate Compass Systems,northgate.com,Manufacturing,2018-02-28,Active,Starter,2885.28,j.whitfield,
+001Qy00000100923,Verdigris Clinical Labs,verdigris.com,Retail,2025-08-16,Active,Starter,420.35,s.okoro,Paid Search
+001Qy00000100865,Inglewood Onyx Group,inglewood.com,Fintech,2025-05-18,Active,Starter,445.34,s.okoro,PPC
+001Qy00000100301,André Frères Pioneer,andre.com,Logistics,2023-05-20,Inactive,Starter,0.00,a.reyes,
+001Qy00000101276,Glenrock Foundry Labs,glenrock.com,Logistics,2026-07-10,Inactive,Starter,1500.00,a.reyes,PPC
+001Qy00000101214,Tanglewood Quantum Inc,tanglewood.com,Healthcare,2026-04-07,Active,Growth,2036.59,d.castellanos,LinkedIn
+001Qy00000101063,Cranfield Foundry Group,cranfield.com,Retail,2025-11-23,Churned,Starter,0.00,a.reyes,Paid Social
+001Qy00000100393,Harborview Analytics Systems,harborview.com,Logistics,2023-08-21,,Starter,433.77,d.castellanos,
+001Qy00000100720,Acme Compass LLC,acme.com,Media,2024-11-28,Active,Starter,563.77,p.lindqvist,SEO
+001Qy00000100467,Northgate Keystone Labs,northgate.com,Construction,2024-01-31,Inactive,Starter,618.05,d.castellanos,
+001Qy00000100991,Nightingale Digital Labs,nightingale.com,Manufacturing,2025-09-03,,Growth,2610.65,p.lindqvist,PPC
+001Qy00000101228,Tanglewood Anchor Holdings,tanglewood.com,Manufacturing,2026-05-08,Active,Starter,732.96,m.tan,Word of Mouth
+001Qy00000100103,Hernández Retail Supply,hernandez.com,Healthcare,2018-10-10,Churned,Enterprise,9200.63,p.lindqvist,
+001Qy00000100153,Northgate Beacon Group,northgate.com,Media,2022-09-11,Active,Starter,379.57,a.reyes,
+001Qy00000100416,Larkspur Compass Inc,larkspur.com,Energy,2023-10-11,Active,Starter,560.69,a.reyes,
+001Qy00000100055,Oakfield Quantum Inc,oakfield.com,Media,2021-04-13,Churned,Growth,0.00,a.reyes,
+001Qy00000100011,Pemberton Summit Inc,pemberton.com,Fintech,2021-05-11,Active,Enterprise,28681.27,s.okoro,
+001Qy00000101026,Whitmore Compass Group,whitmore.com,Manufacturing,2025-10-31,Active,Growth,1433.35,p.lindqvist,
+001Qy00000101363,Blackthorn Clinical Partners,blackthorn.com,Energy,2020-09-23,Active,Starter,659.37,p.lindqvist,
+001Qy00000100717,Yarrow Quantum Labs,yarrow.com,Fintech,2024-11-05,Active,Enterprise,6525.22,a.reyes,Paid Search
+001Qy00000100555,Glenrock Onyx Holdings,glenrock.com,Healthcare,2024-03-20,Active,Growth,2565.17,m.tan,
+001Qy00000100421,Hollowway Cascade LLC,hollowway.com,Manufacturing,2023-12-03,Churned,Growth,3562.16,a.reyes,
+001Qy00000100040,Hollowway Digital Inc,hollowway.com,Education,2019-03-20,Churned,Growth,1942.44,s.okoro,
+001Qy00000100043,Eastvale Trading Corp,eastvale.com,Construction,2020-03-10,Inactive,Growth,1445.24,m.tan,
+001Qy00000100731,Juniper Summit Inc,juniper.com,Healthcare,2025-01-09,Active,Enterprise,12275.89,m.tan,Tradeshow
+001Qy00000101107,André Frères Freight,andre.com,Logistics,2026-02-10,Active,Starter,483.36,j.whitfield,paid search
+001Qy00000100279,Dovetail Supply Group,dovetail.com,Construction,2023-05-21,Churned,Growth,1696.86,d.castellanos,
+001Qy00000100475,Zenith Lumen LLC,zenith.com,Fintech,2024-01-30,Active,Growth,8099.46,d.castellanos,
+001Qy00000100163,Zenith Quantum Inc,zenith.com,Fintech,2022-11-13,Active,Starter,697.16,m.tan,
+001Qy00000101124,Quillfeather Precision Systems,quillfeather.com,Media,2026-03-18,Active,Enterprise,14585.18,m.tan,paid search
+001Qy00000100933,Pemberton Summit Holdings,pemberton.com,Hospitality,2025-07-10,Active,Starter,321.18,s.okoro,paid search
+001Qy00000101100,Vásquez Media Compass,vasquez.com,Media,2026-02-12,Active,Growth,7173.87,p.lindqvist,Cold Outreach
+001Qy00000100003,André Frères Summit,andre.com,Healthcare,2018-07-03,Active,Growth,12159.18,p.lindqvist,
+001Qy00000100449,Inglewood Precision Partners,inglewood.com,Media,2024-01-20,,Starter,905.01,p.lindqvist,
+001Qy00000100698,Núñez Capital Vector II,nunez.com,Construction,2024-11-11,Inactive,Starter,576.36,m.tan,Organic Search
+001Qy00000101443,Ravenswood Beacon LLC,ravenswood.com,Retail,2022-08-24,Active,Starter,1020.84,s.okoro,
+001Qy00000100918,Kestrel Clinical Labs,kestrel.com,Media,2025-08-13,Churned,Starter,609.23,s.okoro,direct
+001Qy00000101258,Cranfield Atlas Holdings,cranfield.com,Manufacturing,2026-05-08,Active,Starter,1207.89,d.castellanos,Google Ads
+001Qy00000100122,Brightwater Nimbus Group,brightwater.com,Education,2019-07-23,Churned,Growth,0.00,a.reyes,
+001Qy00000100635,Pemberton Precision Labs,pemberton.com,Construction,2024-08-16,Churned,Starter,597.24,a.reyes,Organic Search
+001Qy00000100383,Orchard Sterling Inc,orchard.com,Retail,2023-09-15,Churned,Growth,0.00,p.lindqvist,
+001Qy00000100046,Yarrow Nimbus Labs,yarrow.com,Hospitality,2022-05-13,Active,Starter,427.55,a.reyes,
+001Qy00000100642,Harborview Cascade Partners,harborview.com,Education,2024-08-27,Active,Starter,736.39,d.castellanos,PPC
+001Qy00000100004,López y Asociados Atlas,lopez.com,Hospitality,2021-04-29,Active,Growth,1200.00,p.lindqvist,
+001Qy00000100293,Kestrel Onyx Partners,kestrel.com,Energy,2023-04-26,Churned,Starter,1126.17,p.lindqvist,
+001Qy00000100889,Stonebridge Pioneer Corp,stonebridge.com,Logistics,2025-06-21,Active,Growth,3015.33,m.tan,SEO
+001Qy00000100824,Larkspur Vector Inc,larkspur.com,Media,2025-03-29,Active,Growth,1353.99,j.whitfield,LinkedIn Ads
+001Qy00000100868,Northgate Atlas Holdings,northgate.com,Fintech,2025-05-10,Active,Starter,485.89,j.whitfield,SEO
+001Qy00000100627,Yellowfin Atlas Corp,yellowfin.com,Healthcare,2024-07-13,,Starter,680.74,a.reyes,Blog
+001Qy00000101120,Dunmore Clinical Systems,dunmore.com,Healthcare,2026-01-13,Active,Starter,900.14,s.okoro,LinkedIn Ads
+001Qy00000100082,Blackthorn Sable Inc,blackthorn.com,Energy,2019-11-06,Active,Growth,512.45,a.reyes,
+001Qy00000100636,Pinnacle Freight Group,pinnacle.com,Healthcare,2024-08-18,Churned,Starter,0.00,s.okoro,
+001Qy00000100796,Thornbury Foundry Inc,thornbury.com,Hospitality,2025-03-06,,Growth,4943.44,m.tan,social
+001Qy00000100236,Umbra Sable Labs,umbra.com,Hospitality,2023-02-17,Active,Starter,730.67,j.whitfield,
+001Qy00000100780,Pinnacle Sable Partners,pinnacle.com,Logistics,2025-02-19,Inactive,Starter,31.43,p.lindqvist,Paid Search
+001Qy00000100407,Marbury Summit Partners,marbury.com,Energy,2023-11-23,Churned,Starter,388.25,p.lindqvist,
+001Qy00000100174,Copperfield Summit Systems,copperfield.com,Retail,2022-10-17,Active,Starter,1235.41,p.lindqvist,
+001Qy00000101442,Vantage Keystone LLC,vantage.com,Retail,2022-02-22,Active,Starter,1441.23,s.okoro,
+001Qy00000100249,Nightingale Freight Group,nightingale.com,Media,2023-04-06,Churned,Growth,1200.00,j.whitfield,
+001Qy00000100965,Ashcombe Lumen Inc,ashcombe.com,Construction,2025-09-19,Active,Growth,610.49,d.castellanos,social
+001Qy00000100887,Thornbury Summit LLC,thornbury.com,Media,2025-06-16,Active,Starter,654.75,s.okoro,Google Ads
+001Qy00000100800,Guimarães Log Precision,guimaraes.com,Energy,2025-01-27,Active,Starter,429.19,a.reyes,Google Ads
+001Qy00000100793,Yarrow Analytics Systems,yarrow.com,Hospitality,2025-02-19,Active,Growth,1954.82,d.castellanos,Partner
+001Qy00000101460,Vantage Lumen Partners,vantage.com,Logistics,2020-07-11,Active,Starter,778.55,d.castellanos,
+001Qy00000100450,Northgate Digital Labs,northgate.com,Construction,2023-12-29,Active,Starter,1038.38,a.reyes,
+001Qy00000101295,Quillfeather Anchor Holdings,quillfeather.com,Fintech,2026-07-10,Active,Enterprise,5274.93,p.lindqvist,Outbound
+001Qy00000100241,Stonebridge Pioneer Partners,stonebridge.com,Construction,2023-01-30,Churned,Starter,1500.00,j.whitfield,
+001Qy00000100672,Umbra Quantum Systems,umbra.com,Education,2024-09-06,Active,Growth,5530.55,m.tan,Organic Search
+001Qy00000100408,Juniper Trading Systems,juniper.com,Retail,2023-10-24,Inactive,Growth,3658.95,a.reyes,
+001Qy00000101369,Ashcombe Foundry Partners,ashcombe.com,Media,2024-02-15,Churned,Starter,0.00,a.reyes,
+001Qy00000100471,Silverline Summit Holdings,silverline.com,Retail,2024-02-25,Active,Growth,2065.96,j.whitfield,
+001Qy00000100987,Quillfeather Analytics Systems,quillfeather.com,Healthcare,2025-10-10,Active,Starter,751.06,d.castellanos,Direct
+001Qy00000100734,Oakfield Beacon LLC,oakfield.com,Manufacturing,2024-12-24,Inactive,Growth,0.00,s.okoro,Blog
+001Qy00000100074,Harborview Lumen Holdings,harborview.com,Media,2018-11-11,Active,Starter,612.29,j.whitfield,
+001Qy00000101127,Umbra Sterling Group,umbra.com,Energy,2026-03-16,Active,Growth,571.00,m.tan,Word of Mouth
+001Qy00000100072,Silverline Pioneer Partners,silverline.com,Hospitality,2021-08-27,Active,Enterprise,12959.94,d.castellanos,
+001Qy00000100783,Pinnacle Coastal Partners,pinnacle.com,Media,2025-03-22,Active,Starter,487.61,s.okoro,Blog
+001Qy00000100348,Alder Onyx Systems,alder.com,Logistics,2023-08-16,,Growth,895.90,d.castellanos,
+001Qy00000101231,Yarrow Nimbus Partners,yarrow.com,Energy,2026-04-17,Active,Starter,478.40,m.tan,Google Ads
+001Qy00000100776,Silverline Foundry Holdings,silverline.com,Hospitality,2025-02-01,Churned,Starter,279.95,d.castellanos,Direct
+001Qy00000100514,Blackthorn Vector Corp,blackthorn.com,Logistics,2024-02-24,Active,Enterprise,8478.34,a.reyes,
+001Qy00000100716,Redstone Atlas Labs,redstone.com,Fintech,2024-11-10,Active,Starter,544.11,s.okoro,Paid Search
+001Qy00000101322,Eastvale Summit Systems,eastvale.com,Energy,2022-03-02,Churned,Growth,0.00,p.lindqvist,
+001Qy00000101116,Inglewood Precision Group,inglewood.com,Construction,2026-02-15,Active,Growth,2878.82,j.whitfield,SEO
+001Qy00000100476,Northgate Sterling Labs,northgate.com,Construction,2024-02-24,Active,Growth,492.17,s.okoro,
+001Qy00000100822,Zenith Compass Inc,zenith.com,Energy,2025-04-04,Active,Growth,4280.89,p.lindqvist,Organic Search
+001Qy00000100264,Zenith Coastal Partners,zenith.com,Construction,2023-03-25,,Starter,970.97,s.okoro,
+001Qy00000100810,Fairmount Keystone Systems,fairmount.com,Logistics,2025-03-16,Active,Growth,1042.44,j.whitfield,Event
+001Qy00000100459,Yarrow Vector Labs,yarrow.com,Fintech,2024-02-03,Active,Growth,2925.32,d.castellanos,
+001Qy00000101154,Ravenswood Analytics Labs,ravenswood.com,Construction,2026-02-10,Active,Starter,432.52,s.okoro,SEO
+001Qy00000100316,Stonebridge Pioneer Systems,stonebridge.com,Manufacturing,2023-07-13,Inactive,Starter,0.00,p.lindqvist,
+001Qy00000101413,Guimarães Log Digital II,guimaraes.com,Energy,2020-03-18,Churned,Starter,979.36,m.tan,
+001Qy00000100714,Verdigris Freight Systems,verdigris.com,Manufacturing,2024-11-08,Active,Starter,470.47,m.tan,Organic Search
+001Qy00000101310,Hernández Retail Anchor,hernandez.com,Retail,2021-10-06,,Growth,2282.77,m.tan,
+001Qy00000100652,Northgate Cascade,northgate.com,Retail,2024-08-26,,Starter,59.23,a.reyes,social
+001Qy00000101184,Ravenswood Anchor Labs,ravenswood.com,Hospitality,2026-04-15,Active,Growth,2584.61,p.lindqvist,PPC
+001Qy00000100542,Ravenswood Onyx Labs,ravenswood.com,Education,2024-04-17,,Growth,5455.97,m.tan,
+001Qy00000100633,Verdigris Sterling Labs,verdigris.com,Hospitality,2024-09-06,Active,Growth,3585.38,m.tan,
+001Qy00000100022,Glenrock Summit Inc,glenrock.com,Education,2020-11-20,Active,Enterprise,282.18,s.okoro,
+001Qy00000100404,Ferreira Serviços Nimbus,ferreira.com,Manufacturing,2023-11-06,Active,Starter,578.85,d.castellanos,
+001Qy00000101188,Larkspur Onyx Partners,larkspur.com,Media,2026-03-26,Active,Starter,436.42,d.castellanos,Google Ads
+001Qy00000100328,Ravenswood Coastal Systems,ravenswood.com,Logistics,2023-08-20,Active,Growth,8326.62,j.whitfield,
+001Qy00000100943,Alder Freight Holdings,alder.com,Fintech,2025-09-05,Active,Growth,4275.16,p.lindqvist,Cold Outreach
+001Qy00000100411,Blackthorn Summit Partners,blackthorn.com,Healthcare,2023-11-21,Churned,Growth,2989.97,j.whitfield,
+001Qy00000101387,Fairmount Trading LLC,fairmount.com,Media,2021-09-10,Churned,Starter,0.00,a.reyes,
+001Qy00000101195,Silverline Keystone Corp,silverline.com,Healthcare,2026-02-27,Active,Growth,2854.89,s.okoro,Blog
+001Qy00000101344,Quillfeather Onyx Corp,quillfeather.com,Construction,2019-05-07,Active,Growth,2381.00,a.reyes,
+001Qy00000100926,Harborview Lumen Group,harborview.com,Logistics,2025-08-17,Active,Starter,746.65,p.lindqvist,SEO
+001Qy00000100104,Vásquez Media Summit,vasquez.com,Media,2022-04-02,Active,Starter,796.28,d.castellanos,
+001Qy00000101050,Whitmore Anchor Labs,whitmore.com,Manufacturing,2025-11-12,Active,Growth,1200.00,m.tan,SEO
+001Qy00000100036,Quillfeather Anchor Corp,quillfeather.com,Media,2021-10-16,Active,Starter,264.09,m.tan,
+001Qy00000100830,Orchard Trading Group,orchard.com,Construction,2025-03-27,Active,Growth,1200.00,d.castellanos,Word of Mouth
+001Qy00000100268,Brightwater Pioneer Group,brightwater.com,Healthcare,2023-03-08,Inactive,Starter,702.09,j.whitfield,
+001Qy00000100928,Marbury Clinical Inc,marbury.com,Hospitality,2025-07-30,Active,Starter,777.58,s.okoro,Google Ads
+001Qy00000100752,Northgate Vector LLC,northgate.com,Media,2025-01-15,Active,Growth,3943.67,a.reyes,Referral
+001Qy00000100211,Whitmore Digital Inc,whitmore.com,Media,2023-01-13,Active,Growth,4453.88,j.whitfield,
+001Qy00000100957,Pemberton Freight Labs,pemberton.com,Construction,2025-09-02,,Growth,3556.19,j.whitfield,Blog
+001Qy00000100607,Northgate Cascade LLC,northgate.com,Education,2024-08-16,Churned,Starter,598.43,j.whitfield,Word of Mouth
+001Qy00000101348,Quillfeather Summit Holdings,quillfeather.com,Education,2020-02-25,Active,Starter,2148.90,m.tan,
+001Qy00000100812,Lakeshore Trading Systems,lakeshore.com,Energy,2025-03-07,Inactive,Starter,1457.01,j.whitfield,
+001Qy00000100704,Kestrel Sable LLC,kestrel.com,Construction,2024-11-22,Active,Starter,669.92,p.lindqvist,Blog
+001Qy00000100888,Cerulean Vector Corp,cerulean.com,Construction,2025-06-04,Churned,Starter,0.00,a.reyes,Google Ads
+001Qy00000100951,Whitmore Anchor Systems,whitmore.com,Fintech,2025-09-21,Active,Starter,431.21,d.castellanos,SEO
+001Qy00000101351,Umbra Anchor Systems,umbra.com,Retail,2023-01-24,Inactive,Starter,688.77,a.reyes,
+001Qy00000100445,Northwind Clinical Corp,northwind.com,Healthcare,2024-01-13,Inactive,Enterprise,1284.38,s.okoro,
+001Qy00000101059,Ironwood Atlas Group,ironwood.com,Construction,2026-01-10,Active,Starter,524.98,s.okoro,Organic Search
+001Qy00000100436,Hollowway Lumen Holdings,hollowway.com,Media,2023-12-31,,Starter,267.06,s.okoro,
+001Qy00000101250,Acme Precision Partners,acme.com,Energy,2026-05-08,Inactive,Growth,8435.06,p.lindqvist,direct
+001Qy00000100189,Zenith Atlas Corp,zenith.com,Media,2022-11-05,,Starter,0.00,d.castellanos,
+001Qy00000100240,Eastvale Nimbus Group,eastvale.com,Healthcare,2023-02-12,Churned,Starter,412.77,p.lindqvist,
+001Qy00000100204,García Sistemas Summit,garcia.com,Fintech,2022-12-06,,Growth,481.09,a.reyes,
+001Qy00000101021,Cerulean Summit Labs,cerulean.com,Fintech,2025-10-07,Inactive,Starter,495.39,d.castellanos,Paid Social
+001Qy00000100753,Pemberton Vector Corp,pemberton.com,Fintech,2025-02-03,Active,Growth,3088.51,d.castellanos,Organic Search
+001Qy00000101022,Hollowway Anchor LLC,hollowway.com,Logistics,2025-11-08,Churned,Starter,0.00,j.whitfield,Google Ads
+001Qy00000101269,Dovetail Digital Corp,dovetail.com,Manufacturing,2026-07-20,Active,Enterprise,14867.79,a.reyes,SEO
+001Qy00000101145,Alder Lumen Systems,alder.com,Fintech,2026-02-23,Churned,Starter,145.10,m.tan,Blog
+001Qy00000101300,Eastvale Analytics Group,eastvale.com,Energy,2022-10-08,Active,Growth,3396.81,d.castellanos,
+001Qy00000101106,García Sistemas Clinical,garcia.com,Education,2026-01-13,Active,Growth,3012.93,d.castellanos,Referral
+001Qy00000100802,Muñoz Holdings Onyx,munoz.com,Manufacturing,2025-03-11,Active,Starter,1349.81,j.whitfield,Cold Outreach
+001Qy00000100692,Yarrow Nimbus Group,yarrow.com,Education,2024-09-21,Churned,Growth,0.00,m.tan,Event
+001Qy00000100529,Lakeshore Anchor Inc,lakeshore.com,Education,2024-04-17,Churned,Starter,0.00,d.castellanos,
+001Qy00000100713,Oakfield Summit Systems,oakfield.com,Education,2024-11-11,Active,Growth,1528.44,m.tan,Paid Search
+001Qy00000101169,Pemberton Freight Systems,pemberton.com,Manufacturing,2026-03-08,Active,Starter,1080.36,m.tan,PPC
+001Qy00000100262,Orchard Foundry Inc,orchard.com,Media,2023-04-01,Churned,Starter,630.78,j.whitfield,
+001Qy00000100263,Cranfield Cascade Labs,cranfield.com,Construction,2023-04-03,Active,Starter,816.51,s.okoro,
+001Qy00000100339,Westbrook Digital Group,westbrook.com,Construction,2023-07-25,Churned,Starter,1069.36,j.whitfield,
+001Qy00000100433,Kestrel Keystone Group,kestrel.com,Hospitality,2024-01-08,Active,Starter,630.30,a.reyes,
+001Qy00000101110,Dunmore Analytics Corp,dunmore.com,Construction,2026-01-07,Active,Starter,433.42,a.reyes,SDR
+001Qy00000100370,Glenrock Sable Group,glenrock.com,Retail,2023-10-03,Active,Growth,10181.93,p.lindqvist,
+001Qy00000100289,Marbury Foundry Labs,marbury.com,Hospitality,2023-03-30,Churned,Starter,0.00,j.whitfield,
+001Qy00000101458,Westbrook Vector Group,westbrook.com,Energy,2023-12-14,Churned,Growth,3540.05,s.okoro,
+001Qy00000101372,Pemberton Onyx Group,pemberton.com,Education,2021-05-22,Active,Growth,1575.29,p.lindqvist,
+001Qy00000100839,Marbury Keystone LLC,marbury.com,Hospitality,2025-04-26,Active,Enterprise,13411.95,a.reyes,Referral
+001Qy00000101155,Silverline Supply Partners,silverline.com,Media,2026-03-07,Active,Starter,626.00,a.reyes,paid search
+001Qy00000100949,Acme Clinical Corp,acme.com,Fintech,2025-08-13,Active,Growth,1200.00,a.reyes,Organic Search
+001Qy00000100341,Fairmount Anchor Systems,fairmount.com,Energy,2023-07-10,Churned,Starter,555.90,j.whitfield,
+001Qy00000101403,Acme Cascade Partners,acme.com,Fintech,2020-04-12,,Growth,2950.68,j.whitfield,
+001Qy00000100156,Dovetail Compass Corp,dovetail.com,Education,2022-09-18,Churned,Growth,2552.38,j.whitfield,
+001Qy00000100876,Cerulean Anchor Corp,cerulean.com,Energy,2025-06-02,Churned,Starter,11.67,a.reyes,Partner
+001Qy00000101370,Pinnacle Analytics Labs,pinnacle.com,Hospitality,2022-05-04,Inactive,Starter,860.57,d.castellanos,
+001Qy00000101281,Cerulean Freight Systems,cerulean.com,Education,2026-06-06,,Starter,906.01,d.castellanos,Google Ads
+001Qy00000100470,Pinnacle Atlas Inc,pinnacle.com,Education,2024-01-21,Churned,Enterprise,711.01,s.okoro,
+001Qy00000100079,Larkspur Pioneer LLC,larkspur.com,Manufacturing,2021-02-15,Active,Starter,349.90,j.whitfield,
+001Qy00000101136,Yarrow Analytics Labs,yarrow.com,Construction,2026-02-04,Active,Growth,1466.77,d.castellanos,Word of Mouth
+001Qy00000101340,Cranfield Anchor LLC,cranfield.com,Construction,2019-08-27,Active,Growth,4115.38,d.castellanos,
+001Qy00000101126,Umbra Sterling Group,umbra.com,Energy,2026-02-25,Churned,Growth,2809.44,m.tan,direct
+001Qy00000100194,Yarrow Anchor Partners,yarrow.com,Healthcare,2022-11-23,Active,Starter,643.92,m.tan,
+001Qy00000100522,Quarry Onyx Labs,quarry.com,Hospitality,2024-03-14,Active,Growth,546.78,j.whitfield,
+001Qy00000100239,Ravenswood Compass Group,ravenswood.com,Logistics,2023-02-13,Active,Growth,5339.49,m.tan,
+001Qy00000100591,Pemberton Atlas Group,pemberton.com,Manufacturing,2024-06-13,Inactive,Growth,456.78,d.castellanos,Paid Search
+001Qy00000100909,Fairmount Nimbus Systems,fairmount.com,Retail,2025-08-19,Active,Growth,3429.70,d.castellanos,Tradeshow
+001Qy00000100402,Vásquez Media Freight,vasquez.com,Logistics,2023-10-23,Churned,Starter,1008.23,p.lindqvist,
+001Qy00000100972,Thornbury Coastal Holdings,thornbury.com,Media,2025-09-05,Active,Starter,941.93,d.castellanos,paid search
+001Qy00000101398,Fairmount Compass Systems,fairmount.com,Fintech,2022-06-25,Active,Starter,679.94,s.okoro,
+001Qy00000100008,Oakfield Trading Holdings,oakfield.com,Energy,2022-04-14,Active,Growth,8150.93,d.castellanos,
+001Qy00000101030,Kestrel Supply Inc,kestrel.com,Retail,2025-09-27,Inactive,Starter,955.43,m.tan,LinkedIn Ads
+001Qy00000100615,Inglewood Foundry Holdings,inglewood.com,Education,2024-06-25,Active,Starter,363.41,m.tan,Paid Search
+001Qy00000101383,Pemberton Sterling Inc,pemberton.com,Media,2023-03-03,Inactive,Starter,466.21,j.whitfield,
+001Qy00000101096,Zenith Summit Inc,zenith.com,Energy,2026-02-12,Churned,Growth,0.00,s.okoro,Blog
+001Qy00000100682,Ashcombe Freight Holdings,ashcombe.com,Hospitality,2024-10-20,Active,Growth,1492.40,a.reyes,Event
+001Qy00000100715,Orchard Analytics Inc,orchard.com,Hospitality,2024-11-13,,Starter,760.08,m.tan,Organic Search
+001Qy00000100487,Inglewood Digital Labs,inglewood.com,Retail,2024-01-30,Inactive,Growth,6734.54,s.okoro,
+001Qy00000100653,Yellowfin Clinical Inc,yellowfin.com,Retail,2024-09-24,Active,Growth,1496.13,p.lindqvist,Tradeshow
+001Qy00000100837,Westbrook Clinical Systems,westbrook.com,Construction,2025-05-17,Inactive,Starter,928.87,s.okoro,direct
+001Qy00000100995,Quarry Supply Corp,quarry.com,Hospitality,2025-09-25,Active,Growth,4970.60,a.reyes,paid search
+001Qy00000100932,Kestrel Cascade Inc,kestrel.com,Hospitality,2025-07-30,Active,Starter,717.44,d.castellanos,
+001Qy00000101152,Larkspur Cascade Systems,larkspur.com,Logistics,2026-01-28,Active,Starter,447.74,a.reyes,Word of Mouth
+001Qy00000100051,Northwind Digital Partners,northwind.com,Manufacturing,2020-05-27,Active,Starter,2017.37,m.tan,
+001Qy00000101381,Harborview Cascade LLC,harborview.com,Construction,2024-02-11,Inactive,Growth,3251.07,d.castellanos,
+001Qy00000101433,Vantage Freight Holdings,vantage.com,Fintech,2023-08-03,Inactive,Starter,515.05,p.lindqvist,
+001Qy00000100958,Eastvale Sterling Holdings,eastvale.com,Logistics,2025-09-20,Active,Starter,584.30,p.lindqvist,LinkedIn
+001Qy00000100109,Brightwater Pioneer Inc,brightwater.com,Logistics,2020-09-07,Churned,Enterprise,10989.50,d.castellanos,
+001Qy00000100087,Glenrock Precision Partners,glenrock.com,Hospitality,2021-12-20,Active,Starter,899.21,j.whitfield,
+001Qy00000101248,Harborview Lumen Labs,harborview.com,Retail,2026-04-30,Active,Growth,2273.55,p.lindqvist,SDR
+001Qy00000101254,Thornbury Foundry Partners,thornbury.com,Media,2026-04-28,Active,Starter,884.27,j.whitfield,Direct
+001Qy00000101261,Ravenswood Atlas Inc,ravenswood.com,Education,2026-04-22,Active,Starter,265.76,d.castellanos,
+001Qy00000100362,Quillfeather Nimbus Inc,quillfeather.com,Fintech,2023-09-13,Active,Enterprise,6000.00,j.whitfield,
+001Qy00000101349,Larkspur Sterling Systems,larkspur.com,Construction,2022-12-01,Active,Growth,6866.56,d.castellanos,
+001Qy00000100519,Westbrook Pioneer Holdings,westbrook.com,Media,2024-02-24,Active,Starter,615.15,p.lindqvist,
+001Qy00000100440,Dunmore Trading Holdings,dunmore.com,Hospitality,2023-12-29,Churned,Starter,965.12,m.tan,
+001Qy00000100663,Westbrook Foundry Labs,westbrook.com,Construction,2024-09-08,Active,Growth,1490.83,a.reyes,Word of Mouth
+001Qy00000100260,Silverline Freight LLC,silverline.com,Media,2023-04-04,Churned,Starter,778.40,d.castellanos,
+001Qy00000100371,Pemberton Anchor Labs,pemberton.com,Media,2023-09-23,Active,Growth,5130.24,d.castellanos,
+001Qy00000101366,Blackthorn Freight Labs,blackthorn.com,Fintech,2020-07-30,Active,Starter,1076.70,m.tan,
+001Qy00000101002,Núñez Capital Freight,nunez.com,Manufacturing,2025-10-30,Churned,Starter,382.46,m.tan,Word of Mouth
+001Qy00000100871,Meridian Trading Inc,meridian.com,Hospitality,2025-06-09,Active,Starter,392.06,d.castellanos,Paid Search
+001Qy00000100913,Whitmore Atlas Inc,whitmore.com,Construction,2025-06-29,Active,Starter,250.00,a.reyes,PPC
+001Qy00000100444,Harborview Anchor Group,harborview.com,Retail,2023-12-07,Churned,Starter,793.19,p.lindqvist,
+001Qy00000100564,Nightingale Sable Partners,nightingale.com,Education,2024-05-22,Active,Starter,883.46,j.whitfield,
+001Qy00000100665,Ashcombe Quantum Inc,ashcombe.com,Education,2024-10-25,Active,Starter,610.20,j.whitfield,Blog
+001Qy00000100708,Pemberton Sterling Partners,pemberton.com,Construction,2024-12-02,Active,Starter,698.31,s.okoro,SEO
+001Qy00000100428,Hollowway Beacon Systems,hollowway.com,Manufacturing,2023-11-24,Active,Growth,4494.13,s.okoro,
+001Qy00000100669,Verdigris Beacon Labs,verdigris.com,Healthcare,2024-09-15,Inactive,Starter,635.56,s.okoro,LinkedIn
+001Qy00000100592,Tanglewood Anchor LLC,tanglewood.com,Fintech,2024-06-18,Active,Growth,2091.31,p.lindqvist,
+001Qy00000100763,Blackthorn Keystone Systems,blackthorn.com,Manufacturing,2025-02-15,Active,Starter,1047.10,m.tan,direct
+001Qy00000100035,Ashcombe Foundry Labs,ashcombe.com,Fintech,2019-05-12,,Starter,170.69,m.tan,
+001Qy00000100327,Thornbury Lumen Systems,thornbury.com,Energy,2023-06-04,Churned,Growth,0.00,d.castellanos,
+001Qy00000101115,Pemberton Analytics Holdings,pemberton.com,Manufacturing,2026-01-20,Churned,Starter,0.00,s.okoro,Google Ads
+001Qy00000100611,Juniper Clinical Partners,juniper.com,Hospitality,2024-07-07,Churned,Starter,250.00,m.tan,social
+001Qy00000101437,Redstone Keystone Labs,redstone.com,Construction,2022-08-13,Active,Starter,520.09,m.tan,
+001Qy00000101393,Dunmore Sterling Labs,dunmore.com,Manufacturing,2023-08-27,Churned,Starter,0.00,d.castellanos,
+001Qy00000100959,Quarry Analytics Group,quarry.com,Fintech,2025-08-21,Active,Enterprise,25188.85,p.lindqvist,
+001Qy00000100027,Inglewood Sable Labs,inglewood.com,Hospitality,2021-10-23,Active,Growth,3803.54,j.whitfield,
+001Qy00000100513,Inglewood Digital Systems,inglewood.com,Retail,2024-03-11,Active,Starter,651.83,p.lindqvist,
+001Qy00000100212,Quillfeather Freight Inc,quillfeather.com,Energy,2022-12-29,Churned,Starter,1043.93,m.tan,
+001Qy00000100244,Larkspur Nimbus Labs,larkspur.com,Hospitality,2023-02-05,Churned,Growth,2253.53,d.castellanos,
+001Qy00000100068,Pinnacle Keystone LLC,pinnacle.com,Manufacturing,2017-06-17,Active,Growth,6779.81,m.tan,
+001Qy00000101421,Dovetail Nimbus Group,dovetail.com,Hospitality,2021-05-12,Active,Starter,732.90,a.reyes,
+001Qy00000100675,Glenrock Anchor Systems,glenrock.com,Manufacturing,2024-10-02,Active,Starter,536.30,s.okoro,paid search
+001Qy00000100541,Quillfeather Summit LLC,quillfeather.com,Energy,2024-05-17,,Starter,859.87,d.castellanos,
+001Qy00000100536,Tanglewood Anchor Group,tanglewood.com,Healthcare,2024-04-05,Churned,Starter,581.00,a.reyes,
+001Qy00000101237,Ravenswood Sable Corp,ravenswood.com,Media,2026-05-03,,Starter,741.24,m.tan,LinkedIn Ads
+001Qy00000100838,Harborview Digital Labs,harborview.com,Education,2025-04-04,Active,Enterprise,8160.65,j.whitfield,Outbound
+001Qy00000100947,Eastvale Sterling Labs,eastvale.com,Hospitality,2025-07-22,Churned,Growth,0.00,s.okoro,Organic Search
+001Qy00000100735,Meridian Pioneer Labs,meridian.com,Education,2025-01-03,Inactive,Starter,326.36,p.lindqvist,SEO
+001Qy00000100420,Whitmore Quantum Inc,whitmore.com,Education,2023-11-06,Active,Starter,1230.35,p.lindqvist,
+001Qy00000100275,Underhill (DBA),underhill.com,Media,2023-03-27,Churned,Growth,33.54,d.castellanos,
+001Qy00000100970,Eastvale Analytics Systems,eastvale.com,Fintech,2025-09-20,Churned,Starter,1229.16,j.whitfield,Blog
+001Qy00000100427,Whitmore Foundry Partners,whitmore.com,Manufacturing,2023-11-27,Active,Starter,592.30,a.reyes,
+001Qy00000101069,Glenrock Supply Holdings,glenrock.com,Manufacturing,2026-01-07,Active,Starter,534.36,s.okoro,Referral
+001Qy00000101011,Underhill Freight LLC,underhill.com,Logistics,2025-11-09,Active,Growth,1964.98,s.okoro,Referral
+001Qy00000100967,Inglewood Nimbus Inc,inglewood.com,Education,2025-09-02,Active,Growth,3891.52,p.lindqvist,PPC
+001Qy00000100044,Zenith Coastal Corp,zenith.com,Energy,2017-05-15,,Starter,720.49,s.okoro,
+001Qy00000101293,Stonebridge Pioneer Inc,stonebridge.com,Media,2026-07-15,Active,Growth,2255.03,a.reyes,Conference
+001Qy00000100158,Larkspur Freight Holdings,larkspur.com,Education,2022-09-07,Inactive,Enterprise,39948.25,j.whitfield,
+001Qy00000101070,Quillfeather Anchor Systems,quillfeather.com,Construction,2026-01-21,,Starter,953.53,a.reyes,paid search
+001Qy00000100622,Stonebridge Beacon Partners,stonebridge.com,Media,2024-07-07,Inactive,Growth,2189.77,s.okoro,Partner Referral
+001Qy00000101431,Orchard Supply Holdings,orchard.com,Manufacturing,2021-03-30,Active,Growth,2992.52,p.lindqvist,
+001Qy00000100415,Cerulean Clinical Partners,cerulean.com,Education,2023-09-27,Active,Starter,607.85,a.reyes,
+001Qy00000100307,Underhill Vector Partners,underhill.com,Energy,2023-06-13,Churned,Growth,3486.22,s.okoro,
+001Qy00000100039,Tanglewood Freight Inc,tanglewood.com,Education,2020-12-26,Active,Starter,1110.63,d.castellanos,
+001Qy00000101412,Vásquez Media Quantum,vasquez.com,Energy,2022-05-26,Active,Growth,1487.08,d.castellanos,
+001Qy00000100092,Pinnacle Digital Group,pinnacle.com,Healthcare,2019-07-10,Churned,Enterprise,0.00,j.whitfield,
+001Qy00000100604,Umbra Anchor Partners,umbra.com,Education,2024-08-12,Active,Starter,305.55,j.whitfield,Blog
+001Qy00000100180,Brightwater Onyx Group,brightwater.com,Construction,2022-10-07,Active,Growth,2313.35,d.castellanos,
+001Qy00000100530,Ironwood Sable Corp,ironwood.com,Healthcare,2024-04-15,Active,Starter,1016.66,d.castellanos,
+001Qy00000100447,Acme Anchor Labs,acme.com,Energy,2023-12-06,Inactive,Starter,247.83,s.okoro,
+001Qy00000100608,Dunmore Digital Inc,dunmore.com,Media,2024-07-21,Active,Starter,691.38,m.tan,Word of Mouth
+001Qy00000100950,Glenrock Cascade Holdings,glenrock.com,Fintech,2025-08-02,Active,Starter,508.13,a.reyes,SEO
+001Qy00000101211,Núñez Capital Digital,nunez.com,Media,2026-04-11,Active,Starter,469.20,a.reyes,paid search
+001Qy00000100247,Fairmount Precision LLC,fairmount.com,Healthcare,2023-04-26,Active,Starter,627.94,p.lindqvist,
+001Qy00000100873,Dovetail Cascade Holdings,dovetail.com,Media,2025-06-27,Active,Starter,610.84,p.lindqvist,Paid Social
+001Qy00000101251,Fairmount Atlas Inc,fairmount.com,Hospitality,2026-06-07,Active,Starter,380.91,d.castellanos,paid search
+001Qy00000101101,Guimarães Log Onyx,guimaraes.com,Construction,2026-02-15,Churned,Starter,0.00,a.reyes,PPC
+001Qy00000101159,Kestrel Anchor Labs,kestrel.com,Fintech,2026-03-05,Active,Starter,653.58,j.whitfield,
+001Qy00000101238,Blackthorn Trading LLC,blackthorn.com,Retail,2026-06-02,Active,Starter,1139.72,p.lindqvist,
+001Qy00000100831,Dovetail Compass Labs,dovetail.com,Logistics,2025-02-25,Active,Starter,876.25,p.lindqvist,PPC
+001Qy00000100143,Cranfield Clinical Holdings,cranfield.com,Fintech,2022-10-02,Inactive,Starter,0.00,s.okoro,
+001Qy00000100409,Alder Vector LLC,alder.com,Logistics,2023-11-24,Churned,Starter,780.50,j.whitfield,
+001Qy00000101391,Inglewood Summit Group,inglewood.com,Manufacturing,2023-12-06,Churned,Starter,412.30,d.castellanos,
+001Qy00000101234,Nightingale Anchor Labs,nightingale.com,Healthcare,2026-04-11,Active,Starter,870.74,m.tan,Organic Search
+001Qy00000101265,Umbra Summit Systems,umbra.com,Fintech,2026-06-08,Active,Starter,510.56,d.castellanos,Paid Social
+001Qy00000100033,Oakfield Digital Corp,oakfield.com,Media,2019-12-18,Churned,Growth,0.00,a.reyes,
+001Qy00000101034,Dovetail Sterling LLC,dovetail.com,Construction,2025-11-09,Active,Enterprise,6000.00,j.whitfield,
+001Qy00000100737,Redstone Pioneer Group,redstone.com,Manufacturing,2024-12-28,Active,Enterprise,16222.02,p.lindqvist,Organic Search
+001Qy00000101140,Hollowway Sable Systems,hollowway.com,Retail,2026-02-28,Active,Starter,578.92,m.tan,SEO
+001Qy00000100834,Eastvale Cascade Group,eastvale.com,Healthcare,2025-04-21,Active,Starter,697.21,a.reyes,Word of Mouth
+001Qy00000100988,Cranfield Foundry LLC,cranfield.com,Logistics,2025-09-26,Active,Growth,2322.41,m.tan,Google Ads
+001Qy00000101373,Alder Beacon Holdings,alder.com,Fintech,2023-02-11,Active,Enterprise,14143.80,j.whitfield,
+001Qy00000100808,Quillfeather Coastal Holdings,quillfeather.com,Fintech,2025-01-18,Churned,Starter,54.21,m.tan,SEO
+001Qy00000100290,Marbury Keystone Corp,marbury.com,Energy,2023-04-28,Active,Starter,821.34,p.lindqvist,
+001Qy00000100397,López y Asociados Anchor,lopez.com,Retail,2023-10-21,Active,Growth,3504.27,m.tan,
+001Qy00000100582,Verdigris Sable Inc,verdigris.com,Manufacturing,2024-05-20,Active,Growth,4678.64,a.reyes,paid search
+001Qy00000100903,São Bento Vector,sao.com,Retail,2025-08-16,Active,Starter,314.33,s.okoro,Blog
+001Qy00000100768,Alder Sterling Labs,alder.com,Hospitality,2025-01-31,,Enterprise,13948.92,s.okoro,Tradeshow
+001Qy00000101354,Dunmore Cascade Partners,dunmore.com,Media,2020-11-06,Inactive,Starter,648.69,a.reyes,
+001Qy00000101210,São Bento Precision,sao.com,Fintech,2026-04-25,Active,Starter,853.36,j.whitfield,Paid Search
+001Qy00000100138,Zenith Freight Group,zenith.com,Fintech,2017-12-06,,Starter,600.83,d.castellanos,
+001Qy00000100139,Tanglewood Compass Group,tanglewood.com,Energy,2022-09-19,Active,Growth,2508.15,m.tan,
+001Qy00000100434,Fairmount Onyx LLC,fairmount.com,Healthcare,2023-12-31,Active,Starter,1143.78,m.tan,
+001Qy00000101004,Hernández Retail Pioneer,hernandez.com,Construction,2025-10-04,Churned,Growth,1708.15,d.castellanos,
+001Qy00000101044,Copperfield Clinical Group,copperfield.com,Logistics,2025-11-17,Active,Enterprise,1033.85,m.tan,Blog
+001Qy00000100020,Inglewood Compass Corp,inglewood.com,Media,2022-02-09,Active,Starter,382.97,m.tan,
+001Qy00000101316,Meridian Sterling Labs,meridian.com,Education,2020-03-18,Active,Growth,2363.40,s.okoro,
+001Qy00000101331,Acme Lumen Holdings,acme.com,Logistics,2021-01-29,Active,Growth,4692.35,p.lindqvist,
+001Qy00000100626,Harborview Supply Group,harborview.com,Hospitality,2024-07-21,Active,Starter,458.17,d.castellanos,direct
+001Qy00000101268,Cranfield Freight Systems,cranfield.com,Education,2026-07-24,Active,Enterprise,27124.52,j.whitfield,Outbound
+001Qy00000101333,Harborview Beacon Partners,harborview.com,Retail,2020-09-29,Active,Starter,552.89,d.castellanos,
+001Qy00000100203,Muñoz Holdings Supply,munoz.com,Energy,2022-12-24,Active,Growth,7482.49,d.castellanos,
+001Qy00000101000,López y Asociados Beacon II,lopez.com,Logistics,2025-09-10,Inactive,Starter,145.60,d.castellanos,Paid Search
+001Qy00000100817,Dovetail Summit Holdings,dovetail.com,Hospitality,2025-04-16,Active,Starter,1017.83,d.castellanos,Direct
+001Qy00000101094,Eastvale Beacon Group,eastvale.com,Fintech,2026-01-14,Active,Starter,608.27,j.whitfield,direct
+001Qy00000100024,Kestrel Summit Partners,kestrel.com,Logistics,2020-12-18,Active,Growth,4827.49,m.tan,
+001Qy00000101153,Verdigris Onyx Holdings,verdigris.com,Media,2026-01-30,Churned,Starter,0.00,d.castellanos,Google Ads
+001Qy00000100276,Dovetail Quantum Partners,dovetail.com,Construction,2023-04-20,Active,Starter,419.91,j.whitfield,
+001Qy00000100760,Copperfield Trading Holdings,copperfield.com,Manufacturing,2025-01-29,Churned,Starter,782.26,p.lindqvist,direct
+001Qy00000100938,Quillfeather Beacon Partners,quillfeather.com,Retail,2025-08-22,Active,Starter,297.31,p.lindqvist,LinkedIn
+001Qy00000100552,Brightwater Digital Systems,brightwater.com,Retail,2024-04-16,Churned,Growth,2291.55,a.reyes,
+001Qy00000101426,Acme Sterling Corp,acme.com,Hospitality,2022-08-16,Churned,Enterprise,180.17,p.lindqvist,
+001Qy00000101119,Harborview Beacon Systems,harborview.com,Construction,2026-01-02,Active,Starter,896.77,s.okoro,LinkedIn
+001Qy00000101025,Hollowway Foundry Inc,hollowway.com,Media,2025-11-07,Active,Growth,3207.23,a.reyes,direct
+001Qy00000101263,Tanglewood Anchor Inc,tanglewood.com,Healthcare,2026-05-20,Active,Starter,573.33,a.reyes,Word of Mouth
+001Qy00000100299,Muñoz Holdings Precision II,munoz.com,Manufacturing,2023-05-01,,Growth,2157.03,d.castellanos,
+001Qy00000100639,Quarry Coastal Holdings,quarry.com,Energy,2024-08-17,Active,Starter,661.92,s.okoro,PPC
+001Qy00000101079,Vantage Summit Labs,vantage.com,Retail,2026-01-05,Active,Starter,691.36,d.castellanos,Google Ads
+001Qy00000100770,Ashcombe Analytics LLC,ashcombe.com,Manufacturing,2025-01-26,Active,Starter,521.29,j.whitfield,
+001Qy00000100031,Oakfield Foundry Systems,oakfield.com,Construction,2018-09-28,Active,Starter,807.88,p.lindqvist,
+001Qy00000101142,Oakfield Compass Labs,oakfield.com,Energy,2026-02-19,Active,Enterprise,135000.00,d.castellanos,Partner
+001Qy00000100359,Yellowfin Compass Group,yellowfin.com,Fintech,2023-08-04,Churned,Starter,323.87,j.whitfield,
+001Qy00000101356,Pinnacle Nimbus Holdings,pinnacle.com,Manufacturing,2021-03-24,Active,Starter,623.88,m.tan,
+001Qy00000100660,Redstone Sable Labs,redstone.com,Education,2024-09-09,Active,Growth,2900.31,s.okoro,Organic Search
+001Qy00000100558,Pemberton Coastal Systems,pemberton.com,Construction,2024-04-04,Active,Starter,500.50,d.castellanos,
+001Qy00000101425,Acme Sterling Corp,acme.com,Hospitality,2022-08-21,Churned,Starter,0.00,p.lindqvist,
+001Qy00000101378,Umbra Atlas Holdings,umbra.com,Construction,2023-05-23,Active,Starter,526.59,s.okoro,
+001Qy00000101329,Copperfield Foundry Holdings,copperfield.com,Manufacturing,2021-07-16,Active,Growth,2102.38,j.whitfield,
+001Qy00000101148,Nightingale Supply Corp,nightingale.com,Healthcare,2026-03-16,Active,Starter,698.77,d.castellanos,
+001Qy00000101380,Larkspur Analytics Holdings,larkspur.com,Construction,2024-01-10,Active,Starter,311.16,p.lindqvist,
+001Qy00000100432,Oakfield Atlas Systems,oakfield.com,Retail,2023-12-29,,Starter,740.56,d.castellanos,
+001Qy00000101058,Lakeshore Anchor Holdings,lakeshore.com,Fintech,2025-11-21,Active,Growth,1503.14,s.okoro,Outbound
+001Qy00000100656,Glenrock Digital Inc,glenrock.com,Energy,2024-08-30,Active,Starter,852.03,p.lindqvist,LinkedIn
+001Qy00000100540,Yellowfin Foundry LLC,yellowfin.com,Construction,2024-04-07,Churned,Starter,460.07,a.reyes,
+001Qy00000100986,Yellowfin Coastal LLC,yellowfin.com,Media,2025-10-14,Active,Starter,573.82,p.lindqvist,Paid Search
+001Qy00000101270,Whitmore Atlas Corp,whitmore.com,Hospitality,2026-06-18,Active,Starter,902.96,a.reyes,PPC
+001Qy00000100243,Tanglewood Nimbus Systems,tanglewood.com,Fintech,2023-03-05,Churned,Growth,0.00,j.whitfield,
+001Qy00000101406,Umbra Lumen Holdings,umbra.com,Fintech,2021-04-08,Active,Growth,1469.91,s.okoro,
+001Qy00000101317,Cranfield Precision Inc,cranfield.com,Hospitality,2020-10-12,,Starter,1176.51,p.lindqvist,
+001Qy00000100120,Dunmore Lumen Holdings,dunmore.com,Energy,2021-11-10,Churned,Starter,535.38,a.reyes,
+001Qy00000100288,Brightwater Vector Group,brightwater.com,Manufacturing,2023-04-26,Churned,Growth,0.00,d.castellanos,
+001Qy00000100435,Inglewood Sable Inc,inglewood.com,Hospitality,2023-11-28,Inactive,Growth,5232.80,d.castellanos,
+001Qy00000100738,Quillfeather Sterling Labs,quillfeather.com,Manufacturing,2025-01-16,Active,Growth,1840.96,m.tan,Organic Search
+001Qy00000101368,Ashcombe Sterling Corp,ashcombe.com,Retail,2024-01-31,Inactive,Starter,353.00,m.tan,
+001Qy00000101390,Cerulean Compass Partners,cerulean.com,Fintech,2022-11-09,Churned,Starter,638.54,p.lindqvist,
+001Qy00000100118,Oakfield Compass LLC,oakfield.com,Construction,2021-01-17,Churned,Starter,0.00,s.okoro,
+001Qy00000100054,Hollowway Onyx Systems,hollowway.com,Construction,2017-08-07,Active,Growth,13500.00,d.castellanos,
+001Qy00000101220,Quillfeather Analytics Labs,quillfeather.com,Logistics,2026-04-08,Active,Starter,1208.66,j.whitfield,Word of Mouth
+001Qy00000101343,Northgate Quantum Labs,northgate.com,Healthcare,2022-04-29,Churned,Growth,0.00,p.lindqvist,
+001Qy00000101339,Pemberton Clinical LLC,pemberton.com,Retail,2022-01-26,Active,Enterprise,61139.91,p.lindqvist,
+001Qy00000100175,Pemberton Atlas Inc,pemberton.com,Education,2022-11-08,Churned,Starter,281.25,d.castellanos,
+001Qy00000100630,Dunmore Coastal LLC,dunmore.com,Fintech,2024-09-07,Active,Enterprise,26083.83,s.okoro,Tradeshow
+001Qy00000100322,Marbury Beacon Labs,marbury.com,Manufacturing,2023-06-08,Churned,Starter,0.00,m.tan,
+001Qy00000100064,Redstone Pioneer Systems,redstone.com,Fintech,2021-05-05,Active,Growth,2536.02,m.tan,
+001Qy00000100545,Pinnacle Foundry LLC,pinnacle.com,Healthcare,2024-04-19,Active,Enterprise,7524.98,s.okoro,
+001Qy00000100192,Stonebridge Digital Inc,stonebridge.com,Retail,2022-11-16,Inactive,Growth,5620.95,a.reyes,
+001Qy00000100422,Fairmount Coastal Labs,fairmount.com,Manufacturing,2023-11-15,Active,Growth,1830.48,p.lindqvist,
+001Qy00000100616,Northwind Analytics Inc,northwind.com,Healthcare,2024-08-01,,Starter,412.39,m.tan,Paid Search
+001Qy00000100312,Cranfield Pioneer Systems,cranfield.com,Hospitality,2023-05-20,Churned,Starter,22153.80,a.reyes,
+001Qy00000100900,García Sistemas Coastal,garcia.com,Logistics,2025-06-15,Churned,Growth,3536.21,s.okoro,Conference
+001Qy00000100191,Stonebridge Onyx Systems,stonebridge.com,Education,2022-11-30,Inactive,Growth,884.14,a.reyes,
+001Qy00000100388,Umbra Analytics Systems,umbra.com,Construction,2023-10-05,Churned,Growth,1200.00,d.castellanos,
+001Qy00000100451,Umbra Summit Partners,umbra.com,Hospitality,2023-12-22,,Growth,1263.63,d.castellanos,
+001Qy00000100490,Pinnacle Coastal LLC,pinnacle.com,Energy,2024-02-22,,Starter,805.15,j.whitfield,
+001Qy00000101226,Oakfield Nimbus Holdings,oakfield.com,Fintech,2026-04-18,Active,Starter,695.85,p.lindqvist,paid search
+001Qy00000100693,Underhill Lumen Group,underhill.com,Construction,2024-10-23,Active,Starter,791.56,d.castellanos,Direct
+001Qy00000101335,Lakeshore Coastal Corp,lakeshore.com,Education,2019-12-31,Churned,Starter,603.73,s.okoro,
+001Qy00000100511,Inglewood Compass Group,inglewood.com,Energy,2024-03-06,Active,Starter,460.05,m.tan,
+001Qy00000100237,Northwind Keystone Systems,northwind.com,Retail,2023-02-26,Active,Starter,592.06,a.reyes,
+001Qy00000101456,Meridian Analytics LLC,meridian.com,Media,2020-11-25,Active,Growth,1994.04,d.castellanos,
+001Qy00000100253,Tanglewood Atlas Systems,tanglewood.com,Education,2023-03-28,Churned,Growth,0.00,j.whitfield,
+001Qy00000101371,Northgate Compass LLC,northgate.com,Fintech,2022-11-13,Active,Growth,1147.86,j.whitfield,
+001Qy00000101187,Oakfield Atlas Group,oakfield.com,Manufacturing,2026-03-15,Churned,Starter,0.00,p.lindqvist,Paid Social
+001Qy00000100019,Verdigris Anchor Inc,verdigris.com,Healthcare,2022-03-06,Churned,Starter,857.39,m.tan,
+001Qy00000100835,Kestrel Compass Inc,kestrel.com,Manufacturing,2025-03-20,Active,Starter,540.69,d.castellanos,Direct
+001Qy00000101411,Hernández Retail Nimbus,hernandez.com,Construction,2023-06-04,Churned,Starter,0.00,a.reyes,
+001Qy00000100395,Yarrow Foundry LLC,yarrow.com,Healthcare,2023-10-11,Churned,Growth,0.00,s.okoro,
+001Qy00000101122,Verdigris Foundry Systems,verdigris.com,Manufacturing,2025-12-27,Inactive,Growth,778.79,s.okoro,Referral
+001Qy00000100680,Underhill Digital LLC,underhill.com,Logistics,2024-10-14,Active,Starter,568.44,s.okoro,Tradeshow
+001Qy00000100853,Umbra Summit Inc,umbra.com,Media,2025-05-02,Active,Starter,289.27,d.castellanos,Paid Search
+001Qy00000100543,Juniper Analytics Systems,juniper.com,Logistics,2024-04-23,Active,Starter,905.17,d.castellanos,
+001Qy00000101275,Juniper Atlas Corp,juniper.com,Hospitality,2026-06-20,Inactive,Growth,1778.74,p.lindqvist,Google Ads
+001Qy00000100148,Nightingale Vector LLC,nightingale.com,Healthcare,2022-09-20,Inactive,Growth,3632.64,d.castellanos,
+001Qy00000100169,Verdigris Pioneer Holdings,verdigris.com,Energy,2022-10-06,Active,Enterprise,122241.23,d.castellanos,
+001Qy00000101285,Northgate Sterling LLC,northgate.com,Healthcare,2026-06-30,Active,Starter,438.21,s.okoro,Paid Search
+001Qy00000100777,Quarry Coastal Systems,quarry.com,Retail,2025-01-23,Active,Growth,2459.65,m.tan,SDR
+001Qy00000101454,Quarry Pioneer Inc,quarry.com,Education,2020-11-20,Churned,Starter,0.00,d.castellanos,
+001Qy00000100525,Nightingale Summit Group,nightingale.com,Education,2024-03-28,Churned,Starter,0.00,j.whitfield,
+001Qy00000100006,Núñez Capital Coastal,nunez.com,Healthcare,2017-10-20,Active,Growth,2998.00,d.castellanos,
+001Qy00000100065,Tanglewood Cascade Inc,tanglewood.com,Hospitality,2022-06-28,Active,Enterprise,5635.42,s.okoro,
+001Qy00000101193,Northwind Onyx Holdings,northwind.com,Construction,2026-03-11,Active,Growth,1518.07,j.whitfield,Referral
+001Qy00000100238,Copperfield Lumen Labs,copperfield.com,Fintech,2023-02-10,,Starter,482.17,s.okoro,
+001Qy00000100302,López y Asociados Precision,lopez.com,Media,2023-06-13,Inactive,Growth,0.00,s.okoro,
+001Qy00000100674,Yarrow Quantum Partners,yarrow.com,Manufacturing,2024-09-15,Active,Enterprise,6000.00,s.okoro,Tradeshow
+001Qy00000100532,Ironwood Compass,ironwood.com,Retail,2024-03-25,Inactive,Starter,53.14,d.castellanos,
+001Qy00000100246,Eastvale Lumen Labs,eastvale.com,Education,2023-04-12,Inactive,Enterprise,7215.89,m.tan,
+001Qy00000100078,Cranfield Summit Partners,cranfield.com,Construction,2017-02-01,Active,Starter,748.03,s.okoro,
+001Qy00000101277,Westbrook Sable Systems,westbrook.com,Healthcare,2026-06-11,Active,Growth,2561.04,d.castellanos,Event
+001Qy00000100084,Umbra Coastal Holdings,umbra.com,Manufacturing,2017-01-17,Active,Starter,502.01,j.whitfield,
+001Qy00000100855,Glenrock Precision Group,glenrock.com,Healthcare,2025-04-08,Active,Starter,627.16,s.okoro,PPC
+001Qy00000100059,Northgate Freight Partners,northgate.com,Fintech,2021-12-27,Active,Growth,4203.85,p.lindqvist,
+001Qy00000101036,Hollowway Lumen Systems,hollowway.com,Healthcare,2025-10-29,Active,Starter,508.70,m.tan,PPC
+001Qy00000100976,Westbrook Coastal Partners,westbrook.com,Hospitality,2025-09-03,Active,Starter,557.56,a.reyes,
+001Qy00000100179,Pinnacle Sable Holdings,pinnacle.com,Media,2022-10-11,Active,Starter,985.57,m.tan,
+001Qy00000101242,Silverline Quantum LLC,silverline.com,Construction,2026-05-12,Active,Growth,1981.66,s.okoro,Tradeshow
+001Qy00000100141,Whitmore Foundry Corp,whitmore.com,Logistics,2022-10-02,Active,Starter,654.98,j.whitfield,
+001Qy00000100969,Brightwater Clinical Systems,brightwater.com,Retail,2025-09-13,Churned,Starter,338.04,p.lindqvist,Outbound
+001Qy00000100866,Kestrel Clinical Inc,kestrel.com,Energy,2025-05-25,Active,Growth,1582.08,a.reyes,
+001Qy00000100712,Juniper Summit Group,juniper.com,Construction,2024-11-28,Active,Starter,481.15,m.tan,paid search
+001Qy00000100807,Quillfeather Coastal Holdings,quillfeather.com,Fintech,2025-03-02,Active,Starter,405.76,m.tan,SEO
+001Qy00000100659,Copperfield Pioneer Partners,copperfield.com,Retail,2024-09-29,Inactive,Growth,2554.05,s.okoro,
+001Qy00000100145,Verdigris Coastal Corp,verdigris.com,Energy,2022-10-16,Churned,Growth,773.21,s.okoro,
+001Qy00000100285,Acme Precision LLC,acme.com,Education,2023-04-18,Active,Enterprise,20048.97,d.castellanos,
+001Qy00000100502,Ashcombe Foundry Corp,ashcombe.com,Logistics,2024-03-08,Active,Enterprise,9626.42,j.whitfield,
+001Qy00000100278,Pinnacle Summit Labs,pinnacle.com,Education,2023-04-03,Inactive,Growth,1908.87,j.whitfield,
+001Qy00000100294,Inglewood Coastal Corp,inglewood.com,Construction,2023-05-06,Churned,Growth,0.00,d.castellanos,
+001Qy00000101205,Grupo Peña Foundry,grupo.com,Education,2026-04-09,Active,Starter,520.02,a.reyes,Organic Search
+001Qy00000101218,Nightingale Anchor LLC,nightingale.com,Media,2026-04-17,Active,Starter,341.85,m.tan,LinkedIn Ads
+001Qy00000100025,Brightwater Sterling Inc,brightwater.com,Hospitality,2016-12-31,Active,Enterprise,582.51,j.whitfield,
+001Qy00000100310,Inglewood Lumen Partners,inglewood.com,Education,2023-06-06,Active,Growth,5235.98,m.tan,
+001Qy00000101054,Dunmore Keystone Group,dunmore.com,Fintech,2025-12-19,Inactive,Growth,1925.87,j.whitfield,Conference
+001Qy00000100372,Dunmore Clinical Labs,dunmore.com,Education,2023-10-16,Active,Enterprise,19883.82,m.tan,
+001Qy00000100170,Inglewood Nimbus LLC,inglewood.com,Education,2022-11-02,,Enterprise,27160.86,d.castellanos,
+001Qy00000100550,Dovetail Precision Systems,dovetail.com,Manufacturing,2024-05-02,Inactive,Growth,3884.10,p.lindqvist,
+001Qy00000100962,Ravenswood Beacon Corp,ravenswood.com,Retail,2025-10-12,Active,Growth,1200.00,s.okoro,Tradeshow
+001Qy00000101448,Brightwater Precision Labs,brightwater.com,Construction,2023-10-02,,Starter,848.79,p.lindqvist,
+001Qy00000101459,Thornbury Precision Inc,thornbury.com,Logistics,2021-05-09,Active,Starter,685.17,d.castellanos,
+001Qy00000101223,Westbrook Summit Group,westbrook.com,Energy,2026-03-27,Active,Growth,1291.70,p.lindqvist,Google Ads
+001Qy00000101389,Hollowway Compass Partners,hollowway.com,Education,2020-05-05,Active,Growth,3313.51,p.lindqvist,
+001Qy00000100349,Tanglewood Onyx LLC,tanglewood.com,Hospitality,2023-08-07,,Starter,543.61,p.lindqvist,
+001Qy00000101135,Juniper Nimbus Corp,juniper.com,Retail,2026-02-13,Active,Starter,687.41,p.lindqvist,Partner Referral
+001Qy00000101209,López y Asociados Sable,lopez.com,Fintech,2026-04-18,Active,Starter,437.50,a.reyes,SEO
+001Qy00000100472,Underhill Atlas Corp,underhill.com,Retail,2024-02-14,Active,Starter,301.55,d.castellanos,
+001Qy00000100154,Brightwater Quantum Labs,brightwater.com,Manufacturing,2022-09-24,Active,Starter,545.50,s.okoro,
+001Qy00000100894,Zenith Digital LLC,zenith.com,Hospitality,2025-06-16,Churned,Starter,572.18,a.reyes,social
+001Qy00000100222,Underhill Compass Corp,underhill.com,Education,2023-02-12,,Growth,2143.79,p.lindqvist,
+001Qy00000100202,Grupo Peña Lumen,grupo.com,Fintech,2022-12-04,Active,Starter,822.54,m.tan,
+001Qy00000100287,Lakeshore Quantum Labs,lakeshore.com,Media,2023-04-24,Active,Growth,13500.00,j.whitfield,
+001Qy00000101143,Larkspur Pioneer Labs,larkspur.com,Energy,2026-01-29,Active,Starter,749.77,s.okoro,Blog
+001Qy00000101342,Copperfield Lumen Inc,copperfield.com,Logistics,2019-08-12,,Growth,2692.49,s.okoro,
+001Qy00000101463,Cerulean Pioneer Group,cerulean.com,Energy,2022-06-27,,Growth,3113.62,a.reyes,
+001Qy00000100081,Vantage Summit Partners,vantage.com,Construction,2021-09-05,Active,Starter,421.08,j.whitfield,
+001Qy00000100220,Inglewood Atlas Group,inglewood.com,Construction,2023-01-15,Active,Growth,3848.29,d.castellanos,
+001Qy00000101018,Thornbury Anchor Systems,thornbury.com,Hospitality,2025-10-20,Active,Growth,6005.64,p.lindqvist,
+001Qy00000101102,Ferreira Serviços Beacon,ferreira.com,Energy,2026-01-13,Inactive,Starter,484.86,d.castellanos,direct
+001Qy00000100989,Ashcombe Summit Corp,ashcombe.com,Retail,2025-09-22,Active,Starter,561.89,p.lindqvist,Partner
+001Qy00000100491,Dovetail Supply Partners,dovetail.com,Manufacturing,2024-03-06,Active,Growth,2151.37,a.reyes,
+001Qy00000100463,Meridian Cascade Systems,meridian.com,Logistics,2024-01-15,Active,Enterprise,135000.00,a.reyes,
+001Qy00000100457,Marbury Keystone Partners,marbury.com,Energy,2024-01-14,Active,Starter,278.16,p.lindqvist,
+001Qy00000100465,Stonebridge Lumen Inc,stonebridge.com,Hospitality,2024-02-05,Active,Starter,497.10,a.reyes,
+001Qy00000100284,Umbra Vector Group,umbra.com,Logistics,2023-04-09,Churned,Starter,721.33,d.castellanos,
+001Qy00000100523,Northwind Quantum Corp,northwind.com,Retail,2024-04-20,Churned,Starter,0.00,a.reyes,
+001Qy00000101429,Hollowway Coastal Labs,hollowway.com,Retail,2024-01-25,Churned,Starter,588.50,p.lindqvist,
+001Qy00000100132,Quillfeather Quantum Corp,quillfeather.com,Logistics,2019-10-24,Active,Starter,353.04,p.lindqvist,
+001Qy00000101338,Quarry Anchor Partners,quarry.com,Logistics,2019-08-06,Active,Growth,2817.24,j.whitfield,
+001Qy00000101441,Vantage Coastal Systems,vantage.com,Healthcare,2024-02-02,Inactive,Growth,1095.77,d.castellanos,
+001Qy00000100390,Orchard Sterling Labs,orchard.com,Construction,2023-09-04,Active,Starter,978.60,p.lindqvist,
+001Qy00000101057,Stonebridge Foundry Labs,stonebridge.com,Logistics,2025-11-01,Active,Starter,666.39,j.whitfield,paid search
+001Qy00000101204,Umbra Trading Corp,umbra.com,Retail,2026-03-17,Active,Growth,3130.70,p.lindqvist,Conference
+001Qy00000100282,Pinnacle Sable Labs,pinnacle.com,Logistics,2023-03-17,Churned,Starter,600.35,a.reyes,
+001Qy00000100461,Yellowfin Nimbus Corp,yellowfin.com,Logistics,2023-12-28,Active,Starter,21725.05,s.okoro,
+001Qy00000101410,Whitmore Freight LLC,whitmore.com,Energy,2020-11-17,Active,Starter,1491.46,a.reyes,
+001Qy00000100012,Ashcombe Clinical LLC,ashcombe.com,Energy,2022-07-12,Active,Starter,602.33,d.castellanos,
+001Qy00000100185,Vantage Vector LLC,vantage.com,Fintech,2022-11-10,Churned,Growth,0.00,m.tan,
+001Qy00000100637,Marbury Sable Inc,marbury.com,Energy,2024-08-20,,Starter,0.00,s.okoro,PPC
+001Qy00000100794,Northwind Vector Labs,northwind.com,Retail,2025-02-09,Active,Growth,1337.46,m.tan,direct
+001Qy00000101352,Underhill Sterling Corp,underhill.com,Manufacturing,2023-06-24,Active,Growth,1953.19,j.whitfield,
+001Qy00000101303,Whitmore Sable Inc,whitmore.com,Construction,2022-03-08,Churned,Starter,0.00,s.okoro,
+001Qy00000101189,Glenrock Vector Corp,glenrock.com,Hospitality,2026-03-15,Inactive,Starter,936.95,s.okoro,Google Ads
+001Qy00000100786,Westbrook Freight Corp,westbrook.com,Education,2025-03-14,Active,Enterprise,7368.18,d.castellanos,Organic Search
+001Qy00000100579,Meridian Analytics Inc,meridian.com,Fintech,2024-05-14,Active,Growth,5311.00,m.tan,SDR
+001Qy00000100195,Quarry Quantum Corp,quarry.com,Fintech,2022-11-29,Churned,Starter,846.06,m.tan,
+001Qy00000100527,Yarrow Trading,yarrow.com,Fintech,2024-03-09,Inactive,Starter,18.55,p.lindqvist,
+001Qy00000100295,Whitmore Cascade Corp,whitmore.com,Fintech,2023-05-31,Active,Starter,748.10,d.castellanos,
+001Qy00000100924,Verdigris Clinical Labs,verdigris.com,Retail,2025-07-25,Inactive,Starter,131.15,s.okoro,Direct
+001Qy00000100722,Zenith Foundry Group,zenith.com,Logistics,2025-01-07,Churned,Starter,317.15,m.tan,PPC
+001Qy00000100978,Northgate Pioneer LLC,northgate.com,Energy,2025-10-24,Active,Growth,1907.94,m.tan,Direct
+001Qy00000100870,Eastvale Precision Systems,eastvale.com,Healthcare,2025-05-03,Churned,Growth,0.00,a.reyes,Cold Outreach
+001Qy00000101149,Nightingale Supply Corp.,nightingale.com,Healthcare,2026-02-12,Churned,Starter,99.58,d.castellanos,Word of Mouth
+001Qy00000100086,Brightwater Nimbus Systems,brightwater.com,Manufacturing,2021-06-06,Inactive,Enterprise,12503.54,a.reyes,
+001Qy00000100469,Stonebridge Pioneer Holdings,stonebridge.com,Retail,2024-02-16,Active,Growth,8096.05,m.tan,
+001Qy00000101024,Dovetail Vector Holdings,dovetail.com,Logistics,2025-10-09,Active,Enterprise,15341.40,j.whitfield,
+001Qy00000101323,Quillfeather Pioneer Labs,quillfeather.com,Retail,2022-05-14,Churned,Starter,0.00,p.lindqvist,
+001Qy00000100730,Ravenswood Pioneer LLC,ravenswood.com,Hospitality,2024-12-13,Active,Enterprise,17808.19,m.tan,SEO
+001Qy00000100528,Marbury Digital Labs,marbury.com,Hospitality,2024-04-01,Active,Enterprise,24730.10,p.lindqvist,
+001Qy00000100205,André Frères Beacon,andre.com,Healthcare,2022-12-30,Churned,Starter,548.69,a.reyes,
+001Qy00000100535,Westbrook Analytics Group,westbrook.com,Retail,2024-03-26,Active,Growth,3638.98,s.okoro,
+001Qy00000100614,Lakeshore Supply Inc,lakeshore.com,Construction,2024-07-05,Active,Enterprise,356.45,p.lindqvist,SEO
+001Qy00000100187,Blackthorn Coastal Inc,blackthorn.com,Energy,2022-11-17,Active,Starter,1145.00,s.okoro,
+001Qy00000100097,Ironwood Precision Inc,ironwood.com,Energy,2021-09-14,Churned,Starter,0.00,p.lindqvist,
+001Qy00000100270,Acme Sable Partners,acme.com,Construction,2023-03-29,Inactive,Starter,192.83,m.tan,
+001Qy00000101171,Alder Anchor Group,alder.com,Retail,2026-04-27,Active,Growth,2667.58,a.reyes,
+001Qy00000100320,Ashcombe Atlas Holdings,ashcombe.com,Media,2023-06-11,Churned,Enterprise,4014.98,a.reyes,
+001Qy00000100166,Copperfield Precision Group,copperfield.com,Retail,2022-10-27,Active,Starter,648.79,j.whitfield,
+001Qy00000101455,Larkspur Compass Holdings,larkspur.com,Logistics,2023-09-24,Active,Growth,2492.15,m.tan,
+001Qy00000100446,Acme Anchor Labs,acme.com,Energy,2023-12-15,Active,Starter,648.80,s.okoro,
+001Qy00000100896,Nightingale Lumen Labs,nightingale.com,Construction,2025-07-09,Churned,Starter,78.08,p.lindqvist,paid search
+001Qy00000100102,Pérez Group Cascade,perez.com,Hospitality,2019-06-23,Active,Enterprise,17997.05,s.okoro,
+001Qy00000100825,Yellowfin Quantum Inc,yellowfin.com,Education,2025-03-15,Active,Starter,584.19,j.whitfield,Blog
+001Qy00000100453,Harborview Onyx Partners,harborview.com,Hospitality,2023-12-09,Churned,Growth,2766.84,p.lindqvist,
+001Qy00000100685,Quillfeather Lumen Labs,quillfeather.com,Media,2024-11-03,Churned,Starter,425.84,a.reyes,Paid Search
+001Qy00000100658,Brightwater Pioneer Holdings,brightwater.com,Hospitality,2024-09-17,Churned,Starter,280.91,j.whitfield,Partner Referral
+001Qy00000100272,Nightingale Freight Holdings,nightingale.com,Education,2023-05-13,Active,Starter,993.21,j.whitfield,
+001Qy00000100350,Dunmore Anchor LLC,dunmore.com,Education,2023-09-08,Active,Growth,2350.97,a.reyes,
+001Qy00000100255,Verdigris Atlas Inc,verdigris.com,Retail,2023-03-21,Active,Enterprise,13348.69,d.castellanos,
+001Qy00000101087,Blackthorn Keystone Holdings,blackthorn.com,Construction,2025-12-25,Active,Growth,10622.42,j.whitfield,Outbound
+001Qy00000101249,Marbury Sterling Partners,marbury.com,Hospitality,2026-05-06,Active,Starter,401.08,j.whitfield,
+001Qy00000100584,Thornbury Trading Group,thornbury.com,Media,2024-05-29,Active,Growth,4053.96,m.tan,Tradeshow
+001Qy00000100673,Underhill Analytics Holdings,underhill.com,Media,2024-09-25,Churned,Starter,288.72,s.okoro,Paid Search
+001Qy00000100354,Westbrook Coastal Holdings,westbrook.com,Hospitality,2023-09-01,,Starter,552.03,a.reyes,
+001Qy00000101256,Tanglewood Sable Inc,tanglewood.com,Fintech,2026-05-06,Active,Starter,366.91,d.castellanos,social
+001Qy00000101104,Grupo Peña Pioneer II,grupo.com,Media,2026-01-22,Active,Starter,63.36,d.castellanos,SDR
+001Qy00000100271,Silverline Analytics Holdings,silverline.com,Manufacturing,2023-04-09,Active,Growth,475.39,s.okoro,
+001Qy00000101438,Yarrow Clinical Systems,yarrow.com,Healthcare,2020-10-14,Active,Starter,521.55,s.okoro,
+001Qy00000100993,Ironwood Beacon Holdings,ironwood.com,Healthcare,2025-09-27,Active,Starter,362.48,j.whitfield,SDR
+001Qy00000100508,Fairmount Digital Systems,fairmount.com,Education,2024-03-23,Active,Starter,204.92,d.castellanos,
+001Qy00000100556,Umbra Keystone Corp,umbra.com,Construction,2024-05-19,Active,Growth,2714.78,s.okoro,
+001Qy00000100336,Redstone Clinical Holdings,redstone.com,Construction,2023-08-26,,Enterprise,2291.42,p.lindqvist,
+001Qy00000100483,Nightingale Summit Systems,nightingale.com,Construction,2024-02-17,Active,Starter,300.78,j.whitfield,
+001Qy00000100762,Lakeshore Compass Partners,lakeshore.com,Logistics,2025-02-09,Active,Growth,1754.91,m.tan,Cold Outreach
+001Qy00000100121,Hollowway Trading Group,hollowway.com,Retail,2017-01-20,,Enterprise,9172.10,m.tan,
+001Qy00000100981,Quillfeather Pioneer Holdings,quillfeather.com,Manufacturing,2025-09-26,Active,Enterprise,8778.27,s.okoro,PPC
+001Qy00000101297,Ravenswood Beacon Group,ravenswood.com,Energy,2026-06-24,Active,Starter,844.56,s.okoro,Tradeshow
+001Qy00000100647,Whitmore Pioneer Partners,whitmore.com,Education,2024-08-08,Active,Enterprise,14032.53,d.castellanos,paid search
+001Qy00000100037,Brightwater Sterling LLC,brightwater.com,Logistics,2019-06-16,Active,Starter,827.19,d.castellanos,
+001Qy00000100937,Westbrook Summit Inc,westbrook.com,Media,2025-08-31,Active,Enterprise,6684.52,j.whitfield,SDR
+001Qy00000101313,Ferreira Serviços Vector,ferreira.com,Retail,2023-06-26,Inactive,Starter,0.00,s.okoro,
+001Qy00000100439,Acme Quantum Holdings,acme.com,Media,2024-01-06,Active,Growth,1465.34,d.castellanos,
+001Qy00000100029,Zenith Compass Group,zenith.com,Energy,2018-05-05,Active,Growth,2118.60,j.whitfield,
+001Qy00000100112,Pemberton Atlas Holdings,pemberton.com,Retail,2018-03-20,Active,Enterprise,7602.76,m.tan,
+001Qy00000100701,Vásquez Media Analytics,vasquez.com,Fintech,2024-11-02,Active,Starter,681.60,a.reyes,Blog
+001Qy00000100228,Northwind Anchor Systems,northwind.com,Energy,2023-01-19,Active,Growth,2543.58,d.castellanos,
+001Qy00000100292,Northgate Compass Corp,northgate.com,Logistics,2023-04-23,Active,Growth,4343.79,a.reyes,
+001Qy00000100018,Quillfeather Sterling Inc,quillfeather.com,Education,2022-01-27,Active,Growth,4089.82,a.reyes,
+001Qy00000101114,Whitmore Foundry Group,whitmore.com,Energy,2026-01-24,Active,Starter,661.22,p.lindqvist,Google Ads
+001Qy00000100761,Orchard Lumen Inc,orchard.com,Fintech,2025-01-26,Churned,Starter,826.10,p.lindqvist,SEO
+001Qy00000100254,Zenith Precision Systems,zenith.com,Hospitality,2023-03-27,Active,Enterprise,12508.79,m.tan,
+001Qy00000100007,Pérez Group Vector,perez.com,Logistics,2018-05-06,Active,Enterprise,9102.97,d.castellanos,
+001Qy00000101013,Ravenswood Atlas Labs,ravenswood.com,Manufacturing,2025-10-07,Churned,Starter,1120.78,s.okoro,Organic Search
+001Qy00000100533,Copperfield Sable Labs,copperfield.com,Logistics,2024-04-01,Active,Growth,9000.00,a.reyes,
+001Qy00000100419,Whitmore Sterling Systems,whitmore.com,Fintech,2023-11-24,Churned,Starter,918.24,j.whitfield,
+001Qy00000100983,Harborview Sterling Holdings,harborview.com,Hospitality,2025-09-21,Active,Enterprise,22906.74,m.tan,Direct
+001Qy00000100864,Quarry Summit Inc,quarry.com,Construction,2025-05-26,Active,Starter,511.04,p.lindqvist,direct
+001Qy00000101085,Zenith Digital Systems,zenith.com,Construction,2025-12-15,Active,Starter,807.19,d.castellanos,Direct
+001Qy00000100252,Ironwood Vector Systems,ironwood.com,Healthcare,2023-03-26,Active,Growth,1524.23,j.whitfield,
+001Qy00000100723,Zenith Foundry Group,zenith.com,Logistics,2025-01-13,,Starter,54.82,m.tan,PPC
+001Qy00000100878,Pinnacle Vector Partners,pinnacle.com,Logistics,2025-05-06,Active,Starter,656.97,a.reyes,PPC
+001Qy00000100005,São Bento Coastal,sao.com,Fintech,2018-06-12,Active,Starter,408.04,m.tan,
+001Qy00000100186,Glenrock Precision Inc,glenrock.com,Healthcare,2022-10-31,Churned,Starter,0.00,j.whitfield,
+001Qy00000100418,Cerulean Foundry Labs,cerulean.com,Logistics,2023-12-01,Inactive,Starter,303.72,j.whitfield,
+001Qy00000101017,Acme Foundry Group,acme.com,Hospitality,2025-10-06,Churned,Starter,454.69,p.lindqvist,SDR
+001Qy00000100231,Dovetail Lumen Inc,dovetail.com,Manufacturing,2023-03-07,Active,Growth,9314.11,d.castellanos,
+001Qy00000100854,Dovetail Beacon Systems,dovetail.com,Manufacturing,2025-03-31,Churned,Starter,695.37,d.castellanos,Tradeshow
+001Qy00000100598,André Frères Vector,andre.com,Manufacturing,2024-06-17,Active,Growth,3097.67,m.tan,
+001Qy00000101306,São Bento Nimbus,sao.com,Construction,2021-03-04,Inactive,Growth,0.00,d.castellanos,
+001Qy00000101181,Yarrow Digital Group,yarrow.com,Fintech,2026-04-16,Active,Starter,345.54,a.reyes,Paid Search
+001Qy00000101241,Northgate Analytics Partners,northgate.com,Education,2026-06-02,Active,Starter,250.00,a.reyes,LinkedIn Ads
+001Qy00000100210,Inglewood Anchor Corp,inglewood.com,Education,2023-01-01,Active,Growth,2081.85,d.castellanos,
+001Qy00000101394,Orchard Analytics Holdings,orchard.com,Construction,2023-09-07,Active,Starter,830.21,m.tan,
+001Qy00000100671,Northwind Precision Corp,northwind.com,Fintech,2024-09-22,Active,Starter,631.87,j.whitfield,paid search
+001Qy00000100751,Pinnacle Anchor LLC,pinnacle.com,Hospitality,2025-02-01,,Growth,1241.86,d.castellanos,
+001Qy00000100799,Vásquez Media Digital,vasquez.com,Hospitality,2025-02-11,Active,Growth,1895.63,a.reyes,SEO
+001Qy00000100877,Quarry Onyx LLC,quarry.com,Education,2025-05-27,Active,Growth,4549.52,p.lindqvist,SDR
+001Qy00000101321,Larkspur Lumen Group,larkspur.com,Education,2022-12-03,,Starter,308.42,d.castellanos,
+001Qy00000101134,Ashcombe Trading Labs,ashcombe.com,Manufacturing,2026-02-06,Active,Starter,721.85,a.reyes,Partner
+001Qy00000100085,Blackthorn Keystone Partners,blackthorn.com,Construction,2021-10-16,Churned,Starter,0.00,a.reyes,
+001Qy00000100052,Ravenswood Cascade Partners,ravenswood.com,Manufacturing,2019-07-03,Inactive,Enterprise,15804.29,d.castellanos,
+001Qy00000100369,Orchard Clinical Systems,orchard.com,Retail,2023-09-12,Churned,Starter,415.54,a.reyes,
+001Qy00000101330,Fairmount Lumen Group,fairmount.com,Hospitality,2019-06-09,,Growth,2797.18,a.reyes,
+001Qy00000100645,Dovetail Compass Partners,dovetail.com,Fintech,2024-08-03,Churned,Enterprise,1645.41,a.reyes,Cold Outreach
+001Qy00000100814,Oakfield Pioneer Holdings,oakfield.com,Fintech,2025-04-15,Active,Starter,578.84,p.lindqvist,Google Ads
+001Qy00000100176,Whitmore Sable Partners,whitmore.com,Logistics,2022-11-17,Churned,Starter,881.60,p.lindqvist,
+001Qy00000100806,Harborview Atlas LLC,harborview.com,Fintech,2025-03-14,Active,Starter,728.08,p.lindqvist,PPC
+001Qy00000100437,Kestrel Trading Inc,kestrel.com,Hospitality,2024-01-06,Churned,Growth,2890.06,d.castellanos,
+001Qy00000101163,Underhill Sterling Partners,underhill.com,Logistics,2026-01-30,Active,Growth,1264.74,j.whitfield,Tradeshow
+001Qy00000101020,Juniper Digital Systems,juniper.com,Retail,2025-11-02,Active,Starter,542.47,p.lindqvist,Word of Mouth
+001Qy00000100571,Underhill Freight,underhill.com,Logistics,2024-05-01,Active,Starter,154.00,m.tan,Google Ads
+001Qy00000100075,Quarry Sable LLC,quarry.com,Logistics,2018-07-15,Active,Growth,6174.74,d.castellanos,
+001Qy00000101294,Quillfeather Anchor Holdings,quillfeather.com,Fintech,2026-07-22,Active,Enterprise,15489.83,p.lindqvist,Direct
+001Qy00000100277,Inglewood Nimbus Labs,inglewood.com,Hospitality,2023-05-11,Churned,Starter,349.18,a.reyes,
+001Qy00000100167,Marbury Precision Inc,marbury.com,Retail,2022-10-23,Active,Growth,7028.11,a.reyes,
+001Qy00000100968,Inglewood Nimbus Inc,inglewood.com,Education,2025-09-28,Churned,Growth,554.50,p.lindqvist,Blog
+001Qy00000100539,Glenrock Freight Holdings,glenrock.com,Hospitality,2024-04-11,Churned,Starter,250.00,j.whitfield,
+001Qy00000100805,Northgate Coastal Holdings,northgate.com,Manufacturing,2025-02-16,Active,Growth,1574.81,s.okoro,PPC
+001Qy00000101271,Glenrock Cascade Group,glenrock.com,Manufacturing,2026-05-30,Active,Starter,429.50,p.lindqvist,Partner Referral
+001Qy00000100149,Copperfield Digital Corp,copperfield.com,Media,2022-10-05,Active,Growth,1435.81,m.tan,
+001Qy00000100990,Glenrock Trading Labs,glenrock.com,Energy,2025-09-10,Active,Enterprise,6000.00,p.lindqvist,Conference
+001Qy00000100518,Blackthorn Digital Corp,blackthorn.com,Construction,2024-03-20,Churned,Starter,459.46,a.reyes,
+001Qy00000100726,Quarry Supply Labs,quarry.com,Education,2024-12-28,Active,Enterprise,29648.90,d.castellanos,Event
+001Qy00000100936,Westbrook Cascade Partners,westbrook.com,Retail,2025-09-05,Active,Growth,2592.84,j.whitfield,PPC
+001Qy00000100009,Ashcombe Anchor Labs,ashcombe.com,Logistics,2018-03-19,Active,Growth,2105.62,p.lindqvist,
+001Qy00000100500,André Frères Clinical,andre.com,Media,2024-01-18,Active,Starter,734.28,s.okoro,
+001Qy00000100151,Juniper Precision Labs,juniper.com,Construction,2022-10-10,Churned,Starter,0.00,j.whitfield,
+001Qy00000100931,Ashcombe Compass Corp,ashcombe.com,Hospitality,2025-07-03,,Growth,629.09,m.tan,SDR
+001Qy00000101093,Tanglewood Trading Inc,tanglewood.com,Fintech,2026-01-25,Active,Enterprise,736.99,d.castellanos,LinkedIn Ads
+001Qy00000100305,Pérez Group Foundry,perez.com,Logistics,2023-05-29,,Starter,539.79,m.tan,
+001Qy00000100670,Umbra Foundry Holdings,umbra.com,Energy,2024-09-02,Churned,Starter,527.99,m.tan,PPC
+001Qy00000100001,Grupo Peña Analytics,grupo.com,Hospitality,2018-07-22,Active,Growth,6604.94,s.okoro,
+001Qy00000100452,Quarry Precision Holdings,quarry.com,Logistics,2023-11-29,Active,Growth,1664.50,p.lindqvist,
+001Qy00000101375,Alder Cascade Group,alder.com,Healthcare,2021-03-12,Active,Growth,1772.79,a.reyes,
+001Qy00000100906,Quillfeather Nimbus Holdings,quillfeather.com,Fintech,2025-08-04,Active,Starter,558.03,a.reyes,Tradeshow
+001Qy00000100258,Juniper Sable Labs,juniper.com,Fintech,2023-03-07,Churned,Growth,4033.30,s.okoro,
+001Qy00000101150,Ironwood Supply Partners,ironwood.com,Construction,2026-03-12,Active,Starter,615.33,j.whitfield,
+001Qy00000100306,Whitmore Freight Group,whitmore.com,Media,2023-06-01,Active,Enterprise,11991.34,a.reyes,
+001Qy00000100297,Inglewood Analytics LLC,inglewood.com,Education,2023-06-02,Churned,Starter,0.00,m.tan,
+001Qy00000100728,Copperfield Nimbus Labs,copperfield.com,Manufacturing,2025-01-08,Churned,Starter,558.03,s.okoro,Google Ads
+001Qy00000101088,Yellowfin Digital Labs,yellowfin.com,Media,2025-11-24,Active,Starter,610.41,m.tan,LinkedIn Ads
+001Qy00000101051,Pemberton Vector Labs,pemberton.com,Construction,2025-12-01,Active,Growth,5320.65,s.okoro,Referral
+001Qy00000100438,Verdigris Pioneer Systems,verdigris.com,Hospitality,2023-12-31,Active,Starter,381.30,s.okoro,
+001Qy00000100045,Eastvale Digital LLC,eastvale.com,Hospitality,2019-11-17,Active,Starter,958.65,a.reyes,
+001Qy00000100060,Ravenswood Clinical Systems,ravenswood.com,Logistics,2018-07-08,Active,Starter,488.16,m.tan,
+001Qy00000101168,Northwind Supply LLC,northwind.com,Healthcare,2026-02-16,Active,Growth,1846.80,a.reyes,Event
+001Qy00000101128,Copperfield Atlas Partners,copperfield.com,Hospitality,2026-02-20,Active,Starter,397.09,m.tan,paid search
+001Qy00000101247,Cerulean Onyx Partners,cerulean.com,Energy,2026-05-13,Active,Growth,4249.06,m.tan,PPC
+001Qy00000100150,Tanglewood Foundry Labs,tanglewood.com,Logistics,2022-08-29,Churned,Growth,0.00,p.lindqvist,
+001Qy00000101320,Whitmore Lumen Systems,whitmore.com,Construction,2020-07-24,Churned,Growth,1413.95,d.castellanos,
+001Qy00000101056,Brightwater Atlas Partners,brightwater.com,Logistics,2025-11-21,Active,Starter,737.65,m.tan,Direct
+001Qy00000100480,Quarry Beacon Corp,quarry.com,Healthcare,2024-02-11,Active,Starter,548.65,s.okoro,
+001Qy00000100569,Brightwater Beacon Labs,brightwater.com,Media,2024-05-23,Active,Growth,3253.67,a.reyes,Word of Mouth
+001Qy00000101076,Whitmore Onyx Group,whitmore.com,Construction,2025-12-29,Active,Starter,672.85,j.whitfield,Word of Mouth
+001Qy00000100406,Eastvale Freight LLC,eastvale.com,Fintech,2023-10-08,Churned,Starter,577.31,d.castellanos,
+001Qy00000100625,Alder Precision Corp,alder.com,Fintech,2024-07-14,Active,Starter,381.90,m.tan,Paid Search
+001Qy00000100026,Copperfield Digital Group,copperfield.com,Education,2020-09-10,Active,Enterprise,15805.21,j.whitfield,
+001Qy00000101103,Grupo Peña Pioneer II,grupo.com,Media,2026-02-15,Active,Starter,1856.11,d.castellanos,SDR
+001Qy00000101350,Dovetail Sterling Holdings,dovetail.com,Energy,2023-06-01,Active,Growth,1863.45,d.castellanos,
+001Qy00000100852,Cerulean Compass Systems,cerulean.com,Healthcare,2025-04-19,Active,Starter,542.18,a.reyes,
+001Qy00000100431,Lakeshore Atlas Systems,lakeshore.com,Retail,2023-12-09,Active,Growth,6246.98,a.reyes,
+001Qy00000100323,Stonebridge Sable Corp,stonebridge.com,Fintech,2023-07-15,Active,Starter,291.98,d.castellanos,
+001Qy00000100382,Alder Precision Holdings,alder.com,Healthcare,2023-08-28,,Starter,573.52,d.castellanos,
+001Qy00000101222,Tanglewood Summit Inc,tanglewood.com,Retail,2026-05-22,Active,Growth,1608.93,m.tan,Word of Mouth
+001Qy00000101212,Pérez Group Nimbus,perez.com,Construction,2026-05-02,Active,Starter,1500.00,s.okoro,
+001Qy00000100916,Ravenswood Compass Labs,ravenswood.com,Energy,2025-08-13,Active,Starter,605.14,p.lindqvist,Word of Mouth
+001Qy00000101240,Pinnacle Anchor Group,pinnacle.com,Construction,2026-06-10,Churned,Starter,740.42,p.lindqvist,paid search
+001Qy00000100879,Cerulean Summit Holdings,cerulean.com,Manufacturing,2025-05-16,Active,Growth,1815.62,j.whitfield,Partner Referral
+001Qy00000100142,Westbrook Lumen LLC,westbrook.com,Media,2022-10-08,Active,Starter,657.34,m.tan,
+001Qy00000100832,Harborview Analytics Holdings,harborview.com,Fintech,2025-03-09,Active,Starter,650.63,m.tan,Word of Mouth
+001Qy00000100214,Marbury Digital Partners,marbury.com,Energy,2023-01-14,Churned,Starter,0.00,p.lindqvist,
+001Qy00000101007,Ferreira Serviços Foundry II,ferreira.com,Retail,2025-10-08,Inactive,Growth,2039.95,a.reyes,
+001Qy00000100448,Copperfield Cascade Corp,copperfield.com,Hospitality,2023-12-11,Active,Starter,1054.02,m.tan,
+001Qy00000101090,Ashcombe Supply LLC,ashcombe.com,Logistics,2026-01-10,Active,Starter,616.96,d.castellanos,Paid Search
+001Qy00000100385,Kestrel Analytics Systems,kestrel.com,Healthcare,2023-10-06,Churned,Starter,455.25,a.reyes,
+001Qy00000100269,Acme Sable Partners,acme.com,Construction,2023-03-23,Churned,Starter,575.81,m.tan,
+001Qy00000100474,Harborview Onyx Labs,harborview.com,Education,2024-01-20,Active,Starter,350.57,d.castellanos,
+001Qy00000101071,Quillfeather Anchor Labs,quillfeather.com,Media,2026-01-01,Churned,Starter,0.00,j.whitfield,Paid Search
+001Qy00000100953,Lakeshore Onyx Group,lakeshore.com,Energy,2025-09-04,Active,Starter,457.84,j.whitfield,Blog
+001Qy00000100994,Northgate Foundry Systems,northgate.com,Energy,2025-09-19,Churned,Starter,0.00,m.tan,Organic Search
+001Qy00000100510,Ravenswood Foundry Group,ravenswood.com,Logistics,2024-03-13,Churned,Starter,445.86,j.whitfield,
+001Qy00000101327,Verdigris Anchor Labs,verdigris.com,Fintech,2023-08-01,Inactive,Starter,216.96,a.reyes,
+001Qy00000100538,Westbrook Clinical LLC,westbrook.com,Retail,2024-03-28,Active,Starter,1252.98,d.castellanos,
+001Qy00000101447,Eastvale Sable Group,eastvale.com,Energy,2023-04-30,Active,Starter,1523.35,d.castellanos,
+001Qy00000100374,Dunmore Trading Group,dunmore.com,Healthcare,2023-10-13,Churned,Enterprise,6000.00,d.castellanos,
+001Qy00000100619,Pemberton Sable Corp,pemberton.com,Fintech,2024-07-18,Churned,Enterprise,4121.26,d.castellanos,SEO
+001Qy00000101157,Brightwater Coastal Group,brightwater.com,Education,2026-02-15,Churned,Starter,944.19,p.lindqvist,social
+001Qy00000101376,Larkspur Sable Group,larkspur.com,Energy,2020-07-27,Churned,Growth,2853.17,m.tan,
+001Qy00000100557,Stonebridge Keystone LLC,stonebridge.com,Hospitality,2024-04-19,Active,Starter,587.10,s.okoro,
+001Qy00000100767,Tanglewood Nimbus Group,tanglewood.com,Media,2025-01-27,Active,Starter,497.16,d.castellanos,PPC
+001Qy00000101032,Glenrock Freight Labs,glenrock.com,Logistics,2025-10-13,Active,Starter,733.85,a.reyes,Word of Mouth
+001Qy00000101178,Vantage Digital Inc,vantage.com,Manufacturing,2026-02-16,Inactive,Starter,1042.80,p.lindqvist,
+001Qy00000101192,Inglewood Coastal Systems,inglewood.com,Construction,2026-04-02,Active,Growth,1864.16,a.reyes,direct
+001Qy00000100613,Harborview Summit Systems,harborview.com,Logistics,2024-08-05,Churned,Growth,0.00,j.whitfield,Referral
+001Qy00000100324,Pemberton Vector LLC,pemberton.com,Retail,2023-06-11,Churned,Starter,961.54,j.whitfield,
+001Qy00000100577,Silverline Analytics Partners,silverline.com,Education,2024-06-10,Active,Starter,566.66,a.reyes,SEO
+001Qy00000100707,Inglewood Summit Inc,inglewood.com,Hospitality,2024-12-03,Active,Starter,482.83,d.castellanos,PPC
+001Qy00000100792,Marbury Trading Labs,marbury.com,Construction,2025-01-24,Active,Growth,3201.25,a.reyes,paid search
+001Qy00000100606,Hollowway Sable Group,hollowway.com,Media,2024-07-08,,Enterprise,312.07,s.okoro,
+001Qy00000101137,Larkspur Nimbus Corp,larkspur.com,Construction,2026-01-31,Active,Starter,1176.67,j.whitfield,Organic Search
+001Qy00000100414,Eastvale Onyx Systems,eastvale.com,Fintech,2023-10-09,Churned,Starter,335.32,p.lindqvist,
+001Qy00000100695,Cranfield Trading Corp,cranfield.com,Manufacturing,2024-10-24,Churned,Starter,325.28,j.whitfield,paid search
+001Qy00000101206,Muñoz Holdings Cascade,munoz.com,Hospitality,2026-03-24,Active,Starter,710.35,j.whitfield,SDR
+001Qy00000100066,Hollowway Nimbus Systems,hollowway.com,Manufacturing,2021-01-20,Active,Starter,832.60,m.tan,
+001Qy00000100070,Kestrel Anchor Partners,kestrel.com,Logistics,2019-12-13,Churned,Starter,1200.47,p.lindqvist,
+001Qy00000100697,São Bento Foundry II II,sao.com,Retail,2024-10-04,Active,Growth,1200.00,s.okoro,Outbound
+001Qy00000101172,Harborview Compass LLC,harborview.com,Healthcare,2026-04-10,Inactive,Starter,818.11,p.lindqvist,social
+001Qy00000100942,Blackthorn Precision Systems,blackthorn.com,Education,2025-08-22,Active,Starter,414.10,p.lindqvist,LinkedIn Ads
+001Qy00000100781,Redstone Sable Corp,redstone.com,Construction,2025-02-19,Active,Growth,2474.44,s.okoro,Outbound
+001Qy00000101395,Dovetail Sterling Group,dovetail.com,Healthcare,2023-11-13,Churned,Starter,730.66,d.castellanos,
+001Qy00000100417,Ashcombe Analytics Corp,ashcombe.com,Logistics,2023-10-20,Active,Enterprise,7820.40,d.castellanos,
+001Qy00000100178,Westbrook Supply Systems,westbrook.com,Education,2022-09-29,Active,Enterprise,1100.32,j.whitfield,
+001Qy00000100089,Ironwood Trading Holdings,ironwood.com,Healthcare,2018-02-01,Active,Starter,338.81,m.tan,
+001Qy00000101121,Verdigris Foundry Systems,verdigris.com,Manufacturing,2026-01-08,Active,Growth,2136.77,s.okoro,Partner Referral
+001Qy00000100727,Yellowfin Trading Partners,yellowfin.com,Retail,2024-12-02,Active,Growth,1509.49,s.okoro,Blog
+001Qy00000101301,Silverline Cascade Partners,silverline.com,Logistics,2020-03-28,Active,Growth,5851.19,p.lindqvist,
+001Qy00000100790,Verdigris Compass Inc,verdigris.com,Hospitality,2025-03-15,Active,Growth,5061.04,p.lindqvist,SEO
+001Qy00000101158,Whitmore Sterling Group,whitmore.com,Energy,2026-02-28,Churned,Growth,0.00,s.okoro,Google Ads
+001Qy00000101353,Dunmore Sterling Corp,dunmore.com,Hospitality,2021-09-26,Active,Growth,2003.90,s.okoro,
+001Qy00000100797,Lakeshore Lumen Corp,lakeshore.com,Healthcare,2025-03-01,Inactive,Starter,0.00,a.reyes,
+001Qy00000100599,López y Asociados Compass,lopez.com,Healthcare,2024-07-01,Active,Starter,846.84,s.okoro,Direct
+001Qy00000100641,Juniper Nimbus Partners,juniper.com,Education,2024-09-13,Active,Growth,5978.79,m.tan,LinkedIn
+001Qy00000100201,Ferreira Serviços Foundry,ferreira.com,Retail,2022-12-30,Active,Starter,585.69,s.okoro,
+001Qy00000100116,Cranfield Beacon Group,cranfield.com,Energy,2020-05-16,Active,Growth,4498.96,m.tan,
+001Qy00000101377,Larkspur Sable Systems,larkspur.com,Manufacturing,2024-02-15,Active,Starter,693.33,s.okoro,
+001Qy00000101273,Vantage Anchor Group,vantage.com,Fintech,2026-05-31,Churned,Starter,509.88,m.tan,Paid Search
+001Qy00000101402,Harborview Clinical Partners,harborview.com,Media,2020-11-04,Active,Growth,3641.64,s.okoro,
+001Qy00000100851,Westbrook Beacon Labs,westbrook.com,Hospitality,2025-03-30,Churned,Starter,1471.24,j.whitfield,PPC
+001Qy00000100775,Quarry Precision Group,quarry.com,Logistics,2024-12-23,Active,Starter,308.60,a.reyes,Paid Search
+001Qy00000101077,Northwind Keystone Partners,northwind.com,Manufacturing,2026-01-05,Active,Starter,584.70,s.okoro,paid search
+001Qy00000100603,Verdigris Onyx Inc,verdigris.com,Energy,2024-06-28,Active,Starter,563.15,s.okoro,Direct
+001Qy00000101407,Vantage Quantum Inc,vantage.com,Healthcare,2022-07-18,Active,Growth,1475.40,s.okoro,
+001Qy00000101432,Ashcombe Summit Group,ashcombe.com,Fintech,2022-10-27,Active,Starter,1807.54,m.tan,
+001Qy00000100758,Underhill Atlas Group,underhill.com,Logistics,2025-02-13,Inactive,Growth,406.00,m.tan,direct
+001Qy00000100199,Vásquez Media Coastal,vasquez.com,Construction,2022-12-19,Active,Growth,1580.58,a.reyes,
+001Qy00000100296,Pemberton Vector Inc,pemberton.com,Logistics,2023-05-09,Active,Growth,2840.97,j.whitfield,
+001Qy00000100655,Tanglewood Trading LLC,tanglewood.com,Hospitality,2024-08-30,Active,Growth,2801.10,s.okoro,Direct
+001Qy00000100366,Umbra Quantum Partners,umbra.com,Hospitality,2023-08-26,Active,Growth,4945.01,m.tan,
+001Qy00000100002,Muñoz Holdings Precision,munoz.com,Fintech,2021-02-01,Active,Starter,383.23,p.lindqvist,
+001Qy00000101029,Thornbury Atlas Inc,thornbury.com,Education,2025-10-05,,Growth,2718.15,j.whitfield,Paid Social
+001Qy00000100711,Kestrel Atlas Corp,kestrel.com,Retail,2024-12-11,Churned,Starter,1760.63,d.castellanos,Google Ads
+001Qy00000100922,Underhill Sable Group,underhill.com,Education,2025-06-23,Active,Growth,4770.85,a.reyes,direct
+001Qy00000100985,Copperfield Atlas Systems,copperfield.com,Manufacturing,2025-10-06,Churned,Starter,312.94,a.reyes,Paid Search
+001Qy00000101009,Underhill Summit Partners,underhill.com,Retail,2025-10-28,Churned,Starter,0.00,j.whitfield,PPC
+001Qy00000100840,Copperfield Compass Corp,copperfield.com,Media,2025-03-28,Active,Starter,475.43,m.tan,PPC
+001Qy00000101325,Verdigris Keystone LLC,verdigris.com,Manufacturing,2021-02-24,Active,Growth,1333.83,s.okoro,
+001Qy00000101235,Orchard Trading Partners,orchard.com,Logistics,2026-04-22,Active,Growth,1920.76,j.whitfield,Event
+001Qy00000100094,Nightingale Lumen Systems,nightingale.com,Manufacturing,2020-04-29,,Growth,5492.10,a.reyes,
+001Qy00000100330,Kestrel Quantum Holdings,kestrel.com,Manufacturing,2023-07-11,,Growth,3158.57,d.castellanos,
+001Qy00000100914,Pemberton Nimbus LLC,pemberton.com,Manufacturing,2025-07-02,Active,Starter,329.77,m.tan,paid search
+001Qy00000100281,Brightwater Atlas Group,brightwater.com,Logistics,2023-04-25,Active,Growth,1753.26,a.reyes,
+001Qy00000100356,Stonebridge Anchor Group,stonebridge.com,Logistics,2023-09-28,Active,Starter,511.65,s.okoro,
+001Qy00000100580,Kestrel Pioneer Holdings,kestrel.com,Logistics,2024-04-23,Churned,Growth,2119.21,m.tan,Partner
+001Qy00000100208,Ravenswood Clinical Labs,ravenswood.com,Fintech,2023-01-12,Churned,Starter,0.00,p.lindqvist,
+001Qy00000100041,Ashcombe Coastal Group,ashcombe.com,Retail,2022-02-14,Active,Enterprise,20114.06,d.castellanos,
+001Qy00000101364,Thornbury Precision Labs,thornbury.com,Retail,2021-09-10,Churned,Starter,974.65,a.reyes,
+001Qy00000101422,Acme Lumen Group,acme.com,Construction,2020-11-27,Active,Growth,3133.54,p.lindqvist,
+001Qy00000100146,Silverline Trading Group,silverline.com,Hospitality,2022-09-27,,Growth,1682.69,d.castellanos,
+001Qy00000101346,Lakeshore Pioneer Holdings,lakeshore.com,Manufacturing,2022-03-24,Inactive,Starter,0.00,s.okoro,
+001Qy00000100329,Pinnacle Sable LLC,pinnacle.com,Fintech,2023-07-20,Churned,Growth,3602.29,j.whitfield,
+001Qy00000101049,Oakfield Analytics Labs,oakfield.com,Education,2025-11-07,,Starter,0.00,a.reyes,paid search
+001Qy00000100333,Pinnacle Keystone Group,pinnacle.com,Hospitality,2023-07-31,,Growth,1906.60,m.tan,
+001Qy00000101405,Vantage Freight Partners,vantage.com,Retail,2021-09-29,Inactive,Growth,0.00,j.whitfield,
+001Qy00000101345,Ravenswood Precision Holdings,ravenswood.com,Healthcare,2021-12-19,Active,Growth,2572.17,j.whitfield,
+001Qy00000100845,Glenrock Onyx Corp,glenrock.com,Hospitality,2025-04-28,Active,Starter,934.73,p.lindqvist,social
+001Qy00000100882,Dunmore Onyx LLC,dunmore.com,Construction,2025-05-08,Active,Starter,957.23,j.whitfield,SEO
+001Qy00000101379,Ashcombe Summit LLC,ashcombe.com,Retail,2020-12-29,Active,Growth,2818.39,j.whitfield,
+001Qy00000100668,Nightingale Vector Partners,nightingale.com,Hospitality,2024-09-18,Inactive,Enterprise,1688.74,p.lindqvist,direct
+001Qy00000101227,Alder Clinical Partners,alder.com,Healthcare,2026-05-05,Churned,Starter,384.26,p.lindqvist,Referral
+001Qy00000101219,Fairmount Keystone Holdings,fairmount.com,Construction,2026-04-05,Active,Starter,752.80,m.tan,Conference
+001Qy00000101012,Juniper Analytics Inc,juniper.com,Hospitality,2025-10-14,Active,Starter,459.84,m.tan,Paid Social
+001Qy00000100744,Oakfield Sterling Group,oakfield.com,Construction,2024-12-26,,Starter,0.00,s.okoro,Paid Social
+001Qy00000101266,Harborview Supply LLC,harborview.com,Education,2026-06-21,Inactive,Enterprise,27043.60,p.lindqvist,Conference
+001Qy00000101132,Cerulean Nimbus Labs,cerulean.com,Hospitality,2026-02-14,Active,Starter,329.51,s.okoro,Paid Social
+001Qy00000100399,Núñez Capital Quantum,nunez.com,Construction,2023-11-07,Active,Starter,709.69,m.tan,
+001Qy00000100954,Whitmore Compass LLC,whitmore.com,Healthcare,2025-08-22,Active,Starter,830.18,a.reyes,Google Ads
+001Qy00000101384,Zenith Sterling Partners,zenith.com,Energy,2022-12-10,Churned,Growth,0.00,m.tan,
+001Qy00000100782,Lakeshore Analytics Corp,lakeshore.com,Construction,2025-02-07,Active,Starter,1083.54,j.whitfield,
+001Qy00000101279,Eastvale Digital Partners,eastvale.com,Energy,2026-06-14,,Starter,333.13,d.castellanos,Event
+001Qy00000100147,Westbrook Nimbus Group,westbrook.com,Logistics,2022-09-12,Inactive,Starter,1087.76,d.castellanos,
+001Qy00000101436,Vantage Beacon Labs,vantage.com,Media,2021-01-15,Active,Starter,651.31,p.lindqvist,
+001Qy00000100387,Orchard Supply Corp,orchard.com,Logistics,2023-09-23,Churned,Starter,259.36,m.tan,
+001Qy00000100344,Westbrook Digital Partners,westbrook.com,Construction,2023-07-11,Churned,Starter,413.80,p.lindqvist,
+001Qy00000100902,López y Asociados Lumen,lopez.com,Fintech,2025-06-28,Active,Starter,399.36,p.lindqvist,paid search
+001Qy00000100617,Northwind Analytics Inc,northwind.com,Healthcare,2024-08-15,,Starter,48.48,m.tan,Paid Search
+001Qy00000100304,Núñez Capital Clinical,nunez.com,Energy,2023-04-21,Active,Growth,3021.48,m.tan,
+001Qy00000100628,Copperfield Keystone Group,copperfield.com,Logistics,2024-09-11,Active,Enterprise,15495.89,m.tan,SEO
+001Qy00000101382,Glenrock Keystone Systems,glenrock.com,Healthcare,2023-04-03,Active,Enterprise,21662.69,d.castellanos,
+001Qy00000100495,Ferreira Serviços Digital,ferreira.com,Healthcare,2024-02-20,Active,Starter,302.64,s.okoro,
+001Qy00000100574,Ravenswood Coastal Group,ravenswood.com,Retail,2024-06-08,Churned,Starter,495.49,m.tan,Organic Search
+001Qy00000100155,Ashcombe Sterling Labs,ashcombe.com,Manufacturing,2022-10-18,Active,Growth,2341.25,m.tan,
+001Qy00000100657,Silverline Quantum Labs,silverline.com,Energy,2024-08-22,Active,Starter,565.60,d.castellanos,PPC
+001Qy00000100964,Cerulean Analytics Partners,cerulean.com,Construction,2025-09-04,Active,Growth,1921.30,d.castellanos,Cold Outreach
+001Qy00000101081,Silverline Vector Group,silverline.com,Hospitality,2025-12-14,Active,Starter,224.60,p.lindqvist,
+001Qy00000100706,Blackthorn Lumen Systems,blackthorn.com,Media,2024-11-18,Active,Growth,11992.23,j.whitfield,Outbound
+001Qy00000100426,Nightingale Digital Corp,nightingale.com,Construction,2023-12-01,Churned,Starter,429.74,d.castellanos,
+001Qy00000100235,Nightingale Vector Labs,nightingale.com,Fintech,2023-02-24,Churned,Enterprise,2824.20,d.castellanos,
+001Qy00000101197,Stonebridge Foundry LLC,stonebridge.com,Construction,2026-03-22,Churned,Starter,0.00,a.reyes,Blog
+001Qy00000100742,Umbra Onyx Corp,umbra.com,Energy,2024-12-25,Churned,Starter,782.35,p.lindqvist,PPC
+001Qy00000101289,Fairmount Foundry Inc,fairmount.com,Construction,2026-07-19,Active,Starter,500.06,m.tan,LinkedIn
+001Qy00000100546,Inglewood Sterling Partners,inglewood.com,Manufacturing,2024-04-28,Churned,Starter,299.06,j.whitfield,
+001Qy00000100774,Silverline Anchor Corp,silverline.com,Fintech,2025-01-12,Churned,Enterprise,460.37,m.tan,
+001Qy00000100681,Eastvale Quantum Inc,eastvale.com,Energy,2024-11-08,Active,Growth,6784.53,m.tan,Conference
+001Qy00000100458,Stonebridge Nimbus Group,stonebridge.com,Manufacturing,2024-01-18,Active,Starter,747.48,j.whitfield,
+001Qy00000101098,Dovetail Nimbus Labs,dovetail.com,Hospitality,2026-01-13,Active,Growth,1692.34,p.lindqvist,
+001Qy00000100058,Cerulean Pioneer Inc,cerulean.com,Education,2019-01-03,Active,Growth,1608.77,s.okoro,
+001Qy00000100303,São Bento Trading,sao.com,Media,2023-06-20,Churned,Starter,0.00,j.whitfield,
+001Qy00000100106,Ferreira Serviços Cascade,ferreira.com,Retail,2022-07-12,Churned,Growth,0.00,m.tan,
+001Qy00000100956,Ironwood Cascade Labs,ironwood.com,Hospitality,2025-08-18,Active,Starter,774.16,s.okoro,Word of Mouth
+001Qy00000101165,Nightingale Clinical LLC,nightingale.com,Media,2026-02-09,Active,Starter,110.11,d.castellanos,direct
+001Qy00000100563,Glenrock Supply Inc,glenrock.com,Healthcare,2024-06-04,Active,Growth,3337.82,m.tan,Google Ads
+001Qy00000100618,Pemberton Sable Corp,pemberton.com,Fintech,2024-07-24,,Enterprise,19799.98,d.castellanos,SEO
+001Qy00000101408,Lakeshore Digital Partners,lakeshore.com,Education,2020-03-19,Active,Growth,1594.59,m.tan,
+001Qy00000101043,Quarry Sable Systems,quarry.com,Energy,2025-12-06,,Starter,996.30,a.reyes,PPC
+001Qy00000101357,Verdigris Onyx Systems,verdigris.com,Construction,2020-01-19,Churned,Starter,0.00,d.castellanos,
+001Qy00000100553,Blackthorn Cascade Corp,blackthorn.com,Energy,2024-05-10,Active,Growth,2936.12,j.whitfield,
+001Qy00000100509,Underhill Summit Labs,underhill.com,Hospitality,2024-03-11,Active,Growth,4152.51,p.lindqvist,
+001Qy00000100895,Nightingale Lumen Labs,nightingale.com,Construction,2025-06-07,Active,Starter,476.47,p.lindqvist,PPC
+001Qy00000100677,Stonebridge Quantum Inc,stonebridge.com,Retail,2024-10-18,Active,Starter,518.03,j.whitfield,Organic Search
+001Qy00000100159,Quarry Trading Labs,quarry.com,Healthcare,2022-09-19,Churned,Starter,606.75,j.whitfield,
+001Qy00000101457,Yarrow Onyx LLC,yarrow.com,Logistics,2021-05-18,Active,Growth,2412.61,j.whitfield,
+001Qy00000101141,Yellowfin Cascade Corp,yellowfin.com,Manufacturing,2026-01-23,Active,Starter,964.59,d.castellanos,
+001Qy00000101073,Blackthorn Pioneer Labs,blackthorn.com,Media,2026-01-07,Active,Starter,250.00,m.tan,Paid Search
+001Qy00000100576,Fairmount Compass LLC,fairmount.com,Energy,2024-04-26,Active,Enterprise,8229.42,m.tan,Blog
+001Qy00000101244,Cranfield Coastal Systems,cranfield.com,Healthcare,2026-06-17,Active,Starter,913.21,p.lindqvist,Paid Search
+001Qy00000100745,Yarrow Supply Inc,yarrow.com,Healthcare,2024-12-21,,Growth,2004.66,j.whitfield,
+001Qy00000100334,Whitmore Clinical Corp,whitmore.com,Manufacturing,2023-07-15,Churned,Growth,0.00,d.castellanos,
+001Qy00000100631,Stonebridge Supply Holdings,stonebridge.com,Manufacturing,2024-09-06,Active,Growth,6386.87,s.okoro,Tradeshow
+001Qy00000100816,Westbrook Vector Partners,westbrook.com,Fintech,2025-03-31,Churned,Starter,501.44,j.whitfield,PPC
+001Qy00000101280,Northwind Sable Holdings,northwind.com,Education,2026-06-19,Active,Starter,559.14,p.lindqvist,PPC
+001Qy00000101324,Yarrow Keystone Partners,yarrow.com,Media,2021-09-01,Churned,Starter,792.74,s.okoro,
+001Qy00000100173,Cerulean Onyx LLC,cerulean.com,Fintech,2022-11-09,Active,Growth,3010.20,a.reyes,
+001Qy00000100015,Blackthorn Pioneer Holdings,blackthorn.com,Energy,2020-05-31,,Growth,8808.95,m.tan,
+001Qy00000101035,Oakfield Pioneer Labs,oakfield.com,Media,2025-10-21,Active,Enterprise,21305.97,j.whitfield,Event
+001Qy00000100193,Pemberton Lumen Labs,pemberton.com,Energy,2022-10-21,Active,Growth,6145.14,d.castellanos,
+001Qy00000100841,Northgate Anchor Partners,northgate.com,Retail,2025-03-23,Churned,Starter,0.00,a.reyes,PPC
+001Qy00000101196,Harborview Atlas Partners,harborview.com,Manufacturing,2026-03-11,Churned,Starter,423.74,a.reyes,SEO
+001Qy00000101047,Inglewood Lumen LLC,inglewood.com,Construction,2025-10-28,Active,Enterprise,9371.50,a.reyes,Referral
+001Qy00000100429,Ravenswood Quantum Holdings,ravenswood.com,Hospitality,2023-12-24,Active,Growth,4037.31,a.reyes,
+001Qy00000101260,Eastvale Lumen Partners,eastvale.com,Healthcare,2026-05-08,Active,Starter,417.11,j.whitfield,
+001Qy00000100413,Copperfield Sable Partners,copperfield.com,Manufacturing,2023-10-02,Churned,Enterprise,0.00,j.whitfield,
+001Qy00000100424,Meridian Sable Group,meridian.com,Media,2023-11-16,Active,Starter,444.06,j.whitfield,
+001Qy00000101179,Vantage Digital Inc,vantage.com,Manufacturing,2026-03-29,Active,Starter,368.44,p.lindqvist,Blog
+001Qy00000100561,Dovetail Trading Inc,dovetail.com,Logistics,2024-04-11,Active,Growth,2468.18,a.reyes,
+001Qy00000100410,Hollowway Precision Labs,hollowway.com,Retail,2023-11-07,,Starter,489.64,d.castellanos,
+001Qy00000100200,Guimarães Log Supply,guimaraes.com,Healthcare,2022-12-28,Churned,Growth,0.00,p.lindqvist,
+001Qy00000100091,Orchard Cascade Holdings,orchard.com,Construction,2020-02-14,Active,Starter,696.76,j.whitfield,
+001Qy00000100486,Redstone Quantum Corp,redstone.com,Media,2024-03-22,Churned,Starter,204.27,s.okoro,
+001Qy00000101308,Pérez Group Supply,perez.com,Energy,2022-04-17,Inactive,Starter,379.46,a.reyes,
+001Qy00000100376,Whitmore Quantum Systems,whitmore.com,Manufacturing,2023-08-30,Churned,Starter,0.00,a.reyes,
+001Qy00000100468,Redstone Foundry Group,redstone.com,Manufacturing,2024-01-22,,Enterprise,14720.43,j.whitfield,
+001Qy00000100901,André Frères Compass II,andre.com,Fintech,2025-07-05,Inactive,Growth,510.87,p.lindqvist,
+001Qy00000100492,Hernández Retail Sable,hernandez.com,Retail,2024-02-26,Active,Starter,1052.61,j.whitfield,
+001Qy00000101311,Vásquez Media Atlas,vasquez.com,Education,2023-05-21,Active,Growth,3183.77,p.lindqvist,
+001Qy00000100478,Redstone Compass Group,redstone.com,Media,2024-01-28,Active,Enterprise,13692.82,m.tan,
+001Qy00000100014,Ashcombe Supply Group,ashcombe.com,Hospitality,2020-09-25,Inactive,Growth,3844.97,m.tan,
+001Qy00000100893,Pemberton Anchor Corp,pemberton.com,Hospitality,2025-06-26,Active,Starter,266.74,a.reyes,Word of Mouth
+001Qy00000100801,Ferreira Serviços Supply,ferreira.com,Fintech,2025-02-20,Churned,Starter,462.01,d.castellanos,direct
+001Qy00000100364,Pemberton Analytics Inc,pemberton.com,Hospitality,2023-09-01,Active,Enterprise,7148.73,s.okoro,
+001Qy00000100177,Pinnacle Sterling Inc,pinnacle.com,Hospitality,2022-10-26,Active,Growth,5141.03,j.whitfield,
+001Qy00000100547,Vantage Foundry Holdings,vantage.com,Fintech,2024-03-25,Active,Starter,673.34,a.reyes,
+001Qy00000101362,Whitmore Atlas Holdings,whitmore.com,Education,2020-09-06,Active,Growth,3136.77,s.okoro,
+001Qy00000100999,López y Asociados Beacon II,lopez.com,Logistics,2025-09-27,Active,Starter,368.23,d.castellanos,Paid Search
+001Qy00000100248,Acme Atlas Labs,acme.com,Fintech,2023-04-01,Active,Growth,8853.62,s.okoro,
+001Qy00000100973,Acme Cascade Corp,acme.com,Construction,2025-10-17,Active,Starter,216.76,j.whitfield,Paid Social
+001Qy00000100789,Stonebridge Quantum Labs,stonebridge.com,Education,2025-03-09,Churned,Starter,0.00,m.tan,SEO
+001Qy00000101315,Larkspur Nimbus Group,larkspur.com,Construction,2023-03-10,Active,Growth,2691.77,j.whitfield,
+001Qy00000100732,Dunmore Digital Corp,dunmore.com,Healthcare,2024-11-24,Active,Starter,459.39,a.reyes,
+001Qy00000101282,Cerulean Freight Systems,cerulean.com,Education,2026-06-06,Inactive,Starter,223.28,d.castellanos,Direct
+001Qy00000100115,Umbra Beacon Labs,umbra.com,Construction,2017-06-09,Active,Starter,690.53,j.whitfield,
+001Qy00000100676,Kestrel Sterling Systems,kestrel.com,Healthcare,2024-09-20,Churned,Starter,0.00,m.tan,Blog
+001Qy00000101052,Yarrow Beacon Group,yarrow.com,Media,2025-11-15,Active,Growth,1200.00,m.tan,Paid Search
+001Qy00000100899,Muñoz Holdings Nimbus,munoz.com,Fintech,2025-07-05,Inactive,Growth,427.15,j.whitfield,Outbound
+001Qy00000100583,Ironwood Analytics Corp,ironwood.com,Education,2024-05-12,Churned,Growth,2767.31,p.lindqvist,Outbound
+001Qy00000100337,Vantage Precision Holdings,vantage.com,Logistics,2023-07-19,,Starter,0.00,m.tan,
+001Qy00000100586,Underhill Keystone Partners,underhill.com,Energy,2024-06-28,Churned,Starter,0.00,s.okoro,paid search
+001Qy00000100568,Northwind Lumen LLC,northwind.com,Construction,2024-05-19,Inactive,Starter,75.43,s.okoro,Direct
+001Qy00000101367,Blackthorn Freight Labs,blackthorn.com,Fintech,2020-07-24,Active,Starter,212.92,m.tan,
+001Qy00000101419,Northgate Trading Corp,northgate.com,Hospitality,2024-03-03,Active,Growth,2557.68,j.whitfield,
+001Qy00000100010,Orchard Summit Group,orchard.com,Construction,2020-02-18,Churned,Growth,0.00,d.castellanos,
+001Qy00000101112,Vantage Atlas Group,vantage.com,Construction,2026-01-21,Inactive,Starter,295.62,a.reyes,PPC
+001Qy00000100196,Acme Nimbus Holdings,acme.com,Hospitality,2022-12-27,Active,Growth,2357.36,d.castellanos,
+001Qy00000100544,Pinnacle Freight Systems,pinnacle.com,Retail,2024-05-05,Active,Starter,298.75,m.tan,
+001Qy00000101174,Copperfield Quantum Group,copperfield.com,Hospitality,2026-02-26,Active,Starter,726.87,d.castellanos,Outbound
+001Qy00000100856,Cranfield Atlas Systems,cranfield.com,Energy,2025-03-31,Active,Growth,1285.98,m.tan,SEO
+001Qy00000101095,Alder Nimbus Corp,alder.com,Education,2026-01-10,Active,Starter,721.99,d.castellanos,LinkedIn
+001Qy00000100526,Yarrow Trading Holdings,yarrow.com,Fintech,2024-04-01,Churned,Starter,503.38,p.lindqvist,
+001Qy00000100920,Quillfeather Digital Holdings,quillfeather.com,Construction,2025-06-30,Active,Growth,5020.62,d.castellanos,Blog
+001Qy00000100152,Harborview Compass Group,harborview.com,Education,2022-10-09,Active,Growth,1900.85,m.tan,
+001Qy00000100662,Copperfield Cascade Systems,copperfield.com,Fintech,2024-08-22,Active,Enterprise,19009.53,j.whitfield,Direct
+001Qy00000100083,Yellowfin Clinical Labs,yellowfin.com,Retail,2022-01-22,Churned,Growth,0.00,s.okoro,
+001Qy00000100030,Glenrock Analytics LLC,glenrock.com,Retail,2022-04-14,Inactive,Starter,776.84,j.whitfield,
+001Qy00000100930,Ashcombe Compass Corp,ashcombe.com,Hospitality,2025-07-09,Churned,Starter,7066.56,m.tan,SDR
+001Qy00000101304,Dunmore Vector Inc,dunmore.com,Logistics,2020-07-12,Active,Starter,1039.71,s.okoro,
+001Qy00000100747,Kestrel Onyx Systems,kestrel.com,Construction,2025-01-26,Churned,Starter,970.15,m.tan,paid search
+001Qy00000101125,Quarry Summit Partners,quarry.com,Healthcare,2026-02-25,Active,Starter,1042.87,j.whitfield,
+001Qy00000101245,Northwind Anchor Partners,northwind.com,Construction,2026-06-21,Inactive,Starter,250.00,s.okoro,Outbound
+001Qy00000100773,Whitmore Anchor Corp,whitmore.com,Media,2025-02-20,Active,Growth,2694.04,d.castellanos,Paid Social
+001Qy00000100259,Juniper Sable Labs,juniper.com,Fintech,2023-03-29,Inactive,Growth,1386.05,s.okoro,
+001Qy00000101045,Larkspur Supply Labs,larkspur.com,Media,2025-11-11,,Starter,627.43,p.lindqvist,Paid Search
+001Qy00000100076,Lakeshore Cascade Inc,lakeshore.com,Media,2018-03-15,Active,Growth,3399.48,a.reyes,
+001Qy00000100961,Juniper Analytics Corp,juniper.com,Media,2025-08-30,,Starter,273.83,s.okoro,SEO
+001Qy00000101298,Umbra Foundry Labs,umbra.com,Construction,2026-06-18,Inactive,Starter,267.78,p.lindqvist,Google Ads
+001Qy00000101359,Westbrook Onyx Partners,westbrook.com,Logistics,2021-03-26,Inactive,Starter,969.39,m.tan,
+001Qy00000100346,Larkspur Quantum Partners,larkspur.com,Fintech,2023-09-21,Active,Growth,3291.38,a.reyes,
+001Qy00000100267,Eastvale Digital Labs,eastvale.com,Education,2023-03-28,Churned,Starter,298.50,d.castellanos,
+001Qy00000101083,Fairmount Beacon,fairmount.com,Logistics,2026-01-15,Inactive,Starter,126.12,d.castellanos,Word of Mouth
+001Qy00000100646,Zenith Anchor Group,zenith.com,Media,2024-08-31,Active,Starter,1272.00,s.okoro,Word of Mouth
+001Qy00000101318,Pinnacle Nimbus LLC,pinnacle.com,Fintech,2023-03-16,Active,Starter,602.92,j.whitfield,
+001Qy00000100551,Juniper Freight Group,juniper.com,Healthcare,2024-05-11,Active,Starter,542.64,a.reyes,
+001Qy00000100566,Silverline Analytics Labs,silverline.com,Construction,2024-05-22,,Starter,357.95,j.whitfield,Word of Mouth
+001Qy00000100828,Redstone Beacon Inc,redstone.com,Hospitality,2025-03-09,Churned,Starter,0.00,m.tan,Organic Search
+001Qy00000100473,Nightingale Anchor Inc,nightingale.com,Fintech,2024-01-27,Active,Starter,518.13,a.reyes,
+001Qy00000100498,Muñoz Holdings Digital,munoz.com,Retail,2024-03-17,Churned,Starter,0.00,m.tan,
+001Qy00000100992,Meridian Summit Inc,meridian.com,Construction,2025-08-29,Active,Growth,2033.97,a.reyes,SDR
+001Qy00000101361,Northwind Supply Partners,northwind.com,Hospitality,2022-08-23,Churned,Starter,63.11,d.castellanos,
+001Qy00000100477,Orchard Summit Holdings,orchard.com,Energy,2024-02-18,Active,Starter,454.20,a.reyes,
+001Qy00000100524,Harborview Onyx Group,harborview.com,Manufacturing,2024-04-05,Active,Starter,300.30,m.tan,
+001Qy00000100182,Copperfield Onyx Partners,copperfield.com,Fintech,2022-11-27,Churned,Growth,1200.00,j.whitfield,
+001Qy00000100996,Ashcombe Clinical Partners,ashcombe.com,Logistics,2025-09-04,Active,Enterprise,6728.88,s.okoro,SDR
+001Qy00000100342,Glenrock Foundry Partners,glenrock.com,Logistics,2023-07-19,Churned,Starter,0.00,a.reyes,
+001Qy00000100140,Underhill Compass LLC,underhill.com,Retail,2022-09-02,Inactive,Enterprise,820.04,j.whitfield,
+001Qy00000100256,Meridian Clinical LLC,meridian.com,Energy,2023-04-11,Active,Enterprise,9313.41,p.lindqvist,
+001Qy00000100090,Orchard Compass Labs,orchard.com,Retail,2018-06-25,Active,Growth,13500.00,j.whitfield,
+001Qy00000101427,Thornbury Freight Holdings,thornbury.com,Logistics,2021-04-06,Active,Starter,570.17,s.okoro,
+001Qy00000101445,Alder Anchor LLC,alder.com,Education,2023-08-04,Active,Growth,2236.69,s.okoro,
+001Qy00000100520,Vantage Pioneer Inc,vantage.com,Manufacturing,2024-04-03,Active,Growth,7069.54,p.lindqvist,
+001Qy00000101161,Underhill Coastal Partners,underhill.com,Healthcare,2026-02-21,Active,Growth,2854.79,j.whitfield,Word of Mouth
+001Qy00000100534,Stonebridge Anchor Corp,stonebridge.com,Construction,2024-03-20,Inactive,Growth,0.00,m.tan,
+001Qy00000100274,Underhill Precision Group,underhill.com,Media,2023-04-27,Inactive,Growth,5044.53,d.castellanos,
+001Qy00000101239,Ashcombe Freight Systems,ashcombe.com,Manufacturing,2026-06-05,Active,Starter,801.38,s.okoro,Word of Mouth
+001Qy00000100100,São Bento Foundry,sao.com,Healthcare,2021-04-19,Churned,Starter,0.00,p.lindqvist,
+001Qy00000100872,Thornbury Onyx Labs,thornbury.com,Education,2025-05-08,Active,Starter,470.24,d.castellanos,Google Ads
+001Qy00000101038,Nightingale Cascade Systems,nightingale.com,Logistics,2025-11-28,Churned,Starter,267.44,s.okoro,
+001Qy00000101388,Zenith Summit Group,zenith.com,Education,2024-01-09,,Growth,1928.74,a.reyes,
+001Qy00000100425,Nightingale Compass Systems,nightingale.com,Manufacturing,2023-11-05,Active,Growth,3406.34,d.castellanos,
+001Qy00000101027,Larkspur Quantum Inc,larkspur.com,Hospitality,2025-09-28,Active,Starter,987.57,d.castellanos,direct
+001Qy00000100181,Ironwood Precision Holdings,ironwood.com,Fintech,2022-12-10,Active,Growth,3425.95,a.reyes,
+001Qy00000101041,Zenith Sable Corp,zenith.com,Education,2025-11-18,Active,Starter,670.18,j.whitfield,paid search
+001Qy00000100729,Westbrook Summit Partners,westbrook.com,Education,2024-12-04,Active,Starter,939.25,p.lindqvist,PPC
+001Qy00000101217,Alder Sterling Holdings,alder.com,Hospitality,2026-05-16,Inactive,Starter,926.48,m.tan,paid search
+001Qy00000101001,São Bento Compass II,sao.com,Manufacturing,2025-11-18,Inactive,Growth,5612.88,j.whitfield,
+001Qy00000101162,Marbury Vector Partners,marbury.com,Media,2026-02-28,Active,Growth,3078.32,s.okoro,SDR
+001Qy00000100056,Vantage Atlas LLC,vantage.com,Construction,2018-11-04,Active,Growth,2550.60,d.castellanos,
+001Qy00000100464,Larkspur Coastal Corp,larkspur.com,Education,2024-01-31,Inactive,Growth,1380.27,d.castellanos,
+001Qy00000100441,Larkspur Supply LLC,larkspur.com,Logistics,2024-01-17,Active,Starter,561.24,m.tan,
+001Qy00000101452,Ironwood Anchor Labs,ironwood.com,Fintech,2024-10-02,Churned,Starter,0.00,a.reyes,Organic Search
+001Qy00000100300,García Sistemas Compass,garcia.com,Manufacturing,2023-05-19,Active,Starter,432.58,j.whitfield,
+001Qy00000100725,Larkspur Foundry Corp,larkspur.com,Media,2025-01-03,Churned,Starter,104.17,m.tan,Organic Search
+001Qy00000101111,Alder Summit Holdings,alder.com,Fintech,2026-01-13,Active,Starter,974.40,s.okoro,PPC
+001Qy00000100766,Ironwood Analytics Inc,ironwood.com,Manufacturing,2025-02-02,Active,Growth,4241.48,a.reyes,Organic Search
+001Qy00000100225,Vantage Clinical Group,vantage.com,Retail,2022-12-31,Churned,Starter,0.00,d.castellanos,
+001Qy00000100345,Meridian Trading Group,meridian.com,Retail,2023-07-13,Active,Starter,1491.88,m.tan,
+001Qy00000100881,Fairmount Precision Holdings,fairmount.com,Manufacturing,2025-05-22,Active,Enterprise,8407.73,p.lindqvist,Tradeshow
+001Qy00000101060,Juniper Vector Inc,juniper.com,Media,2026-01-02,Active,Starter,836.64,p.lindqvist,PPC
+001Qy00000100227,Marbury Clinical Labs,marbury.com,Fintech,2023-01-20,Churned,Starter,500.44,d.castellanos,
+001Qy00000101291,Northgate Sable Partners,northgate.com,Construction,2026-07-15,,Starter,982.91,p.lindqvist,Paid Search
+001Qy00000101130,Blackthorn Quantum Systems,blackthorn.com,Fintech,2026-02-04,Active,Starter,499.81,m.tan,direct
+001Qy00000100223,Cranfield Clinical Inc,cranfield.com,Media,2023-01-26,,Starter,251.83,a.reyes,
+001Qy00000100391,Nightingale Freight LLC,nightingale.com,Retail,2023-09-28,Active,Starter,631.50,d.castellanos,
+001Qy00000100587,Verdigris Sterling Holdings,verdigris.com,Manufacturing,2024-06-08,Churned,Growth,3474.71,m.tan,Google Ads
+001Qy00000100809,Verdigris Nimbus Partners,verdigris.com,Logistics,2025-03-12,Churned,Starter,290.24,s.okoro,Conference
+001Qy00000101109,Fairmount Nimbus Holdings,fairmount.com,Hospitality,2026-01-13,,Starter,0.00,p.lindqvist,
+001Qy00000100401,Hernández Retail Cascade,hernandez.com,Education,2023-11-21,Active,Growth,3190.60,p.lindqvist,
+001Qy00000101118,Meridian Quantum Group,meridian.com,Healthcare,2025-12-26,Active,Growth,2129.92,m.tan,SDR
+001Qy00000100261,Oakfield Freight Inc,oakfield.com,Construction,2023-03-28,Churned,Growth,2404.08,m.tan,
+001Qy00000100162,Pemberton Compass LLC,pemberton.com,Construction,2022-11-18,,Growth,2758.78,d.castellanos,
+001Qy00000100593,Ironwood Digital Holdings,ironwood.com,Healthcare,2024-06-10,Inactive,Growth,1669.19,m.tan,Blog
+001Qy00000101319,Vantage Sterling Systems,vantage.com,Retail,2023-01-25,Active,Growth,6769.72,s.okoro,
+001Qy00000100353,Underhill Supply LLC,underhill.com,Manufacturing,2023-09-15,Active,Starter,375.17,s.okoro,
+001Qy00000101117,Meridian Quantum Labs,meridian.com,Education,2026-01-20,Active,Growth,1277.19,p.lindqvist,Organic Search
+001Qy00000100224,Cranfield Freight Holdings,cranfield.com,Energy,2023-01-06,,Starter,300.23,m.tan,
+001Qy00000100705,Larkspur Digital Systems,larkspur.com,Energy,2024-11-23,Churned,Enterprise,10662.00,m.tan,Direct
+001Qy00000100765,Brightwater Sable Partners,brightwater.com,Energy,2025-02-04,Active,Growth,4157.49,p.lindqvist,Paid Search
+001Qy00000101397,Cranfield Atlas Partners,cranfield.com,Healthcare,2023-01-12,Active,Starter,654.37,s.okoro,
+001Qy00000101097,Acme Freight Labs,acme.com,Hospitality,2026-01-23,Active,Starter,898.99,d.castellanos,Word of Mouth
+001Qy00000100318,Zenith Sterling Corp,zenith.com,Retail,2023-06-09,Active,Growth,4295.35,a.reyes,
+001Qy00000101183,Silverline Quantum Group,silverline.com,Hospitality,2026-04-10,Inactive,Enterprise,2293.71,p.lindqvist,Blog
+001Qy00000100684,Quillfeather Lumen Labs,quillfeather.com,Media,2024-10-19,Churned,Starter,0.00,a.reyes,Paid Search
+001Qy00000100941,Copperfield Compass Partners,copperfield.com,Hospitality,2025-07-30,Active,Growth,1960.72,p.lindqvist,Google Ads
+001Qy00000100849,Umbra Clinical Partners,umbra.com,Media,2025-05-24,Active,Growth,1470.64,d.castellanos,Direct
+001Qy00000101055,Dunmore Keystone Group,dunmore.com,Fintech,2025-12-14,,Growth,630.36,j.whitfield,
+001Qy00000100581,Hollowway Analytics Systems,hollowway.com,Fintech,2024-05-13,Active,Growth,2746.77,p.lindqvist,
+001Qy00000100811,Pemberton Coastal LLC,pemberton.com,Healthcare,2025-02-27,Churned,Starter,379.11,d.castellanos,Google Ads
+001Qy00000100703,Ferreira Serviços Analytics,ferreira.com,Logistics,2024-10-20,Churned,Starter,0.00,a.reyes,Direct
+001Qy00000100133,Brightwater Analytics LLC,brightwater.com,Healthcare,2017-08-09,Active,Growth,3936.37,m.tan,
+001Qy00000100462,Westbrook Keystone Inc,westbrook.com,Energy,2024-01-30,Churned,Starter,0.00,d.castellanos,
+001Qy00000101444,Underhill Nimbus Systems,underhill.com,Logistics,2024-10-09,Churned,Starter,684.17,s.okoro,
+001Qy00000101006,Guimarães Log Sterling,guimaraes.com,Fintech,2025-11-24,Active,Growth,1845.11,s.okoro,Blog
+001Qy00000100898,Muñoz Holdings Nimbus,munoz.com,Fintech,2025-06-24,Inactive,Growth,2813.20,j.whitfield,
+001Qy00000100883,Cranfield Vector Holdings,cranfield.com,Logistics,2025-07-02,Active,Starter,496.78,a.reyes,
+001Qy00000100788,Quarry Cascade Holdings,quarry.com,Fintech,2025-03-09,Active,Growth,3560.55,d.castellanos,Event
+001Qy00000100779,Pinnacle Sable Partners,pinnacle.com,Logistics,2025-02-03,Active,Starter,449.74,p.lindqvist,PPC
+001Qy00000101283,Yellowfin Coastal Inc,yellowfin.com,Education,2026-06-18,Active,Growth,1200.00,p.lindqvist,Word of Mouth
+001Qy00000100499,García Sistemas Lumen,garcia.com,Energy,2024-02-17,Inactive,Starter,740.57,j.whitfield,
+001Qy00000100197,Hernández Retail Clinical,hernandez.com,Retail,2023-01-08,Active,Starter,1373.05,s.okoro,
+001Qy00000100861,Fairmount Nimbus Corp,fairmount.com,Construction,2025-05-05,Active,Starter,577.35,p.lindqvist,
+001Qy00000101190,Lakeshore Coastal Holdings,lakeshore.com,Media,2026-02-27,Active,Starter,906.82,m.tan,Direct
+001Qy00000101267,Meridian Quantum Holdings,meridian.com,Logistics,2026-06-29,Active,Starter,339.34,a.reyes,Event
+001Qy00000100565,Thornbury Digital LLC,thornbury.com,Fintech,2024-05-17,Inactive,Starter,371.54,m.tan,LinkedIn
+001Qy00000101262,Brightwater Freight Partners,brightwater.com,Fintech,2026-05-06,Active,Starter,425.54,j.whitfield,Direct
+001Qy00000100021,Verdigris Clinical Systems,verdigris.com,Energy,2022-05-25,Active,Growth,2512.13,j.whitfield,
+001Qy00000101042,Cerulean Cascade LLC,cerulean.com,Healthcare,2025-11-24,Active,Enterprise,9936.92,d.castellanos,Word of Mouth
+001Qy00000100488,Underhill Atlas Labs,underhill.com,Logistics,2024-01-31,Active,Enterprise,8958.51,d.castellanos,
+001Qy00000100678,Larkspur Sable Holdings,larkspur.com,Retail,2024-10-17,Churned,Growth,1742.27,j.whitfield,SEO
+001Qy00000101360,Northwind Supply Partners,northwind.com,Hospitality,2022-09-22,Active,Starter,1114.01,d.castellanos,
+001Qy00000101399,Acme Precision Corp,acme.com,Manufacturing,2022-11-25,Churned,Starter,542.71,d.castellanos,
+001Qy00000100233,Zenith Atlas Labs,zenith.com,Fintech,2023-03-04,Churned,Growth,2239.78,a.reyes,
+001Qy00000100105,Guimarães Log Clinical,guimaraes.com,Manufacturing,2017-08-03,Churned,Enterprise,6000.00,m.tan,
+001Qy00000101182,Silverline Quantum Group,silverline.com,Hospitality,2026-04-03,Active,Enterprise,6000.00,p.lindqvist,Cold Outreach
+001Qy00000101008,Silverline Nimbus Labs,silverline.com,Manufacturing,2025-10-01,Active,Starter,473.61,s.okoro,Google Ads
+001Qy00000101167,Orchard Vector Partners,orchard.com,Healthcare,2026-03-09,Inactive,Starter,327.48,d.castellanos,social
+001Qy00000100654,Marbury Lumen Inc,marbury.com,Energy,2024-09-25,,Starter,1154.81,j.whitfield,SEO
+001Qy00000100219,Silverline Anchor Labs,silverline.com,Fintech,2023-02-11,Active,Growth,4223.51,j.whitfield,
+001Qy00000101404,Glenrock Anchor LLC,glenrock.com,Energy,2022-09-16,Active,Starter,451.29,j.whitfield,
+001Qy00000100687,Lakeshore Lumen LLC,lakeshore.com,Fintech,2024-10-17,Active,Starter,356.12,p.lindqvist,
+001Qy00000100048,Thornbury Supply Partners,thornbury.com,Retail,2022-03-19,Churned,Starter,367.21,d.castellanos,
+001Qy00000100114,Whitmore Precision Group,whitmore.com,Construction,2019-10-12,Active,Starter,696.60,j.whitfield,
+001Qy00000100215,Yellowfin Anchor Holdings,yellowfin.com,Fintech,2023-02-04,Churned,Starter,497.01,s.okoro,
+001Qy00000100188,Tanglewood Analytics Inc,tanglewood.com,Healthcare,2022-11-18,Churned,Growth,0.00,d.castellanos,
+001Qy00000100784,Zenith Foundry Corp,zenith.com,Construction,2025-03-10,Active,Starter,891.49,j.whitfield,paid search
+001Qy00000100069,Cranfield Pioneer Corp,cranfield.com,Retail,2018-11-30,Active,Enterprise,8112.54,s.okoro,
+001Qy00000101108,Larkspur Anchor Corp,larkspur.com,Construction,2026-01-15,Active,Starter,707.97,j.whitfield,PPC
+001Qy00000100944,Stonebridge Trading Inc,stonebridge.com,Construction,2025-08-30,Active,Starter,592.32,s.okoro,Conference
+001Qy00000101446,Larkspur Supply Corp,larkspur.com,Logistics,2023-05-02,Active,Growth,3717.74,j.whitfield,
+001Qy00000100844,MERIDIAN ATLAS GROUP,meridian.com,Construction,2025-03-27,Active,Enterprise,12355.69,d.castellanos,Direct
+001Qy00000100585,Orchard Atlas Corp,orchard.com,Fintech,2024-05-27,Active,Starter,319.68,m.tan,SEO
+001Qy00000100392,Northgate Cascade Labs,northgate.com,Construction,2023-09-10,Active,Growth,3963.52,s.okoro,
+001Qy00000100827,Northgate Beacon LLC,northgate.com,Retail,2025-04-11,Active,Starter,815.20,j.whitfield,Direct
+001Qy00000100911,Meridian Cascade Labs,meridian.com,Hospitality,2025-07-31,Active,Starter,623.71,d.castellanos,Conference
+001Qy00000100386,Umbra Coastal Group,umbra.com,Construction,2023-09-21,Churned,Starter,0.00,a.reyes,
+001Qy00000100405,Underhill Cascade Labs,underhill.com,Hospitality,2023-11-05,Churned,Growth,1520.95,d.castellanos,
+001Qy00000101417,André Frères Analytics,andre.com,Healthcare,2022-04-12,Active,Growth,3805.99,p.lindqvist,
+001Qy00000100251,Eastvale Pioneer Inc,eastvale.com,Hospitality,2023-03-26,Churned,Starter,0.00,m.tan,
+001Qy00000101129,Tanglewood Anchor Systems,tanglewood.com,Fintech,2026-02-03,Active,Starter,426.61,d.castellanos,Blog
+001Qy00000101355,Verdigris Quantum LLC,verdigris.com,Fintech,2020-04-09,Active,Growth,2166.64,m.tan,
+001Qy00000100874,Silverline Precision Group,silverline.com,Education,2025-04-24,Active,Starter,250.00,m.tan,SEO
+001Qy00000101180,Blackthorn Onyx Inc,blackthorn.com,Energy,2026-03-16,Active,Starter,688.04,m.tan,PPC
+001Qy00000100910,Pinnacle Quantum Systems,pinnacle.com,Retail,2025-06-28,Active,Enterprise,7180.74,p.lindqvist,Referral
+001Qy00000100207,Whitmore Digital Group,whitmore.com,Education,2022-12-20,Active,Growth,2792.57,m.tan,
+001Qy00000100661,Northgate Sable Inc,northgate.com,Education,2024-10-01,Active,Growth,2077.10,j.whitfield,SEO
+001Qy00000100974,Ravenswood Summit Systems,ravenswood.com,Retail,2025-10-05,Active,Starter,393.04,m.tan,paid search
+001Qy00000100190,Stonebridge Onyx Systems,stonebridge.com,Education,2022-11-06,Churned,Growth,2928.79,a.reyes,
+001Qy00000100325,Yarrow Digital Inc,yarrow.com,Manufacturing,2023-06-26,Churned,Starter,1665.96,d.castellanos,
+001Qy00000101440,Ashcombe Lumen Group,ashcombe.com,Healthcare,2020-09-06,Active,Growth,6061.73,a.reyes,
+001Qy00000101176,Copperfield Supply Partners,copperfield.com,Retail,2026-02-23,Active,Starter,477.20,j.whitfield,Paid Search
+001Qy00000100184,Redstone Summit Corp,redstone.com,Fintech,2022-11-03,Active,Growth,2633.79,m.tan,
+001Qy00000101175,Kestrel Quantum Corp,kestrel.com,Education,2026-04-25,Active,Growth,1200.00,d.castellanos,SEO
+001Qy00000101257,Ironwood Vector Labs,ironwood.com,Energy,2026-05-27,Active,Growth,1200.00,d.castellanos,Event
+001Qy00000100332,Nightingale Precision Group,nightingale.com,Manufacturing,2023-08-04,Churned,Starter,0.00,a.reyes,
+001Qy00000101005,Vásquez Media Anchor,vasquez.com,Manufacturing,2025-11-03,Active,Growth,1490.24,j.whitfield,Conference
+001Qy00000101284,Northgate Beacon Labs,northgate.com,Energy,2026-07-13,,Starter,799.27,m.tan,Blog
+001Qy00000101449,Meridian Keystone Partners,meridian.com,Manufacturing,2021-05-15,Active,Growth,5637.38,s.okoro,
+001Qy00000100512,Yellowfin Anchor Labs,yellowfin.com,Healthcare,2024-03-24,Churned,Starter,785.58,j.whitfield,
+001Qy00000100638,Fairmount Clinical Systems,fairmount.com,Healthcare,2024-08-14,Active,Starter,365.03,m.tan,Paid Social
+001Qy00000100479,Copperfield Onyx Labs,copperfield.com,Education,2024-02-09,Active,Starter,701.56,a.reyes,
+001Qy00000100884,Meridian Beacon Labs,meridian.com,Retail,2025-07-05,Active,Growth,4446.04,s.okoro,Direct
+001Qy00000100454,Harborview Onyx Partners,harborview.com,Hospitality,2023-12-02,Churned,Growth,299.02,p.lindqvist,
+001Qy00000100396,Thornbury Precision Holdings,thornbury.com,Media,2023-10-04,Active,Growth,10617.43,a.reyes,
+001Qy00000101462,Yarrow Coastal Group,yarrow.com,Hospitality,2024-09-16,Active,Starter,519.15,j.whitfield,
+001Qy00000100595,Muñoz Holdings Supply II,munoz.com,Construction,2024-07-23,Active,Starter,978.16,d.castellanos,Word of Mouth
+001Qy00000100982,Meridian Onyx Corp,meridian.com,Construction,2025-09-24,,Starter,410.92,d.castellanos,social
+001Qy00000101067,Northwind Quantum Holdings,northwind.com,Energy,2025-12-18,Inactive,Growth,4458.75,p.lindqvist,Blog
+001Qy00000100355,Lakeshore Pioneer Labs,lakeshore.com,Fintech,2023-09-03,Churned,Starter,0.00,a.reyes,
+001Qy00000101246,Lakeshore Lumen Partners,lakeshore.com,Manufacturing,2026-05-24,,Starter,440.45,s.okoro,Direct
+001Qy00000101365,Redstone Sable Holdings,redstone.com,Retail,2022-05-19,Inactive,Enterprise,12325.26,s.okoro,
+001Qy00000100126,Acme Clinical Labs,acme.com,Energy,2022-05-14,Churned,Growth,1256.94,m.tan,
+001Qy00000100232,Larkspur Quantum Systems,larkspur.com,Energy,2023-02-13,Churned,Enterprise,20326.13,p.lindqvist,
+001Qy00000100858,Ravenswood Summit Corp,ravenswood.com,Logistics,2025-04-25,Active,Enterprise,25903.13,p.lindqvist,Cold Outreach
+001Qy00000100496,Grupo Peña Compass II,grupo.com,Manufacturing,2024-02-17,Active,Growth,3727.53,p.lindqvist,
+001Qy00000101144,Alder Lumen Systems,alder.com,Fintech,2026-02-12,Churned,Starter,421.44,m.tan,SEO
+001Qy00000100683,Stonebridge Compass Partners,stonebridge.com,Energy,2024-11-19,Churned,Starter,520.48,d.castellanos,Word of Mouth
+001Qy00000100997,Cranfield Quantum Partners,cranfield.com,Logistics,2025-09-19,Active,Growth,1200.00,j.whitfield,Tradeshow
+001Qy00000100160,Verdigris Coastal Systems,verdigris.com,Healthcare,2022-09-26,Active,Growth,3104.64,j.whitfield,
+001Qy00000100829,Umbra Beacon Group,umbra.com,Manufacturing,2025-03-28,Active,Starter,1578.40,m.tan,PPC
+001Qy00000100242,Ravenswood Sterling Systems,ravenswood.com,Energy,2023-03-20,Churned,Growth,1928.51,m.tan,
+001Qy00000100038,Kestrel Lumen Corp,kestrel.com,Energy,2020-05-13,Active,Growth,8838.55,a.reyes,
+001Qy00000101232,Umbra Compass Systems,umbra.com,Construction,2026-03-30,Active,Growth,1860.88,d.castellanos,Tradeshow
+001Qy00000100096,Glenrock Cascade Corp,glenrock.com,Education,2021-06-06,Active,Growth,1327.69,a.reyes,
+001Qy00000100206,Northgate Atlas Corp,northgate.com,Hospitality,2022-12-12,Active,Starter,3253.47,j.whitfield,
+001Qy00000100309,Tanglewood Digital Corp,tanglewood.com,Healthcare,2023-05-02,Active,Growth,1847.95,s.okoro,
+001Qy00000100596,García Sistemas Lumen II,garcia.com,Manufacturing,2024-05-31,Churned,Starter,809.65,a.reyes,Blog
+001Qy00000101287,Fairmount Trading Inc,fairmount.com,Manufacturing,2026-08-04,,Growth,3730.03,p.lindqvist,Event
+001Qy00000100975,Ashcombe Pioneer Inc,ashcombe.com,Healthcare,2025-09-10,Active,Growth,3610.93,s.okoro,Organic Search
+001Qy00000100594,Grupo Peña Lumen II,grupo.com,Retail,2024-07-08,Churned,Growth,2391.05,s.okoro,
+001Qy00000100590,Umbra Digital Systems,umbra.com,Healthcare,2024-07-11,,Growth,0.00,m.tan,Organic Search
+001Qy00000101080,Juniper Pioneer LLC,juniper.com,Fintech,2025-12-14,Active,Starter,951.02,j.whitfield,LinkedIn
+001Qy00000100384,Alder Compass Holdings,alder.com,Education,2023-09-27,,Starter,589.95,m.tan,
+001Qy00000100361,Whitmore Sable Systems,whitmore.com,Hospitality,2023-08-21,Churned,Starter,0.00,d.castellanos,
+001Qy00000100589,Juniper Summit LLC,juniper.com,Healthcare,2024-07-05,Churned,Growth,0.00,j.whitfield,Partner Referral
+001Qy00000100501,Dovetail Clinical Systems,dovetail.com,Education,2024-02-10,Active,Starter,1500.00,s.okoro,
+001Qy00000100093,Westbrook Sterling Systems,westbrook.com,Fintech,2017-02-12,Active,Starter,484.85,j.whitfield,
+001Qy00000101123,Blackthorn Freight Corp,blackthorn.com,Healthcare,2026-02-02,Active,Starter,392.12,m.tan,PPC
+001Qy00000100643,Hollowway Lumen Corp,hollowway.com,Manufacturing,2024-08-23,Churned,Starter,575.70,j.whitfield,
+001Qy00000100080,Northgate Foundry Group,northgate.com,Logistics,2021-10-20,Churned,Growth,2851.49,d.castellanos,
+001Qy00000100601,Núñez Capital Sable,nunez.com,Fintech,2024-06-19,Active,Starter,473.22,m.tan,SEO
+001Qy00000100505,Yarrow Nimbus LLC,yarrow.com,Fintech,2024-04-04,Active,Growth,4334.03,p.lindqvist,
+001Qy00000100736,Ironwood Coastal LLC,ironwood.com,Media,2024-12-09,Inactive,Growth,2983.23,p.lindqvist,Paid Search
+001Qy00000100455,Underhill Trading Holdings,underhill.com,Manufacturing,2024-02-16,Active,Starter,454.67,d.castellanos,
+001Qy00000101173,Orchard Nimbus Systems,orchard.com,Hospitality,2026-03-21,Churned,Starter,354.04,d.castellanos,PPC
+001Qy00000101166,Pemberton Lumen Group,pemberton.com,Manufacturing,2026-01-23,Active,Starter,722.77,a.reyes,paid search
+001Qy00000101160,Kestrel Anchor Labs,kestrel.com,Fintech,2026-03-09,Active,Starter,234.62,j.whitfield,direct
+001Qy00000100063,Kestrel Vector Systems,kestrel.com,Fintech,2020-10-11,Active,Enterprise,8856.39,a.reyes,
+001Qy00000101199,Umbra Cascade Inc,umbra.com,Healthcare,2026-03-07,Active,Starter,633.72,d.castellanos,PPC
+001Qy00000101147,Meridian Supply Holdings,meridian.com,Fintech,2026-02-05,Active,Starter,378.12,d.castellanos,
+001Qy00000100945,Redstone Anchor Labs,redstone.com,Healthcare,2025-08-30,Active,Starter,981.14,s.okoro,PPC
+001Qy00000100515,Yellowfin Quantum Group,yellowfin.com,Energy,2024-04-06,Churned,Growth,0.00,s.okoro,
+001Qy00000100648,Nightingale Anchor Group,nightingale.com,Media,2024-08-04,Active,Enterprise,6293.23,m.tan,Direct
+001Qy00000100843,Meridian Atlas Group,meridian.com,Construction,2025-04-19,Active,Enterprise,33328.52,d.castellanos,Direct
+001Qy00000101392,Inglewood Summit Group,inglewood.com,Manufacturing,2024-01-08,Active,Starter,17.58,d.castellanos,
+001Qy00000100666,Tanglewood Onyx Partners,tanglewood.com,Manufacturing,2024-09-26,Active,Growth,2760.04,d.castellanos,Paid Search
+001Qy00000100531,Ironwood Compass Labs,ironwood.com,Retail,2024-04-04,Active,Starter,732.34,d.castellanos,
+001Qy00000100570,Underhill Freight Inc,underhill.com,Logistics,2024-05-26,Churned,Starter,633.49,m.tan,Google Ads
+001Qy00000100934,Juniper Quantum Partners,juniper.com,Fintech,2025-06-22,Active,Growth,3403.88,j.whitfield,Cold Outreach
+001Qy00000101243,Alder Sable Inc,alder.com,Logistics,2026-05-14,Inactive,Growth,1966.67,j.whitfield,Blog
+001Qy00000100939,Orchard Precision Inc,orchard.com,Retail,2025-09-27,Active,Starter,366.44,d.castellanos,paid search
+001Qy00000100826,Oakfield Atlas Partners,oakfield.com,Logistics,2025-03-14,Active,Growth,6944.51,s.okoro,
+001Qy00000100456,Larkspur Sterling LLC,larkspur.com,Education,2024-01-19,Active,Starter,471.04,m.tan,
+001Qy00000100107,Northgate Clinical Systems,northgate.com,Manufacturing,2018-09-26,Churned,Starter,623.60,j.whitfield,
+001Qy00000100880,Verdigris Clinical Holdings,verdigris.com,Logistics,2025-05-11,Churned,Starter,942.21,m.tan,paid search
+001Qy00000100229,Cerulean Supply Holdings,cerulean.com,Logistics,2023-02-27,Active,Growth,2024.42,s.okoro,
+001Qy00000100548,Harborview Freight Holdings,harborview.com,Retail,2024-03-22,Churned,Growth,0.00,j.whitfield,
+001Qy00000100772,Hollowway Supply Partners,hollowway.com,Healthcare,2025-01-17,Churned,Starter,426.66,p.lindqvist,direct
+001Qy00000101430,Juniper Compass Holdings,juniper.com,Education,2024-01-09,Active,Starter,1000.38,d.castellanos,
+001Qy00000100863,Cerulean Pioneer LLC,cerulean.com,Construction,2025-06-02,Churned,Starter,639.48,p.lindqvist,Google Ads
+001Qy00000100273,Northgate Clinical Corp,northgate.com,Media,2023-05-12,Inactive,Growth,2105.47,d.castellanos,
+001Qy00000100430,Fairmount Analytics Labs,fairmount.com,Logistics,2023-12-04,Churned,Growth,1945.95,s.okoro,
+001Qy00000100859,Yellowfin Atlas Systems,yellowfin.com,Retail,2025-05-04,Churned,Starter,810.87,d.castellanos,social
+001Qy00000100165,Redstone Nimbus Systems,redstone.com,Hospitality,2022-10-22,Active,Starter,662.17,d.castellanos,
+001Qy00000101385,Marbury Sterling LLC,marbury.com,Education,2019-12-31,Active,Starter,809.05,m.tan,
+001Qy00000100377,Marbury Clinical Group,marbury.com,Manufacturing,2023-10-12,Active,Growth,3164.79,p.lindqvist,
+001Qy00000101201,Whitmore Cascade Systems,whitmore.com,Construction,2026-04-23,Active,Starter,427.98,s.okoro,Google Ads
+001Qy00000100028,Dunmore Lumen Group,dunmore.com,Energy,2017-06-28,Inactive,Growth,0.00,m.tan,
+001Qy00000100368,Dovetail Coastal Corp,dovetail.com,Retail,2023-09-05,,Starter,0.00,m.tan,
+001Qy00000100245,Dunmore Lumen Inc,dunmore.com,Hospitality,2023-03-12,Churned,Growth,0.00,m.tan,
+001Qy00000100230,Ravenswood Supply Inc,ravenswood.com,Construction,2023-02-12,Churned,Growth,0.00,s.okoro,
+001Qy00000100073,Ashcombe Pioneer LLC,ashcombe.com,Healthcare,2017-09-11,Churned,Starter,2215.98,a.reyes,
+001Qy00000100484,Yellowfin Cascade Partners,yellowfin.com,Logistics,2024-02-27,Inactive,Starter,499.24,d.castellanos,
+001Qy00000100400,Pérez Group Lumen,perez.com,Energy,2023-10-02,Active,Enterprise,16709.99,p.lindqvist,
+001Qy00000100857,Verdigris Analytics Holdings,verdigris.com,Retail,2025-05-06,Active,Starter,392.14,d.castellanos,Direct
+001Qy00000100897,Grupo Peña Precision,grupo.com,Hospitality,2025-06-30,Active,Starter,610.22,j.whitfield,Word of Mouth
+001Qy00000101177,Fairmount Cascade Labs,fairmount.com,Logistics,2026-03-11,Inactive,Starter,307.48,j.whitfield,paid search
+001Qy00000100485,Lakeshore Precision Holdings,lakeshore.com,Education,2024-02-26,Active,Enterprise,11653.05,a.reyes,
+001Qy00000100600,São Bento Compass,sao.com,Hospitality,2024-06-09,Active,Enterprise,10509.75,a.reyes,Blog
+001Qy00000101312,Guimarães Log Quantum,guimaraes.com,Retail,2019-08-26,Active,Growth,6688.20,j.whitfield,
+001Qy00000100347,Alder Onyx Systems,alder.com,Logistics,2023-08-20,Active,Growth,2631.51,d.castellanos,
+001Qy00000100623,Copperfield Trading Systems,copperfield.com,Hospitality,2024-08-20,Active,Starter,1024.06,p.lindqvist,Paid Social
+001Qy00000100517,Fairmount Cascade Holdings,fairmount.com,Construction,2024-04-12,Churned,Growth,2654.41,s.okoro,
+001Qy00000100803,García Sistemas Beacon,garcia.com,Retail,2025-02-12,Active,Starter,456.62,a.reyes,Blog
+001Qy00000100908,Kestrel Quantum Partners,kestrel.com,Fintech,2025-07-07,Churned,Starter,545.96,s.okoro,
+001Qy00000100216,Northgate Trading LLC,northgate.com,Media,2023-02-09,Active,Growth,3226.23,j.whitfield,
+001Qy00000101435,Nightingale Supply Labs,nightingale.com,Energy,2021-02-10,Inactive,Starter,579.73,d.castellanos,
+001Qy00000100823,Nightingale Keystone Systems,nightingale.com,Logistics,2025-02-27,Churned,Growth,0.00,m.tan,Event
+001Qy00000100644,Hollowway Cascade Holdings,hollowway.com,Energy,2024-09-10,Active,Growth,10527.14,j.whitfield,Direct
+001Qy00000101075,Eastvale Sable Corp,eastvale.com,Retail,2025-12-26,Active,Starter,662.86,j.whitfield,Outbound
+001Qy00000100929,Umbra Trading LLC,umbra.com,Healthcare,2025-08-12,Active,Starter,545.30,m.tan,SEO
+001Qy00000100948,Dunmore Pioneer Holdings,dunmore.com,Hospitality,2025-09-07,Active,Growth,1916.42,a.reyes,Paid Search
+001Qy00000100171,Alder Beacon Inc,alder.com,Retail,2022-10-22,Active,Starter,917.19,a.reyes,
+001Qy00000100833,Juniper Compass Systems,juniper.com,Construction,2025-03-10,Churned,Starter,0.00,p.lindqvist,Direct
+001Qy00000101332,Cranfield Precision Systems,cranfield.com,Healthcare,2022-02-05,Active,Growth,3382.85,p.lindqvist,
+001Qy00000100507,Redstone Onyx Labs,redstone.com,Logistics,2024-03-04,Active,Starter,579.67,s.okoro,
+001Qy00000101450,Stonebridge Beacon Holdings,stonebridge.com,Education,2020-11-07,Active,Growth,2160.24,m.tan,
+001Qy00000101423,Pemberton Coastal Labs,pemberton.com,Construction,2021-11-11,Churned,Growth,7677.74,a.reyes,
+001Qy00000100605,Hollowway Sable Group,hollowway.com,Media,2024-07-18,Active,Enterprise,4812.72,s.okoro,social
+001Qy00000100724,Larkspur Foundry Corp,larkspur.com,Media,2024-12-24,Inactive,Starter,517.18,m.tan,SEO
+001Qy00000100688,Silverline Vector Corp,silverline.com,Logistics,2024-11-07,Churned,Enterprise,264.72,j.whitfield,
+001Qy00000100919,Northgate Analytics Labs,northgate.com,Logistics,2025-07-17,Active,Growth,4906.62,p.lindqvist,Event
+001Qy00000100904,Núñez Capital Compass,nunez.com,Logistics,2025-08-11,Active,Starter,511.93,d.castellanos,Paid Search
+001Qy00000100885,Silverline Clinical Inc,silverline.com,Energy,2025-06-04,Churned,Starter,0.00,s.okoro,Paid Search
+001Qy00000101453,Quarry Nimbus LLC,quarry.com,Construction,2020-08-24,Churned,Starter,406.09,s.okoro,
+001Qy00000100850,Ashcombe Quantum Systems,ashcombe.com,Manufacturing,2025-04-18,Active,Starter,396.78,m.tan,Google Ads
+001Qy00000101207,García Sistemas Analytics,garcia.com,Construction,2026-04-26,Churned,Starter,675.03,a.reyes,LinkedIn
+001Qy00000101400,Westbrook Coastal LLC,westbrook.com,Fintech,2022-03-14,Churned,Starter,658.93,m.tan,
+001Qy00000100137,Kestrel Freight Systems,kestrel.com,Logistics,2021-04-23,Churned,Growth,3929.63,a.reyes,
+001Qy00000101066,Ashcombe Keystone Holdings,ashcombe.com,Hospitality,2025-11-29,Active,Starter,432.51,p.lindqvist,paid search
+001Qy00000100314,Northgate Lumen Systems,northgate.com,Construction,2023-07-01,Churned,Enterprise,0.00,s.okoro,
+001Qy00000101203,Silverline Coastal Systems,silverline.com,Manufacturing,2026-04-23,,Starter,482.04,s.okoro,Google Ads
+001Qy00000101451,Vantage Cascade Group,vantage.com,Manufacturing,2022-08-02,Active,Growth,1448.78,s.okoro,
+001Qy00000100667,Nightingale Vector Partners,nightingale.com,Hospitality,2024-10-03,Active,Enterprise,7931.50,p.lindqvist,Outbound
+001Qy00000100442,Dunmore Cascade Systems,dunmore.com,Media,2023-11-26,Active,Growth,1844.52,m.tan,
+001Qy00000101396,Dovetail (DBA),dovetail.com,Healthcare,2023-11-20,Churned,Starter,142.99,d.castellanos,
+001Qy00000100034,Ashcombe Foundry Labs,ashcombe.com,Fintech,2019-04-07,Churned,Starter,817.02,m.tan,
+001Qy00000101099,Hernández Retail Atlas,hernandez.com,Hospitality,2026-01-09,Active,Starter,731.21,s.okoro,Word of Mouth
+001Qy00000100998,Northwind Sterling Holdings,northwind.com,Logistics,2025-09-08,Inactive,Starter,1173.18,s.okoro,Organic Search
+001Qy00000100764,Northwind Compass Group,northwind.com,Retail,2024-12-23,Churned,Growth,5029.40,s.okoro,SDR
+001Qy00000100756,Westbrook Pioneer Labs,westbrook.com,Healthcare,2025-01-03,Inactive,Growth,1503.38,s.okoro,Word of Mouth
+001Qy00000100875,Cerulean Anchor Corp,cerulean.com,Energy,2025-05-29,Active,Starter,800.88,a.reyes,Referral
+001Qy00000101347,Brightwater Coastal Labs,brightwater.com,Construction,2020-04-29,Active,Starter,725.63,s.okoro,
+001Qy00000101170,Quarry Analytics Systems,quarry.com,Education,2026-03-23,Active,Starter,538.15,p.lindqvist,
+001Qy00000100521,Quarry Onyx Labs,quarry.com,Hospitality,2024-04-08,Churned,Growth,0.00,j.whitfield,
+001Qy00000100503,Eastvale Vector LLC,eastvale.com,Fintech,2024-03-22,Active,Starter,1483.38,a.reyes,
+001Qy00000100721,Quarry Quantum Inc,quarry.com,Education,2024-12-09,Churned,Growth,3786.73,d.castellanos,Referral
+001Qy00000100977,Nightingale Cascade Labs,nightingale.com,Healthcare,2025-10-07,Active,Starter,1027.76,m.tan,Google Ads
+001Qy00000100743,Orchard Onyx Holdings,orchard.com,Logistics,2024-12-15,,Growth,3899.07,a.reyes,LinkedIn
+001Qy00000100101,Núñez Capital Vector,nunez.com,Hospitality,2018-11-16,Active,Starter,270.44,a.reyes,
+001Qy00000101061,Thornbury Clinical Systems,thornbury.com,Fintech,2025-11-18,,Growth,1832.71,p.lindqvist,SDR
+001Qy00000100340,Silverline Freight Corp,silverline.com,Retail,2023-08-20,Active,Growth,3613.41,s.okoro,
+001Qy00000100679,Dovetail Cascade Corp,dovetail.com,Fintech,2024-11-17,Active,Growth,4432.68,p.lindqvist,Partner
+001Qy00000100218,Yellowfin Vector Partners,yellowfin.com,Logistics,2023-01-20,Active,Starter,490.97,a.reyes,
+001Qy00000100771,Westbrook Digital Labs,westbrook.com,Manufacturing,2025-02-16,Inactive,Growth,1200.00,s.okoro,Organic Search
+001Qy00000100820,Whitmore Nimbus Group,whitmore.com,Energy,2025-03-27,Active,Enterprise,26287.05,d.castellanos,Cold Outreach
+001Qy00000100821,Blackthorn Sterling Labs,blackthorn.com,Education,2025-03-26,Churned,Growth,0.00,p.lindqvist,
+001Qy00000100135,Yellowfin Compass Partners,yellowfin.com,Hospitality,2021-03-12,Active,Growth,2172.59,d.castellanos,
+001Qy00000100650,Northwind Compass Holdings,northwind.com,Hospitality,2024-09-20,Churned,Starter,397.32,m.tan,Blog
+001Qy00000101003,Pérez Group Beacon,perez.com,Construction,2025-10-25,Active,Enterprise,6000.00,d.castellanos,SEO
+001Qy00000101288,Juniper Anchor Inc,juniper.com,Logistics,2026-07-17,Active,Enterprise,6000.00,a.reyes,SDR
+001Qy00000101439,Hollowway Anchor Holdings,hollowway.com,Manufacturing,2020-09-28,Active,Enterprise,2031.04,d.castellanos,
+001Qy00000100955,Lakeshore Analytics Labs,lakeshore.com,Logistics,2025-08-04,Active,Growth,2951.01,a.reyes,Cold Outreach
+001Qy00000101139,Westbrook Quantum Corp,westbrook.com,Media,2026-02-21,Active,Starter,740.92,j.whitfield,Direct
+001Qy00000100351,Oakfield Freight Group,oakfield.com,Energy,2023-09-17,Inactive,Enterprise,0.00,d.castellanos,
+001Qy00000100984,Pinnacle Lumen LLC,pinnacle.com,Healthcare,2025-09-23,Active,Starter,1500.00,d.castellanos,PPC

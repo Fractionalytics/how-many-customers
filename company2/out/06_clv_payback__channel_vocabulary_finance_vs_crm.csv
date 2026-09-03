@@ -1,0 +1,3 @@
+system,distinct_values,values
+finance (marketing_spend.channel),6,Content & SEO | Events & Sponsorships | Outbound SDR | Paid Search | Paid Social | Partner Program
+"sales (crm_accounts.lead_source), non-blank",23,Blog | Cold Outreach | Conference | Direct | Event | Google Ads | LinkedIn | LinkedIn Ads | Organic Search | Outbound | PPC | Paid Search | Paid Social | Partner | Partner Referral | Referral | SDR | SEO | Tradeshow | Word of Mouth | direct | paid search | social

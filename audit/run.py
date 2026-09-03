@@ -44,6 +44,21 @@ if prefix and not any(p.name.startswith("00") for p in files):
     files = [HERE / "sql" / "00_model.sql"] + files      # the model is always needed
 
 con = duckdb.connect()
+
+# Two files only some companies carry: the board's KPI tab and the acquisition schedules the
+# seller produced on request. Load them if present, else create them empty so every query runs.
+if (DATA / "board_kpis.csv").exists():
+    con.execute("CREATE TABLE board AS SELECT * FROM read_csv_auto('board_kpis.csv', header=true)")
+else:
+    con.execute("""CREATE TABLE board (month VARCHAR, active_customers INTEGER, mrr_usd DOUBLE,
+                   revenue_usd DOUBLE, new_customers INTEGER, churned_customers INTEGER,
+                   adjustment INTEGER, adjustment_note VARCHAR, prepared_on DATE, prepared_by VARCHAR)""")
+if (DATA / "acquisition_schedules.csv").exists():
+    con.execute("CREATE TABLE schedules AS SELECT * FROM read_csv_auto('acquisition_schedules.csv', header=true)")
+else:
+    con.execute("""CREATE TABLE schedules (book VARCHAR, closed DATE, customer VARCHAR,
+                   original_contract_date DATE, acv_at_close_usd DOUBLE, contract_type_at_close VARCHAR)""")
+
 for f in files:
     sql = f.read_text(encoding="utf-8")
     print("\n" + "=" * 100 + f"\n{f.name}\n" + "=" * 100)

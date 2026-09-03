@@ -1,0 +1,5 @@
+status,invoices,usd,pct_of_gross
+paid,16872,98993618.0,91.8
+void,443,3310245.0,3.1
+failed,423,2963001.0,2.7
+refunded,411,2510754.0,2.3

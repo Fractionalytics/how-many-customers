@@ -82,3 +82,57 @@ FROM crm WHERE mrr_usd > 0 GROUP BY 1 ORDER BY 3 DESC;
 SELECT date_trunc('quarter', created_date)::DATE AS quarter, COUNT(*) AS accounts_created,
        COUNT(*) FILTER (WHERE lead_source IS NULL OR lead_source = '') AS lead_source_blank
 FROM crm GROUP BY 1 ORDER BY 1;
+
+-- ------------------------------------------------------------------ thesis leg 2, with the schedules
+-- The acquisition schedules the seller produced on request, joined to billing through the same
+-- name key. (Empty when the company carries no acquisition_schedules.csv.)
+
+CREATE OR REPLACE VIEW acquired AS
+  SELECT s.book, s.closed, s.customer, s.original_contract_date, b.customer_ref
+  FROM schedules s
+  LEFT JOIN bill_keyed b ON b.parent_k = canon_key(s.customer);
+
+-- @out acquired_schedule_match
+SELECT book, closed, COUNT(*) AS accounts_on_schedule,
+       COUNT(customer_ref) AS matched_to_billing,
+       ROUND(100.0 * COUNT(customer_ref) / COUNT(*), 1) AS match_pct
+FROM acquired GROUP BY 1, 2 ORDER BY 2;
+
+-- Twelve-month retention: acquired versus organic, base months in the last 24 months.
+-- @out retention_acquired_vs_organic
+WITH tag AS (
+  SELECT b.customer_ref, COALESCE(a.book, 'organic') AS origin FROM bill b LEFT JOIN acquired a USING (customer_ref))
+SELECT t.origin AS segment,
+       COUNT(DISTINCT a.customer_ref) AS customers_in_base,
+       ROUND(100.0 * COUNT(*) FILTER (WHERE b.rev > 0) / COUNT(*), 1) AS logo_retention_12m_pct,
+       ROUND(100.0 * SUM(b.rev) / SUM(a.rev), 1) AS nrr_12m_pct,
+       ROUND(100.0 * SUM(LEAST(a.rev, b.rev)) / SUM(a.rev), 1) AS grr_12m_pct
+FROM panel a
+JOIN panel b ON b.customer_ref = a.customer_ref AND b.month = (a.month + INTERVAL 12 MONTH)::DATE
+JOIN tag t ON t.customer_ref = a.customer_ref, params
+WHERE a.rev > 0 AND (a.month + INTERVAL 12 MONTH)::DATE < date_trunc('month', as_of)
+  AND a.month >= date_trunc('month', as_of) - INTERVAL 24 MONTH
+GROUP BY 1 ORDER BY 2 DESC;
+
+-- The fingerprint a bought book leaves in billing: first invoices bunch in the quarter after close.
+-- @out new_billing_customers_by_quarter_vs_closes
+WITH q AS (
+  SELECT date_trunc('quarter', first_month)::DATE AS quarter, COUNT(*) AS new_billing_customers
+  FROM (SELECT customer_ref, MIN(month) AS first_month FROM rev_amort GROUP BY 1) GROUP BY 1)
+SELECT q.quarter, q.new_billing_customers,
+       (SELECT STRING_AGG(DISTINCT book || ' closed ' || closed, '; ') FROM schedules s
+         WHERE date_trunc('quarter', s.closed)::DATE = q.quarter
+            OR date_trunc('quarter', s.closed + INTERVAL 1 MONTH)::DATE = q.quarter) AS acquisition_closes_nearby
+FROM q ORDER BY 1;
+
+-- CRM created_date against billing first invoice: a migrated book shows years of gap.
+-- @out crm_created_vs_first_invoice_gap
+SELECT CASE WHEN gap_days < 60 THEN 'under 60 days'
+            WHEN gap_days < 365 THEN '60 days to 1 year'
+            WHEN gap_days < 1095 THEN '1 to 3 years'
+            ELSE 'over 3 years' END AS crm_created_before_first_invoice_by,
+       COUNT(*) AS billing_customers, ROUND(SUM(t.ttm)) AS ttm_usd
+FROM (SELECT b.customer_ref, date_diff('day', c.created_date, b.first_invoice_date) AS gap_days
+      FROM bill b JOIN bridge br USING (customer_ref) JOIN crm c USING (account_id)) g
+LEFT JOIN ttm_by_customer t USING (customer_ref)
+GROUP BY 1 ORDER BY MIN(gap_days);

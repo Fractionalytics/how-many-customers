@@ -1,0 +1,4 @@
+plan_tier,accounts,mean_mrr,median_mrr,p90_mrr
+Enterprise,146,15195.0,9138.0,26875.0
+Growth,466,3197.0,2589.0,6101.0
+Starter,713,739.0,584.0,1039.0

@@ -1,0 +1,8 @@
+rule,n,cumulative_spend_over_count
+all CRM accounts ever,1464,21025.0
+all billing customers ever,1399,22002.0
+CRM mrr > 0 not Churned,1110,27730.0
+contract-aware billing,954,32265.0
+product usage 30d,938,32815.0
+CRM Active (rows),892,34507.0
+paid invoice 90d,691,44545.0

@@ -1,0 +1,4 @@
+check_,groups,surplus_rows
+crm: rows sharing an account_id,0,
+crm: rows sharing a folded name key,64,64.0
+billing: customer_refs sharing a parent key (subsidiaries),40,45.0

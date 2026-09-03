@@ -1,0 +1,7 @@
+month,adjustment,adjustment_note,prepared_by,board_customers
+2023-06-01,-14,removed duplicate accounts per J.R. cleanup,J.R.,297
+2024-03-01,9,reinstated annual accounts flagged inactive in error,J.R.,470
+2024-11-01,-22,"Pelham migration in progress, excl. until re-papered",J.R.,566
+2025-03-01,,M.K. took over reporting; revenue now per Stripe recognized,M.K.,675
+2025-09-01,11,added Vireo accounts not yet in SFDC,M.K.,810
+2026-02-01,-6,removed test accounts,M.K.,923

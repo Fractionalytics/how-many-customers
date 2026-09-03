@@ -1,0 +1,4 @@
+contract_type,blended_cac_usd,first_month_cash_usd,avg_monthly_recognized_usd,payback_months_on_cash,payback_months_recognized
+annual,22612.0,53314.0,4482.0,0.4,5.0
+monthly,22612.0,1578.0,1637.0,14.3,13.8
+usage,22612.0,6599.0,5816.0,3.4,3.9

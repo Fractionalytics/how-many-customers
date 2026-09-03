@@ -1,0 +1,6 @@
+file,primary_key,rows,distinct_pk,distinct_name_keys,shared_key
+crm_accounts,account_id,1464,1464,1400,none shared with any other file
+billing_customers,customer_ref,1399,1399,1354,none
+billing_invoices,invoice_id,18149,18149,1399,customer_ref -> billing_customers
+product_usage,"(org_slug, event_date)",268436,268436,1443,none
+marketing_spend,"(month, channel)",282,282,6,none: no account key at all
