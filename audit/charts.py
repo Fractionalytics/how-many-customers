@@ -25,8 +25,11 @@ if len(sys.argv) < 2 or not (REPO / sys.argv[1]).is_dir():
     sys.exit("usage: python audit/charts.py <company-dir>")
 COMPANY = REPO / sys.argv[1]
 OUT = COMPANY / "out"
-CHARTS = COMPANY / "charts"
-CHARTS.mkdir(exist_ok=True)
+# BARE=1 renders the same charts without their titles and subtitles, into charts/bare/, for
+# slides where the slide title is the sentence and the chart should not repeat it.
+BARE = os.environ.get("BARE") == "1"
+CHARTS = COMPANY / "charts" / ("bare" if BARE else "")
+CHARTS.mkdir(parents=True, exist_ok=True)
 
 # ------------------------------------------------------------------ palette (validated)
 SURFACE = "#FAF9F7"
@@ -35,6 +38,10 @@ INK2 = "#565350"
 MUTED = "#97928A"
 GRID = "#E4E2DD"
 BLUE, ORANGE, VIOLET, GREEN = "#1F84B2", "#E07A2F", "#8A6BC1", "#1E9E5A"
+# Growth accounting: retained medium blue; new light green, resurrected medium green, expansion
+# dark green; churn light orange, contraction dark orange.
+GA = {"retained": "#1F84B2", "new": "#A3D977", "resurrected": "#3FAE5C", "expansion": "#1B6B3A",
+      "churned": "#F4B183", "contraction": "#C65911"}
 BLUE_DEEP = "#1A658F"
 CONTRACT = {"annual": BLUE, "monthly": ORANGE, "usage": VIOLET, "(unmatched)": MUTED}
 TIER = {"Enterprise": BLUE, "Growth": VIOLET, "Starter": ORANGE, "(unmatched)": MUTED}
@@ -67,23 +74,31 @@ plt.rcParams.update({
 def read(name):
     return pd.read_csv(OUT / f"{name}.csv")
 
+SLIDE_BOX = (12.1, 4.85)          # inches: the chart area under a slide title and subtitle
+
 def fig(w=12, h=6.75):
+    if BARE:
+        w, h = SLIDE_BOX
     return plt.figure(figsize=(w, h), dpi=160)
 
 import textwrap
 
 def title(ax, text, sub=None):
+    if BARE:
+        return
     f = ax.figure
     f.suptitle(text, fontfamily=DISPLAY, fontsize=19, fontweight="semibold", x=0.01, y=0.985, ha="left", va="top", color=INK)
     if sub:
         f.text(0.01, 0.925, textwrap.fill(sub, 150), fontsize=10.5, color=INK2, va="top", linespacing=1.4)
 
 def head(f, text, sub):
+    if BARE:
+        return
     f.suptitle(text, fontfamily=DISPLAY, fontsize=19, fontweight="semibold", x=0.01, y=0.985, ha="left", va="top", color=INK)
     f.text(0.01, 0.925, textwrap.fill(sub, 170), fontsize=10.5, color=INK2, va="top", linespacing=1.4)
 
 def finish(name):
-    plt.tight_layout(rect=(0, 0, 1, 0.88))
+    plt.tight_layout(rect=(0, 0, 1, 1) if BARE else (0, 0, 1, 0.88))
     p = CHARTS / f"{name}.png"
     plt.savefig(p, dpi=160)
     plt.close()
@@ -102,7 +117,8 @@ def months_last(df, n=24, col="month"):
     return df[df[col] >= df[col].max() - pd.DateOffset(months=n - 1)]
 
 def stacked_ga(ax, d, pos, neg, colors, xcol="month"):
-    """Stacked growth-accounting columns: positives up from zero, negatives down."""
+    """Stacked growth-accounting columns: retained at the base, then new, resurrected and
+    expansion up from it; churn and contraction down from zero."""
     x = range(len(d))
     bottom = pd.Series(0.0, index=d.index)
     for c in pos:
@@ -186,19 +202,20 @@ def chart_rev_ga_by_contract():
     d["month"] = pd.to_datetime(d["month"])
     d = d[d["month"] < d["month"].max()]
     d = d[d["month"] >= d["month"].max() - pd.DateOffset(months=23)]
-    colors = {"new_rev": BLUE, "expansion_rev": GREEN, "resurrected_rev": VIOLET, "contraction_rev": "#C7882B", "churned_rev": ORANGE}
+    colors = {"retained_rev": GA["retained"], "new_rev": GA["new"], "resurrected_rev": GA["resurrected"], "expansion_rev": GA["expansion"],
+              "churned_rev": GA["churned"], "contraction_rev": GA["contraction"]}
     f = fig(14, 7)
     for i, ct in enumerate(["annual", "monthly", "usage"]):
         ax = f.add_subplot(1, 3, i + 1)
         s = d[d.contract_type == ct].reset_index(drop=True)
-        stacked_ga(ax, s, ["new_rev", "expansion_rev", "resurrected_rev"], ["contraction_rev", "churned_rev"], colors)
+        stacked_ga(ax, s, ["retained_rev", "new_rev", "resurrected_rev", "expansion_rev"], ["churned_rev", "contraction_rev"], colors)
         ax.yaxis.set_major_formatter(FuncFormatter(money))
         qr = (s["new_rev"].fillna(0) + s["expansion_rev"].fillna(0) + s["resurrected_rev"].fillna(0)).sum() / -(s["churned_rev"].fillna(0) + s["contraction_rev"].fillna(0)).sum()
         ax.set_title(f"{ct.title()} contracts   quick ratio {qr:.1f}", fontfamily=DISPLAY, fontsize=14, loc="left", color=INK)
-        if i == 1:
-            ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.1), ncol=5, frameon=False)
+    hl, ll = ax.get_legend_handles_labels()
+    f.legend(hl, [l.replace(" rev", "") for l in ll], loc="lower center", ncol=6, frameon=False)
     head(f, "Revenue growth accounting, by contract type. Recognized basis, last 24 complete months", "New, expansion and resurrected revenue above the line; contraction and churn below. Annual revenue only moves at renewal; usage revenue moves every month.")
-    plt.tight_layout(rect=(0, 0.04, 1, 0.88))
+    plt.tight_layout(rect=(0, 0.09, 1, 1) if BARE else (0, 0.09, 1, 0.88))
     p = CHARTS / "04_rev_ga_by_contract.png"; plt.savefig(p, dpi=160); plt.close(); print("  wrote", p.name)
 
 def chart_nrr_by_contract():
@@ -247,7 +264,7 @@ def chart_cohort_heatmap():
         for j in range(vals.shape[1]):
             v = vals[i, j]
             if not np.isnan(v):
-                ax.text(j, i, f"{v:.0f}", ha="center", va="center", fontsize=9.5, color=SURFACE if v > 72 else INK)
+                ax.text(j, i, f"{v:.0f}", ha="center", va="center", fontsize=8 if BARE else 9.5, color=SURFACE if v > 72 else INK)
     ax.set_xticks(range(len(cols))); ax.set_xticklabels([f"m{int(c[1:])}" for c in cols])
     ax.set_yticks(range(len(m))); ax.set_yticklabels([pd.to_datetime(q).strftime("%Y Q") + str((pd.to_datetime(q).month - 1) // 3 + 1) for q in m.index])
     ax.grid(False); ax.set_xlabel("Months since first revenue")
@@ -280,16 +297,26 @@ def chart_org_and_seat_ga():
     s = months_last(read("04_user_growth_accounting__seat_ga_monthly"), 24).reset_index(drop=True)
     f = fig(14, 6.75)
     ax = f.add_subplot(1, 2, 1)
-    stacked_ga(ax, o, ["new_orgs", "resurrected_orgs"], ["churned_orgs"], {"new_orgs": BLUE, "resurrected_orgs": VIOLET, "churned_orgs": ORANGE})
+    stacked_ga(ax, o, ["retained_orgs", "new_orgs", "resurrected_orgs"], ["churned_orgs"],
+               {"retained_orgs": GA["retained"], "new_orgs": GA["new"], "resurrected_orgs": GA["resurrected"], "churned_orgs": GA["churned"]})
     ax.set_title(f"Organizations   {int(o['active_orgs'].iloc[-1]):,} active in {o['month'].iloc[-1]:%b %Y}", fontfamily=DISPLAY, fontsize=14, loc="left", color=INK)
-    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.1), ncol=3)
+    h1, l1 = ax.get_legend_handles_labels()
     ax = f.add_subplot(1, 2, 2)
-    stacked_ga(ax, s, ["new_seats", "expansion_seats", "resurrected_seats"], ["contraction_seats", "churned_seats"],
-               {"new_seats": BLUE, "expansion_seats": GREEN, "resurrected_seats": VIOLET, "contraction_seats": "#C7882B", "churned_seats": ORANGE})
+    stacked_ga(ax, s, ["retained_seats", "new_seats", "resurrected_seats", "expansion_seats"], ["churned_seats", "contraction_seats"],
+               {"retained_seats": GA["retained"], "new_seats": GA["new"], "resurrected_seats": GA["resurrected"], "expansion_seats": GA["expansion"],
+                "churned_seats": GA["churned"], "contraction_seats": GA["contraction"]})
     ax.set_title(f"Seats in use   {int(s['seats'].iloc[-1]):,} in {s['month'].iloc[-1]:%b %Y}", fontfamily=DISPLAY, fontsize=14, loc="left", color=INK)
-    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.1), ncol=5)
+    h2, l2 = ax.get_legend_handles_labels()
+    seen, hh, lab = set(), [], []
+    for h, l in list(zip(h2, l2)) + list(zip(h1, l1)):
+        g = l.split()[0]
+        if g not in seen:
+            seen.add(g); hh.append(h); lab.append(g)
+    order = ["retained", "new", "resurrected", "expansion", "churned", "contraction"]
+    pairs = sorted(zip(hh, lab), key=lambda t: order.index(t[1]))
+    f.legend([t[0] for t in pairs], [t[1] for t in pairs], loc="lower center", ncol=6, frameon=False)
     head(f, "Growth accounting from the product telemetry, last 24 complete months", "Left: organizations that logged in. Right: each organization's peak daily active users, the closest the log gets to an end-user count. New above the line, lost below.")
-    plt.tight_layout(rect=(0, 0.04, 1, 0.88))
+    plt.tight_layout(rect=(0, 0.09, 1, 1) if BARE else (0, 0.09, 1, 0.88))
     p = CHARTS / "09_org_and_seat_ga.png"; plt.savefig(p, dpi=160); plt.close(); print("  wrote", p.name)
 
 # ------------------------------------------------------------------ 6. CAC and payback
@@ -303,6 +330,8 @@ def chart_cac_payback():
     ax.plot(c["quarter"], c["cac_per_billing_customer"], color=BLUE, linewidth=2.2, marker="o", markersize=5, markeredgecolor=SURFACE, label="Spend per new billing customer")
     ax.plot(c["quarter"], c["cac_per_crm_account"], color=ORANGE, linewidth=2, marker="o", markersize=5, markeredgecolor=SURFACE, label="Spend per new CRM account")
     ax.yaxis.set_major_formatter(FuncFormatter(money)); ax.set_ylim(0, None); ax.legend(loc="lower right")
+    import matplotlib.dates as mdates
+    ax.xaxis.set_major_locator(mdates.MonthLocator(bymonth=(1, 7))); ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %y"))
     ax.set_title("Cohort CAC, two denominators", fontfamily=DISPLAY, fontsize=14, loc="left", color=INK)
     ax = f.add_subplot(1, 2, 2)
     pb = p.dropna(subset=["payback_months"])
@@ -313,7 +342,7 @@ def chart_cac_payback():
     ax.grid(axis="x", visible=False); ax.set_ylabel("Months")
     ax.set_title("Payback, months to recover cohort CAC from recognized revenue", fontfamily=DISPLAY, fontsize=14, loc="left", color=INK)
     head(f, "What it costs to acquire a customer, and how long it takes to earn it back", "Marketing spend lagged one month over new customers in the quarter. The two denominators disagree by up to 65 percent; neither excludes the acquired books, because nothing in the files flags them.")
-    plt.tight_layout(rect=(0, 0.04, 1, 0.88))
+    plt.tight_layout(rect=(0, 0.09, 1, 1) if BARE else (0, 0.09, 1, 0.88))
     q = CHARTS / "10_cac_payback.png"; plt.savefig(q, dpi=160); plt.close(); print("  wrote", q.name)
 
 # ------------------------------------------------------------------ 7. mix shift
@@ -362,7 +391,7 @@ def chart_board_vs_systems():
     ax.yaxis.set_major_formatter(FuncFormatter(money)); ax.legend(loc="upper left"); ax.set_ylim(0, None)
     ax.set_title("Revenue: cash for 29 months, then recognized, and nothing says so", fontfamily=DISPLAY, fontsize=14, loc="left", color=INK)
     head(f, "The board pack against the systems it was built from", "Forty-six monthly packs, each assembled by hand from whatever the CRM said on the day. No month can be reproduced from any system.")
-    plt.tight_layout(rect=(0, 0.04, 1, 0.88))
+    plt.tight_layout(rect=(0, 0.09, 1, 1) if BARE else (0, 0.09, 1, 0.88))
     p = CHARTS / "12_board_vs_systems.png"; plt.savefig(p, dpi=160); plt.close(); print("  wrote", p.name)
 
 # ------------------------------------------------------------------ 9. the acquired books
