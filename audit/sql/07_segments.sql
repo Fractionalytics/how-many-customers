@@ -136,3 +136,10 @@ FROM (SELECT b.customer_ref, date_diff('day', c.created_date, b.first_invoice_da
       FROM bill b JOIN bridge br USING (customer_ref) JOIN crm c USING (account_id)) g
 LEFT JOIN ttm_by_customer t USING (customer_ref)
 GROUP BY 1 ORDER BY MIN(gap_days);
+
+-- The mix shift, as the audit sees it: new billing customers per quarter by CRM plan tier.
+-- @out new_customers_by_quarter_and_tier
+SELECT date_trunc('quarter', f.first_month)::DATE AS quarter, COALESCE(c.plan_tier, '(unmatched)') AS plan_tier, COUNT(*) AS new_customers
+FROM (SELECT customer_ref, MIN(month) AS first_month FROM rev_amort GROUP BY 1) f
+LEFT JOIN bridge br USING (customer_ref) LEFT JOIN crm c USING (account_id)
+GROUP BY 1, 2 ORDER BY 1, 2;

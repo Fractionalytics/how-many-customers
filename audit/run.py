@@ -39,9 +39,16 @@ pd.set_option("display.max_columns", 40)
 pd.set_option("display.max_rows", 500)
 pd.set_option("display.float_format", lambda v: f"{v:,.4f}" if abs(v) < 10 else f"{v:,.1f}")
 
-files = sorted(p for p in (HERE / "sql").glob("*.sql") if p.name.startswith(prefix))
-if prefix and not any(p.name.startswith("00") for p in files):
-    files = [HERE / "sql" / "00_model.sql"] + files      # the model is always needed
+# Later files build on views defined in earlier ones, so with a prefix every file up to and
+# including the requested ones still runs; only the requested ones print.
+all_files = sorted((HERE / "sql").glob("*.sql"))
+if prefix:
+    last = max(i for i, p in enumerate(all_files) if p.name.startswith(prefix))
+    files = all_files[: last + 1]
+    show = {p.name for p in all_files if p.name.startswith(prefix)}
+else:
+    files = all_files
+    show = {p.name for p in all_files}
 
 con = duckdb.connect()
 
@@ -61,7 +68,9 @@ else:
 
 for f in files:
     sql = f.read_text(encoding="utf-8")
-    print("\n" + "=" * 100 + f"\n{f.name}\n" + "=" * 100)
+    quiet = f.name not in show
+    if not quiet:
+        print("\n" + "=" * 100 + f"\n{f.name}\n" + "=" * 100)
     label = None
     for text in re.split(r";[ \t]*\r?\n", sql):
         m = re.search(r"--\s*@out\s+(\S+)", text)
@@ -72,6 +81,9 @@ for f in files:
             continue
         is_select = re.match(r"(?is)^\s*(select|with|from|pivot|unpivot)\b", body) is not None
         if is_select:
+            if quiet:
+                con.execute(body).fetchall()
+                continue
             df = con.execute(body).df()
             name = label or f"q{len(list(OUT.glob(f.stem + '__*'))) + 1}"
             print(f"\n-- {name}")

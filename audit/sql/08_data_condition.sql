@@ -112,7 +112,7 @@ CREATE OR REPLACE VIEW board_vs_systems AS
 SELECT month, board_customers, billing_recognized_payers, telemetry_active_orgs,
        ROUND(100.0 * board_customers / NULLIF(billing_recognized_payers, 0) - 100, 1) AS board_over_billing_pct,
        board_mrr, billing_recognized_rev, ROUND(100.0 * board_mrr / NULLIF(billing_recognized_rev, 0) - 100, 1) AS board_mrr_over_billing_pct,
-       board_revenue_basis, board_new, billing_new_customers, board_churned, adjustment, prepared_by
+       board_revenue, billing_cash_rev, board_revenue_basis, board_new, billing_new_customers, board_churned, adjustment, prepared_by
 FROM board_vs_systems ORDER BY month;
 
 -- @out board_revenue_basis_by_period
