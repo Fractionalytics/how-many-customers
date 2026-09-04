@@ -194,7 +194,7 @@ def chart_rev_ga_by_contract():
         stacked_ga(ax, s, ["new_rev", "expansion_rev", "resurrected_rev"], ["contraction_rev", "churned_rev"], colors)
         ax.yaxis.set_major_formatter(FuncFormatter(money))
         qr = (s["new_rev"].fillna(0) + s["expansion_rev"].fillna(0) + s["resurrected_rev"].fillna(0)).sum() / -(s["churned_rev"].fillna(0) + s["contraction_rev"].fillna(0)).sum()
-        ax.set_title(f"{ct.title()} contracts   quick ratio {qr:.1f} over 24 months", fontfamily=DISPLAY, fontsize=14, loc="left", color=INK)
+        ax.set_title(f"{ct.title()} contracts   quick ratio {qr:.1f}", fontfamily=DISPLAY, fontsize=14, loc="left", color=INK)
         if i == 1:
             ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.1), ncol=5, frameon=False)
     head(f, "Revenue growth accounting, by contract type. Recognized basis, last 24 complete months", "New, expansion and resurrected revenue above the line; contraction and churn below. Annual revenue only moves at renewal; usage revenue moves every month.")
