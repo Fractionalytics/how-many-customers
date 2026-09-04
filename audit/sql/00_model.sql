@@ -147,17 +147,35 @@ CREATE OR REPLACE VIEW panel_cash AS
 -- Org x month from the telemetry. The org is the unit, so "active user" here means an
 -- organization with any activity in the month; the active_users column is kept as a sum.
 -- The org slug is the canonical name slugified, so name_key(org_slug) is the entity key.
+-- peak_users is the largest daily active-user count the org logged that month: the seats in
+-- use. The log has no user ids, so it is the closest the telemetry gets to an end-user count.
 CREATE OR REPLACE VIEW usage_month AS
   SELECT org_slug, name_key(org_slug) AS entity_k, date_trunc('month', event_date)::DATE AS month,
-         COUNT(*) AS active_days, SUM(active_users) AS user_days, SUM(sessions) AS sessions
+         COUNT(*) AS active_days, SUM(active_users) AS user_days, MAX(active_users) AS peak_users,
+         SUM(sessions) AS sessions
   FROM usage GROUP BY 1, 2, 3;
+
+-- Contract type reaches the telemetry through the entity resolver; unmatched orgs are labelled.
+CREATE OR REPLACE VIEW org_contract AS
+  SELECT u.org_slug, COALESCE(MIN(b.contract_type), '(unmatched)') AS contract_type
+  FROM (SELECT DISTINCT org_slug, entity_k FROM usage_month) u
+  LEFT JOIN bill_entity e ON e.entity_k = u.entity_k
+  LEFT JOIN bill b ON b.customer_ref = e.customer_ref
+  GROUP BY 1;
 
 CREATE OR REPLACE VIEW usage_panel AS
   WITH firsts AS (SELECT org_slug, MIN(month) AS first_month FROM usage_month GROUP BY 1),
        spine AS (SELECT month FROM months WHERE month >= (SELECT MIN(month) FROM usage_month))
-  SELECT f.org_slug, f.first_month, s.month,
+  SELECT f.org_slug, f.first_month, s.month, oc.contract_type,
          COALESCE(u.active_days, 0) AS act,
-         COALESCE(LAG(u.active_days) OVER (PARTITION BY f.org_slug ORDER BY s.month), 0) AS act_prev
+         COALESCE(LAG(u.active_days) OVER (PARTITION BY f.org_slug ORDER BY s.month), 0) AS act_prev,
+         COALESCE(u.peak_users, 0) AS seats,
+         COALESCE(LAG(u.peak_users) OVER (PARTITION BY f.org_slug ORDER BY s.month), 0) AS seats_prev
   FROM firsts f
   JOIN spine s ON s.month >= f.first_month
+  JOIN org_contract oc USING (org_slug)
   LEFT JOIN usage_month u ON u.org_slug = f.org_slug AND u.month = s.month;
+
+-- The revenue panel with the contract type attached, for growth accounting by contract.
+CREATE OR REPLACE VIEW panel_c AS
+  SELECT p.*, b.contract_type FROM panel p JOIN bill_keyed b USING (customer_ref);

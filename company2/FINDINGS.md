@@ -35,8 +35,8 @@ assembles the board pack by hand.
 | 7 | Billing: paid invoice in the last 365 days | 1,066 |
 | 8 | Billing: contract-aware (monthly and usage paid in 90 days, annual in 365) | 954 |
 | 9 | Billing: recognized revenue above zero in August | 728 |
-| 10 | Product: any usage in the last 30 days | 938 |
-| 11 | Product: monthly active organizations, July | 937 |
+| 10 | Product: any usage in the last 30 days | 932 |
+| 11 | Product: monthly active organizations, July | 939 |
 | 12 | Board pack, July 2026 | 1,050 |
 
 Spread across the four a company actually uses (1, 3, 5, 10): **691 to 1,110**, 419 customers,
@@ -50,7 +50,7 @@ the 112 blank and 134 Inactive rows (average MRR $2,210 and $2,220, so not dead)
 215 Churned rows and most Inactive and blank rows whose `mrr_usd` was never zeroed; rule 10
 counts churned organizations still logging in and misses dormant ones.
 
-Boundary check: 691 and 938 inclusive, 690 and 937 exclusive.
+Boundary check: 691 and 932 inclusive, 690 and 932 exclusive.
 
 ## 2. Concentration
 
@@ -125,18 +125,68 @@ Twelve-month retention, base month to the same month a year later:
 Against the benchmark, 96.5 percent NRR is "good" for mid-market (90) and short of "great"
 (110). On the cash basis the same series swings from 58 to 111 percent month to month.
 
+**By contract type, because monthly, annual and usage customers are three businesses in one
+ledger.** Last twelve complete months, recognized basis, each line as a share of that
+contract's own revenue:
+
+| Contract | Revenue, 12 months | New | Expansion | Contraction | Resurrected | Churned | Quick ratio |
+|---|---|---|---|---|---|---|---|
+| Annual | $20.5M | 1.9% | 1.2% | 0.0% | 0.0% | 0.8% | 3.98 |
+| Monthly | $11.2M | 4.2% | 0.9% | 0.5% | 3.5% | 5.1% | 1.55 |
+| Usage | $5.3M | 3.7% | 9.1% | 8.5% | 1.5% | 4.1% | 1.13 |
+
+Annual revenue barely moves inside a year by construction (it can only churn or expand at
+renewal), monthly revenue churns 5 percent a month and resurrects 3.5 (failed cards, retried),
+and usage revenue swings 9 percent each way every month. A blended quick ratio averages a
+number that only moves at renewal with one that moves every month.
+
+Twelve-month retention by contract, base months in the last 24: annual 102.0 percent NRR, 87.0
+GRR, 82.5 logo; monthly 86.6 / 78.0 / 76.2; usage 97.7 / 83.6 / 84.7. Annual is "good" on the
+benchmark and monthly is below it.
+
 ## 4. Active-organization growth accounting
 
-From the telemetry, organization as the unit, full history (48 months against 47 of invoices).
-Monthly active organizations rose from 89 in October 2022 to 869 in November 2025 and 937 in
-July 2026, with 14 to 48 new organizations a month and 4 to 22 churned; the organization quick
-ratio ran between 1.1 and 7.7 over the last two years and month-over-month retention between
-97 and 99 percent (`user_ga_monthly`). New organizations in the telemetry now track new billing
-customers, which they did not in company 1.
+From the telemetry, full history (48 months against 47 of invoices), two units: the
+organization, and the seats in use inside it.
 
-Paying versus using, July 2026, through the entity resolver: 796 organizations pay and use, 75
-pay and do not use, 141 use and do not pay. The 75 include the 49 dormant subscriptions the
-referee knows about plus resolver misses; the 141 include churned organizations still logging in
+**Organizations.** Monthly active organizations rose from 90 in October 2022 to 871 in November
+2025 and 939 in July 2026, with 10 to 46 new organizations a month and 13 to 34 churned; the
+organization quick ratio ran between 0.8 and 3.2 over the last year and slipped below 1 in
+May, June and July 2026 as churn rose to 24 to 34 a month (`user_ga_monthly`). New organizations
+in the telemetry track new billing customers, which they did not in company 1.
+
+By contract type, last twelve months, with contract reached through the entity resolver:
+
+| Contract | Mean active orgs | New, 12 months | Churned, 12 months | Quick ratio | Monthly churn |
+|---|---|---|---|---|---|
+| Monthly | 471 | 235 | 171 | 1.40 | 3.0% |
+| Annual | 279 | 92 | 26 | 3.58 | 0.8% |
+| Usage | 59 | 21 | 15 | 1.47 | 2.1% |
+| Unmatched to billing | 90 | 33 | 22 | 1.50 | 2.0% |
+
+**Seats, the end-user view.** The log carries no user ids, only a daily active-user count per
+organization, so individual users cannot be followed. What can be followed is each
+organization's seats in use (its peak daily active users in the month), classified the way the
+toolkit classifies revenue: new seats from new organizations, retained, expansion where an
+organization grew, contraction where it shrank, churned where it went silent. Seats in use rose
+from 10,591 in September 2025 to 13,083 in July 2026; the seat quick ratio ran 1.3 to 3.5 over
+the same months (`seat_ga_monthly`). By contract, last twelve months, as a share of seats:
+
+| Contract | Mean seats | New | Expansion | Contraction | Churned | Quick ratio |
+|---|---|---|---|---|---|---|
+| Annual | 6,313 | 1.7% | 2.7% | 1.7% | 0.2% | 2.33 |
+| Monthly | 3,642 | 2.6% | 2.8% | 2.6% | 1.1% | 1.45 |
+| Usage | 855 | 2.6% | 2.4% | 3.1% | 1.2% | 1.18 |
+| Unmatched | 1,127 | 2.0% | 2.1% | 1.8% | 0.4% | 1.89 |
+
+Seat expansion outruns seat contraction on annual contracts and roughly matches it on monthly
+and usage, which is the same shape the revenue growth accounting shows. A user-level growth
+accounting (new, retained, resurrected, churned people) needs the raw event log with user ids;
+this data cannot support it, and that gap goes in the data condition review.
+
+Paying versus using, July 2026, through the entity resolver: 797 organizations pay and use, 74
+pay and do not use, 142 use and do not pay. The 74 include the 49 dormant subscriptions the
+referee knows about plus resolver misses; the 142 include churned organizations still logging in
 and organizations billing cannot match.
 
 ## 5. Cohorts

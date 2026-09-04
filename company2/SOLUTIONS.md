@@ -26,8 +26,8 @@ files. That state is the referee. It scores the rules; it is not itself a rule.
 | CRM `mrr_usd > 0` and not Churned, entities | 1,076 | Same, minus the 34 folded duplicates |
 | Billing: paid invoice in the last 365 days | 1,066 | Counts everyone who churned in the last year |
 | Billing: contract-aware (monthly and usage paid in 90 days, annual in 365) | **954** | Closest to the referee, 7 under it. Misses live customers between a failed and a retried invoice |
-| Product: any usage in the last 30 days | 938 | Churned organizations keep logging in for up to 40 days; dormant ones never show |
-| Product: monthly active organizations, July | 937 | |
+| Product: any usage in the last 30 days | 932 | Churned organizations keep logging in for up to 40 days; dormant ones never show |
+| Product: monthly active organizations, July | 939 | |
 | CRM `account_status = Active`, rows | **892** | 69 under the referee: 112 blank rows and 134 Inactive rows include live customers nobody re-touched |
 | CRM Active, entities | 884 | |
 | Billing: recognized revenue > 0 in August | 728 | August is a partial month |

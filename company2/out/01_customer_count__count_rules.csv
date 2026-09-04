@@ -8,5 +8,5 @@ ord,rule,n
 7,Billing: paid invoice in last 365 days (customer_ref),1066
 8,"Billing: contract-aware (monthly/usage paid 90d, annual paid 365d)",954
 9,Billing: recognized revenue > 0 in the as-of month,728
-10,Product: any usage in last 30 days (org_slug),938
-11,"Product: monthly active orgs, last complete month",937
+10,Product: any usage in last 30 days (org_slug),932
+11,"Product: monthly active orgs, last complete month",939

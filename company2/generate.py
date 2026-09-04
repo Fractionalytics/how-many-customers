@@ -576,6 +576,10 @@ for c in companies:
     cfg = TIERS[c["tier"]]
     slug = slugify(c["canonical"])
     lo_u, hi_u = cfg["users"]
+    # Seats are a STATE, not a daily draw: each organization starts with a seat count in its
+    # tier's band and the count moves with its MRR, so seat expansion in the telemetry is real
+    # expansion. Derived without touching the random stream, so the active-day pattern holds.
+    seats0 = lo_u + (c["cid"] * 7919) % (hi_u - lo_u + 1)
     start = c["platform_start"] - timedelta(days=urng.randint(0, 14))     # a short trial
     end = AS_OF if c["alive"] else min(AS_OF, c["churn_date"] + timedelta(days=urng.randint(0, 40)))
     d = start
@@ -591,9 +595,14 @@ for c in companies:
             dens = 0.0
         if urng.random() < dens:
             scale = 0.4 if (c["churn_date"] and (c["churn_date"] - d).days <= 90) else 1.0
+            mrr_m = c["mrr_by_month"].get(month_of(d), c["mrr0"] if d < c["platform_start"] else c["mrr_now"])
+            seats = max(1.0, seats0 * mrr_m / c["mrr0"])
+            share = 0.55 + 0.35 * urng.random()             # the share of seats active that day
+            sessions_per = urng.randint(1, 8)
+            urng.randint(lo_u, hi_u)                        # consumed to keep the stream aligned
+            active = max(1, int(round(seats * share * scale)))
             usage_rows.append({"org_slug": slug, "event_date": d.isoformat(),
-                               "active_users": max(1, int(urng.randint(lo_u, hi_u) * scale)),
-                               "sessions": urng.randint(1, 8) * max(1, int(urng.randint(lo_u, hi_u) * scale))})
+                               "active_users": active, "sessions": sessions_per * active})
         d += timedelta(days=1)
 
 # ------------------------------------------------------------------ attribution and spend

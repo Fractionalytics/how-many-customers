@@ -1,0 +1,4 @@
+contract_type,revenue_12m,new_pct,expansion_pct,contraction_pct,resurrected_pct,churned_pct,quick_ratio_12m
+annual,9908597.0,2.0,0.4,-0.4,0.5,-1.8,1.33
+monthly,8031029.0,2.2,5.1,-4.5,10.0,-13.5,0.95
+usage,1961578.0,2.5,5.9,-4.6,6.2,-11.1,0.93

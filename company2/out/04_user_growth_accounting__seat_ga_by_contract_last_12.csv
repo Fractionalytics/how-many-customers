@@ -1,0 +1,5 @@
+contract_type,mean_seats,new_pct,expansion_pct,contraction_pct,churned_pct,quick_ratio_12m
+annual,6313.0,1.7,2.7,-1.7,-0.2,2.33
+monthly,3642.0,2.6,2.8,-2.6,-1.1,1.45
+(unmatched),1127.0,2.0,2.1,-1.8,-0.4,1.89
+usage,855.0,2.6,2.4,-3.1,-1.2,1.18

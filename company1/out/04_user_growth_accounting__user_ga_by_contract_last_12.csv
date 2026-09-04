@@ -1,0 +1,5 @@
+contract_type,mean_active_orgs,new_orgs_12m,resurrected_12m,churned_12m,quick_ratio_12m,monthly_churn_pct
+annual,388.0,44.0,80.0,-204.0,0.61,4.4
+monthly,382.0,45.0,90.0,-210.0,0.64,4.6
+(unmatched),92.0,13.0,14.0,-40.0,0.68,3.6
+usage,82.0,10.0,14.0,-35.0,0.69,3.5

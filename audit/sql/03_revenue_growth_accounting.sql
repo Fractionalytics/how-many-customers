@@ -102,3 +102,67 @@ FROM nrr n JOIN cash c USING (month), params
 WHERE (n.month + INTERVAL 12 MONTH)::DATE < date_trunc('month', as_of)
   AND n.month >= date_trunc('month', as_of) - INTERVAL 24 MONTH
 ORDER BY 1;
+
+-- ------------------------------------------------------------ by contract type
+-- Monthly, annual and usage customers are three different businesses in one ledger. Blending
+-- them compares apples to oranges, so every growth-accounting figure is repeated per contract.
+CREATE OR REPLACE VIEW rev_ga_by_contract AS
+  SELECT contract_type, month,
+         COUNT(*) FILTER (WHERE rev > 0)                                                   AS paying_customers,
+         SUM(rev)                                                                          AS revenue,
+         SUM(CASE WHEN months_since_first = 0 THEN rev END)                                AS new_rev,
+         SUM(CASE WHEN months_since_first > 0 AND rev > 0 AND rev_prev > 0
+                  THEN LEAST(rev, rev_prev) END)                                           AS retained_rev,
+         SUM(CASE WHEN months_since_first > 0 AND rev > rev_prev AND rev_prev > 0
+                  THEN rev - rev_prev END)                                                 AS expansion_rev,
+        -SUM(CASE WHEN months_since_first > 0 AND rev > 0 AND rev < rev_prev
+                  THEN rev_prev - rev END)                                                 AS contraction_rev,
+         SUM(CASE WHEN months_since_first > 0 AND rev > 0 AND rev_prev = 0 THEN rev END)   AS resurrected_rev,
+        -SUM(CASE WHEN rev = 0 AND rev_prev > 0 THEN rev_prev END)                         AS churned_rev
+  FROM panel_c GROUP BY 1, 2;
+
+-- @out rev_ga_by_contract_monthly
+SELECT contract_type, month, paying_customers, ROUND(revenue) AS revenue, ROUND(new_rev) AS new_rev,
+       ROUND(retained_rev) AS retained_rev, ROUND(expansion_rev) AS expansion_rev, ROUND(contraction_rev) AS contraction_rev,
+       ROUND(resurrected_rev) AS resurrected_rev, ROUND(churned_rev) AS churned_rev,
+       ROUND((COALESCE(new_rev,0) + COALESCE(resurrected_rev,0) + COALESCE(expansion_rev,0))
+             / NULLIF(-(COALESCE(churned_rev,0) + COALESCE(contraction_rev,0)), 0), 2) AS quick_ratio
+FROM rev_ga_by_contract ORDER BY contract_type, month;
+
+-- @out rev_ga_by_contract_last_12
+SELECT contract_type,
+       ROUND(SUM(revenue)) AS revenue_12m,
+       ROUND(100.0 * SUM(new_rev) / SUM(revenue), 1) AS new_pct,
+       ROUND(100.0 * SUM(expansion_rev) / SUM(revenue), 1) AS expansion_pct,
+       ROUND(100.0 * SUM(contraction_rev) / SUM(revenue), 1) AS contraction_pct,
+       ROUND(100.0 * SUM(resurrected_rev) / SUM(revenue), 1) AS resurrected_pct,
+       ROUND(100.0 * SUM(churned_rev) / SUM(revenue), 1) AS churned_pct,
+       ROUND((SUM(new_rev) + SUM(resurrected_rev) + SUM(expansion_rev)) / NULLIF(-(SUM(churned_rev) + SUM(contraction_rev)), 0), 2) AS quick_ratio_12m
+FROM rev_ga_by_contract, params
+WHERE month < date_trunc('month', as_of) AND month >= date_trunc('month', as_of) - INTERVAL 12 MONTH
+GROUP BY 1 ORDER BY 2 DESC;
+
+-- NRR by contract type, base month to twelve months later.
+CREATE OR REPLACE VIEW nrr_by_contract AS
+  SELECT a.contract_type, a.month,
+         COUNT(*) AS base_customers,
+         ROUND(SUM(b.rev) / SUM(a.rev) * 100, 1) AS nrr_pct,
+         ROUND(SUM(LEAST(b.rev, a.rev)) / SUM(a.rev) * 100, 1) AS grr_pct,
+         ROUND(100.0 * COUNT(*) FILTER (WHERE b.rev > 0) / COUNT(*), 1) AS logo_retention_pct
+  FROM panel_c a
+  JOIN panel b ON b.customer_ref = a.customer_ref AND b.month = (a.month + INTERVAL 12 MONTH)::DATE
+  WHERE a.rev > 0
+  GROUP BY 1, 2;
+
+-- @out nrr_by_contract_monthly
+SELECT contract_type, month AS base_month, base_customers, logo_retention_pct, grr_pct, nrr_pct
+FROM nrr_by_contract, params WHERE (month + INTERVAL 12 MONTH)::DATE < date_trunc('month', as_of)
+ORDER BY contract_type, month;
+
+-- @out nrr_by_contract_last_12_base_months
+SELECT contract_type, ROUND(AVG(nrr_pct), 1) AS mean_nrr_pct, ROUND(AVG(grr_pct), 1) AS mean_grr_pct,
+       ROUND(AVG(logo_retention_pct), 1) AS mean_logo_retention_pct
+FROM nrr_by_contract, params
+WHERE (month + INTERVAL 12 MONTH)::DATE < date_trunc('month', as_of)
+  AND month >= date_trunc('month', as_of) - INTERVAL 24 MONTH
+GROUP BY 1 ORDER BY 1;
